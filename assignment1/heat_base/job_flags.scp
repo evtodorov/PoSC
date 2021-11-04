@@ -8,3 +8,5 @@
 #SBATCH --time=00:05:00
 #SBATCH --account=h039v
 #SBATCH --partition=test
+
+./heat test.dat
