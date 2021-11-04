@@ -6,7 +6,7 @@ for i in "${flagarray[@]}"
 do
     make clean
     sed "s/^CFLAGS.*/CFLAGS = $i/" -i Makefile
-    sed "s/^#SBATCH -o job_.*/#SBATCH -o job_$i" -i job_flags.scp
+    sed "s/^#SBATCH -o job_.*/#SBATCH -o job_$i.out/" -i job_flags.scp
     make
     sbatch job_flags.scp
 done
