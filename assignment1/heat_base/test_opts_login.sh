@@ -7,7 +7,7 @@ echo "Run on login node: "`date` >> filtered.out
 for i in "${flagarray[@]}"
 do
     make clean
-    sed 's/^CFLAGS.*/CFLAGS = -O1/' -i Makefile
+    sed "s/^CFLAGS.*/CFLAGS = $i/" -i Makefile
     make
     ./heat test.dat >> full.out
     echo "#CFLAGS = "$i >> filtered.out
