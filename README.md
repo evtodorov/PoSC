@@ -7,6 +7,7 @@ Assignments for Programming of Supercomunter WiSe 21-22 - Group 12
 All optimization levels except -O0 may affect debugging (-g)
 
 -O0 : Disables all optimizations. Recommended for program development and debugging, GNU default
+
 -O1 : Enables optimization for speed, while being aware of code size (e.g no loop unrolling)
 -O2 : Default optimization. Optimizations for speed, including global code scheduling, software pipelining, predication, and speculation. Intel default. Intel -O2 includes function inlining, while GNU does not
 -O3 : -O2 optimizations plus more aggressive optimizations such as prefetching, scalar replacement, and loop transformations. Enables optimizations for technical computing applications (loop-intensive code): loop optimizations and data prefetch. more aggressive optimizations than -O2, but not always better
