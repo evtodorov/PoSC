@@ -1,12 +1,10 @@
-flags=("-O2" "-O3" "-xhost")
+read -p "Enter Flags: " flag
 
-for i in "${flags[@]}"; do
-	make clean
-	echo "$i"
-	sed -i "s/^CFLAGS.*/CFLAGS = $i/" Makefile
-	sed -i "s/^#SBATCH -o.*/#SBATCH -o job_${i// /_}.out/" job_flags.scp
-	sed -i "s/^#SBATCH -e.*/#SBATCH -e job_${i// /_}.out/" job_flags.scp
-	make
-	sbatch job_flags.scp & PIDJOB=$!
-	wait $PIDJOB
-done
+make clean
+echo "$flag"
+sed -i "s/^CFLAGS.*/CFLAGS = $flag/" Makefile
+sed -i "s/^#SBATCH -o.*/#SBATCH -o job_${flag// /_}.out/" job_flags.scp
+sed -i "s/^#SBATCH -e.*/#SBATCH -e job_${flag// /_}.out/" job_flags.scp
+make
+sbatch job_flags.scp & PIDJOB=$!
+wait $PIDJOB
