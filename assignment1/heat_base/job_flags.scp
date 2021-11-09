@@ -2,8 +2,8 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o job_-xhost_-ipo_-fno-alias_-xCORE-AVX512.out
-#SBATCH -e job_-xhost_-ipo_-fno-alias_-xCORE-AVX512.out
+#SBATCH -o job_-xhost_-xCORE-AVX512_-qopt-zmm-usage=high.out
+#SBATCH -e job_-xhost_-xCORE-AVX512_-qopt-zmm-usage=high.out
 # Wall clock limit:
 #SBATCH --time=00:30:00
 #SBATCH --account=h039v
