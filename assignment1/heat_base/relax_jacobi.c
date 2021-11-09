@@ -36,6 +36,7 @@ double residual_jacobi(double *u, unsigned sizex, unsigned sizey) {
 void relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
 	int i, j;
 
+	#pragma ivdep
 	for (j = 1; j < sizex - 1; j++) {
 		for (i = 1; i < sizey - 1; i++) {
 			utmp[i * sizex + j] = 0.25 * (u[i * sizex + (j - 1)] +  // left
@@ -46,7 +47,7 @@ void relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
 	}
 
 	// copy from utmp to u
-
+	#pragma ivdep // Probably not required since these loops are likely to be auto-vectorised
 	for (j = 1; j < sizex - 1; j++) {
 		for (i = 1; i < sizey - 1; i++) {
 			u[i * sizex + j] = utmp[i * sizex + j];
