@@ -1,0 +1,40 @@
+Resolutions       : (200, 1200, ... 6200)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+Resolution:   200Resolution:   200, Time: 0.007 (0.018 GFlop => 2617.49 MFlop/s, residual 0.031825, 40 iterations)
+Resolution:  1200Resolution:  1200, Time: 0.451 (0.634 GFlop => 1403.56 MFlop/s, residual 0.190962, 40 iterations)
+Resolution:  2200Resolution:  2200, Time: 3.098 (2.130 GFlop => 687.43 MFlop/s, residual 0.349995, 40 iterations)
+Resolution:  3200Resolution:  3200, Time: 6.819 (4.506 GFlop => 660.75 MFlop/s, residual 0.509021, 40 iterations)
+Resolution:  4200Resolution:  4200, Time: 11.718 (7.762 GFlop => 662.38 MFlop/s, residual 0.668045, 40 iterations)
+Resolution:  5200Resolution:  5200, Time: 17.919 (11.898 GFlop => 663.98 MFlop/s, residual 0.827068, 40 iterations)
+Resolution:  6200Resolution:  6200, Time: 27.048 (16.914 GFlop => 625.33 MFlop/s, residual 0.986091, 40 iterations)
+  200; 0.007; 2617.490
+ 1200; 0.451; 1403.555
+ 2200; 3.098; 687.427
+ 3200; 6.819; 660.751
+ 4200; 11.718; 662.379
+ 5200; 17.919; 663.980
+ 6200; 27.048; 625.329
+Resolutions       : (200, 1200, ... 6200)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+Resolution:   200Resolution:   200, Time: 0.007 (0.018 GFlop => 2614.38 MFlop/s, residual 0.031825, 40 iterations)
+Resolution:  1200Resolution:  1200, Time: 0.473 (0.634 GFlop => 1339.12 MFlop/s, residual 0.190962, 40 iterations)
+Resolution:  2200Resolution:  2200, Time: 3.086 (2.130 GFlop => 690.07 MFlop/s, residual 0.349995, 40 iterations)
+Resolution:  3200Resolution:  3200, Time: 6.774 (4.506 GFlop => 665.17 MFlop/s, residual 0.509021, 40 iterations)
+Resolution:  4200Resolution:  4200, Time: 11.646 (7.762 GFlop => 666.46 MFlop/s, residual 0.668045, 40 iterations)
+Resolution:  5200Resolution:  5200, Time: 17.824 (11.898 GFlop => 667.51 MFlop/s, residual 0.827068, 40 iterations)
+Resolution:  6200Resolution:  6200, Time: 27.119 (16.914 GFlop => 623.67 MFlop/s, residual 0.986091, 40 iterations)
+  200; 0.007; 2614.379
+ 1200; 0.473; 1339.122
+ 2200; 3.086; 690.073
+ 3200; 6.774; 665.170
+ 4200; 11.646; 666.460
+ 5200; 17.824; 667.506
+ 6200; 27.119; 623.674
