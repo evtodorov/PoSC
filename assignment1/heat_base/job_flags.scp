@@ -2,8 +2,8 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o job_-O3.out
-#SBATCH -e job_-O3.out
+#SBATCH -o job_-O2_-fno-alias.out
+#SBATCH -e job_-O2_-fno-alias.out
 # Wall clock limit:
 #SBATCH --time=00:30:00
 #SBATCH --account=h039v
