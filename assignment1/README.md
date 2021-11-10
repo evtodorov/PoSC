@@ -37,7 +37,7 @@ Enables multi-file interprocedural optimizations (between files), e.g. inline fu
 ### 1.2.2 What is the meaning of `-fno-alias`? 
 Assume there is no aliasing in program, which allows the compiler to generate faster code. Aliasing means that a memory address can be accessed by different symbolic names (e.g. variables and pointers) Can produce unintended results if the code does not conform to the rules.
 
-### 1.2.3 What is the meaning of "ivdep"? 
+### 1.2.3 What is the meaning of `ivdep`? 
 
 It's a pragma which instructs the compiler to ignore assumed vector dependencies. To ensure correct code, the compiler treats an assumed dependence as a proven dependence, which prevents vectorization. This pragma overrides that decision. The pragma should be sed only when the assumed loop dependencies are safe to ignore.
 
@@ -53,7 +53,9 @@ Use the following options to trigger opt-report: -qopt-report-annotate -qopt-rep
 
 ### 1.2.6 Is the code vectorized by the compiler? 
 
-**TODO**
+Case 1 (No Flags) : When the pragma "ivdep" is put before the outer loop in relax_jacobi(), the inner loop is not vectorized as the compiler assumes a data dependency within the loop. When the pragma is put before the inner loop, it overrides the assumed dependency and vectorizes the loop.
+
+Case 1 (Best Flag Combination) : In this case, the loops are vectorized automatically and the pragma does not make any difference.
 
 ### 1.2.7 What does it mean by `-qopt-zmm-usage`?
 
