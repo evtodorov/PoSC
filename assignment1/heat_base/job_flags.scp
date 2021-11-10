@@ -2,11 +2,15 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o job_flags.out
-#SBATCH -e job_flags.out
+#SBATCH -o job_-O2_-fno-alias.out
+#SBATCH -e job_-O2_-fno-alias.out
 # Wall clock limit:
-#SBATCH --time=00:05:00
+#SBATCH --time=00:30:00
 #SBATCH --account=h039v
 #SBATCH --partition=test
 
+./heat test.dat
+./heat test.dat
+./heat test.dat
+./heat test.dat
 ./heat test.dat
