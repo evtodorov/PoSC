@@ -1,0 +1,108 @@
+//
+// ------- Annotated listing with optimization reports for "/dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c" -------
+//
+1	/*
+2	 * relax_jacobi.c
+3	 *
+4	 * Jacobi Relaxation
+5	 *
+6	 */
+7	
+8	#include "heat.h"
+9	
+10	/*
+11	 * Residual (length of error vector)
+12	 * between current solution and next after a Jacobi step
+13	 */
+14	double residual_jacobi(double *u, unsigned sizex, unsigned sizey) {
+15		unsigned i, j;
+16		double unew, diff, sum = 0.0;
+17	
+18		for (j = 1; j < sizex - 1; j++) {
+19			for (i = 1; i < sizey - 1; i++) {
+//
+//LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(19,3)
+//   remark #25444: Loopnest Interchanged: ( 1 2 ) --> ( 2 1 )
+//   remark #15542: loop was not vectorized: inner loop was already vectorized   [ /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(19,3) ]
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(18,2)
+//   <Peeled loop for vectorization>
+//      remark #15301: PEEL LOOP WAS VECTORIZED
+//   LOOP END
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(18,2)
+//      remark #15301: PERMUTED LOOP WAS VECTORIZED
+//   LOOP END
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(18,2)
+//   <Remainder loop for vectorization>
+//      remark #15301: REMAINDER LOOP WAS VECTORIZED
+//   LOOP END
+//LOOP END
+20				unew = 0.25 * (u[i * sizex + (j - 1)] +  // left
+21							u[i * sizex + (j + 1)] +  // right
+22							u[(i - 1) * sizex + j] +  // top
+23							u[(i + 1) * sizex + j]); // bottom
+24	
+25				diff = unew - u[i * sizex + j];
+26				sum += diff * diff;
+27			}
+28		}
+29	
+30		return sum;
+31	}
+32	
+33	/*
+34	 * One Jacobi iteration step
+35	 */
+36	void relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
+37		int i, j;
+38	
+39		#pragma ivdep
+40		for (j = 1; j < sizex - 1; j++) {
+//
+//LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(40,2)
+//   remark #15542: loop was not vectorized: inner loop was already vectorized
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(41,3)
+//      remark #15300: LOOP WAS VECTORIZED
+//   LOOP END
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(41,3)
+//   <Remainder loop for vectorization>
+//      remark #15301: REMAINDER LOOP WAS VECTORIZED
+//   LOOP END
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(41,3)
+//   <Remainder loop for vectorization>
+//   LOOP END
+//LOOP END
+41			for (i = 1; i < sizey - 1; i++) {
+42				utmp[i * sizex + j] = 0.25 * (u[i * sizex + (j - 1)] +  // left
+43							u[i * sizex + (j + 1)] +  // right
+44							u[(i - 1) * sizex + j] +  // top
+45							u[(i + 1) * sizex + j]); // bottom
+46			}
+47		}
+48	
+49		// copy from utmp to u
+50		#pragma ivdep // Probably not required since these loops are likely to be auto-vectorised
+51		for (j = 1; j < sizex - 1; j++) {
+//
+//LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(51,2)
+//   remark #15542: loop was not vectorized: inner loop was already vectorized
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(52,3)
+//      remark #15300: LOOP WAS VECTORIZED
+//   LOOP END
+//
+//   LOOP BEGIN at /dss/dsshome1/0E/di68gom/pos_21_group12/assignment1/heat_base/relax_jacobi.c(52,3)
+//   <Remainder loop for vectorization>
+//      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+//   LOOP END
+//LOOP END
+52			for (i = 1; i < sizey - 1; i++) {
+53				u[i * sizex + j] = utmp[i * sizex + j];
+54			}
+55		}
+56	}
