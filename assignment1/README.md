@@ -45,11 +45,11 @@ It's a pragma which instructs the compiler to ignore assumed vector dependencies
 It enables Intel® AVX-512 instruction set. CORE-AVX512 is the minimum set of AVX512 instructions included in all AVX512 implementations (common to AVX-512F, AVX-512CD, AVX-512BW, AVX-512DQ and AVX-512VL, etc.). The `-qopt-zmm-usage=high` flag can also be used in conjunction to force full usage of zmm registers with 512-bits-wide operands whether the compiler finds it beneficial or not. A related flag is `-xCOMMON-AVX512`.
 
 
-### 1.2.5 The Intel compiler provides reports when using "opt-report" option. Remember that only relax_jacobi.c is relevant for the overall performance. What does it tell you, and what does it mean?
-Use the following options to trigger opt-report: -qopt-report-annotate -qopt-report-phase=vec,loop. Copy the output for relax_jacobi and explain what it tells you.
+### 1.2.5 The Intel compiler provides reports when using "opt-report" option. Remember that only relax_jacobi.c is relevant for the overall performance. What does it tell you, and what does it mean? Use the following options to trigger opt-report: -qopt-report-annotate -qopt-report-phase=vec,loop. Copy the output for relax_jacobi and explain what it tells you.
 
 `opt-report` : generate an optimization report to stderr.
 `opt-report: -qopt-report-annotate -qopt-report-phase=vec,loop`
+The report tells what it does to optimise the code. The report phase 'vec,loop' shows whether each loop has been vectorised or not or whether the nested loops have been interchanged and also suggest hints like 'outer loop was not auto-vectorized: consider using SIMD directive'. It also states why the attempt to vectorise the loop failed for example, data dependency.
 
 ### 1.2.6 Is the code vectorized by the compiler? 
 
