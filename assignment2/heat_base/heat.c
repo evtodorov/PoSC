@@ -34,6 +34,9 @@ int main(int argc, char *argv[]) {
 	int resolution[1000];
 	int experiment=0;
 
+	// PAPI error checking
+	int retval;
+
 	// check arguments
 	if (argc < 2) {
 		usage(argv[0]);
@@ -92,12 +95,21 @@ int main(int argc, char *argv[]) {
 
 		fprintf(stderr, "Resolution: %5u\r", param.act_res);
 
+		// Creae PAPI region name
+		char region_name[10];
+		itoa(param.act_res, region_name, 10);
+
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
 
 		// starting time
 		runtime = wtime();
 		residual = 999999999;
+
+		// PAPI start measurement
+		retval = PAPI_hl_region_begin(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 
 		iter = 0;
 		while (1) {
@@ -130,6 +142,11 @@ int main(int argc, char *argv[]) {
 			if (iter % 100 == 0)
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
+
+		// PAPI start measurement
+		retval = PAPI_hl_region_end(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;
