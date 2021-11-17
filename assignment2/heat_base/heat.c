@@ -18,6 +18,16 @@ void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
 }
 
+// https://bitbucket.org/icl/papi/wiki/PAPI-Error-Handling
+void handle_error (int retval)
+{
+    /* print error to stderr and exit */
+    fprintf(stderr, "\nPAPI Error code: %d\n", retval);
+    exit(1);
+}
+
+
+
 int main(int argc, char *argv[]) {
 	unsigned iter;
 	FILE *infile, *resfile;
@@ -97,7 +107,7 @@ int main(int argc, char *argv[]) {
 
 		// Creae PAPI region name
 		char region_name[10];
-		itoa(param.act_res, region_name, 10);
+		snprintf(region_name, 10, "%d", param.act_res);
 
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
