@@ -12,6 +12,8 @@
 #include "input.h"
 #include "timing.h"
 
+#include "papi.h"
+
 void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
 }
