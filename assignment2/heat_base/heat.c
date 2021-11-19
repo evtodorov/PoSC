@@ -127,7 +127,7 @@ int main(int argc, char *argv[]) {
 		#ifndef RATE
 		retval = PAPI_hl_region_begin(region_name);
 		#else
-		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops);
 		#endif
 		if ( retval != PAPI_OK )
 			handle_error(1); 
@@ -168,7 +168,7 @@ int main(int argc, char *argv[]) {
 		#ifndef RATE
 		retval = PAPI_hl_region_end(region_name);
 		#else
-		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops);
 		#endif
 		if ( retval != PAPI_OK )
 			handle_error(1); 
