@@ -112,7 +112,8 @@ int main(int argc, char *argv[]) {
 		snprintf(region_name, 10, "%d", param.act_res);
 
 		// PAPI hwflopcounters setup
-		float real_time, proc_time, mflops;
+		float real_time, proc_time;
+		float mflops = 0;
   		long long flpops;
 
 		// full size (param.act_res are only the inner points)
@@ -123,11 +124,11 @@ int main(int argc, char *argv[]) {
 		residual = 999999999;
 
 		// PAPI start measurement
+		#ifndef RATE
 		retval = PAPI_hl_region_begin(region_name);
-		if ( retval != PAPI_OK )
-			handle_error(1); 
-
+		#else
 		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
+		#endif
 		if ( retval != PAPI_OK )
 			handle_error(1); 
 
@@ -164,10 +165,11 @@ int main(int argc, char *argv[]) {
 		}
 
 		// PAPI stop measurement
-		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
-		if ( retval != PAPI_OK )
-			handle_error(1); 
+		#ifndef RATE
 		retval = PAPI_hl_region_end(region_name);
+		#else
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
+		#endif
 		if ( retval != PAPI_OK )
 			handle_error(1); 
 
