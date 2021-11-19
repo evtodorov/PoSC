@@ -46,6 +46,8 @@ int main(int argc, char *argv[]) {
 
 	// PAPI error checking
 	int retval;
+	// PAPI floprate counting
+	double hwfloprate[1000];
 
 	// check arguments
 	if (argc < 2) {
@@ -109,6 +111,10 @@ int main(int argc, char *argv[]) {
 		char region_name[10];
 		snprintf(region_name, 10, "%d", param.act_res);
 
+		// PAPI hwflopcounters setup
+		float real_time, proc_time, mflops;
+  		long long flpops;
+
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
 
@@ -118,6 +124,10 @@ int main(int argc, char *argv[]) {
 
 		// PAPI start measurement
 		retval = PAPI_hl_region_begin(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
+
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
 		if ( retval != PAPI_OK )
 			handle_error(1); 
 
@@ -153,7 +163,10 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
 
-		// PAPI start measurement
+		// PAPI stop measurement
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops))
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 		retval = PAPI_hl_region_end(region_name);
 		if ( retval != PAPI_OK )
 			handle_error(1); 
@@ -165,13 +178,15 @@ int main(int argc, char *argv[]) {
 
 		fprintf(stderr, "Resolution: %5u, ", param.act_res);
 		fprintf(stderr, "Time: %04.3f ", runtime);
-		fprintf(stderr, "(%3.3f GFlop => %6.2f MFlop/s, ", flop / 1000000000.0, flop / runtime / 1000000);
+		fprintf(stderr, "(%3.3f GFlop => %6.2f MFlop/s (HW: %6.2f), ", flop / 1000000000.0, flop / runtime / 1000000, mflops);
 		fprintf(stderr, "residual %f, %d iterations)\n", residual, iter);
 
 		// for plot...
 		time[experiment]=runtime;
 		floprate[experiment]=flop / runtime / 1000000;
 		resolution[experiment]=param.act_res;
+		hwfloprate[experiment] = mflops;
+
 		experiment++;
 
 		if (param.act_res + param.res_step_size > param.max_res)
@@ -181,7 +196,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	for (i=0;i<experiment; i++){
-		printf("%5d; %5.3f; %5.3f\n", resolution[i], time[i], floprate[i]);
+		printf("%5d; %5.3f; %5.3f, %5.3f\n", resolution[i], time[i], floprate[i], hwfloprate[i]);
 
 	}
 
