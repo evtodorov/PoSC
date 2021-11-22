@@ -15,5 +15,13 @@ To build the code with PAPI and compiler flags `-O3 -xhost -fno-alias`:
 make clean
 make papiO3 # to measure cache misses
 # or
-,ale papiO3_rate # to measure FLOPS
+make papiO3_rate # to measure FLOPS
 ```
+
+To execute on SUPERMUC use 
+```
+sbatch job_cache.scp # for cache misses
+# or 
+sbatch job_ops.scp # for FLOPS
+```
+
