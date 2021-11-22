@@ -11,10 +11,18 @@
 
 #include "input.h"
 #include "timing.h"
+#include "papi.h"
 
 void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
 }
+
+void handle_error(int retval)
+{
+	fprintf(stderr, "\nPAPI Error Code: %d\n", retval);
+	exit(1);
+}
+
 
 int main(int argc, char *argv[]) {
 	unsigned iter;
@@ -31,6 +39,8 @@ int main(int argc, char *argv[]) {
 	double floprate[1000];
 	int resolution[1000];
 	int experiment=0;
+
+	int retval;
 
 	// check arguments
 	if (argc < 2) {
@@ -87,7 +97,8 @@ int main(int argc, char *argv[]) {
 
 			usage(argv[0]);
 		}
-
+		char region[10];
+		snprintf(region, 10, "%d", param.act_res);
 		fprintf(stderr, "Resolution: %5u\r", param.act_res);
 
 		// full size (param.act_res are only the inner points)
@@ -96,6 +107,11 @@ int main(int argc, char *argv[]) {
 		// starting time
 		runtime = wtime();
 		residual = 999999999;
+
+		// Start PAPI counters
+		retval = PAPI_hl_region_begin(region)
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 
 		iter = 0;
 		while (1) {
@@ -128,6 +144,11 @@ int main(int argc, char *argv[]) {
 			if (iter % 100 == 0)
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
+
+		// End PAPI counters
+		retval = PAPI_hl_region_end(region);
+		if ( retval != PAPI_OK )
+			handle_error(1);
 
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;

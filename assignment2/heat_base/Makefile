@@ -1,16 +1,16 @@
 # Intel compiler
 CC =  icc
-CFLAGS = -O0
+CFLAGS = -O3 -xhost -fno-alias
 
 MPICC = mpicc
 
 all: heat
 
 heat : heat.o input.o misc.o timing.o relax_gauss.o relax_jacobi.o
-	$(CC) $(CFLAGS) -o $@ $+ -lm 
+	$(CC) $(CFLAGS) -o $@ $+ -lm $(PAPI_LIB)
 
 %.o : %.c heat.h timing.h input.h
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) $(PAPI_INC) -c -o $@ $<
 
 clean:
 	rm -f *.o heat *~ *.ppm
