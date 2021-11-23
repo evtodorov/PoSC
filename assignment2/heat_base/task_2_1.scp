@@ -1,0 +1,20 @@
+#!/bin/bash
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#Output and error (also --output, --error):
+#SBATCH -o task_2_1_O3_-xhost_-fno-alias.out
+#SBATCH -e task_2_1_O3_-xhost_-fno-alias.err
+# Wall clock limit:
+#SBATCH --time=00:10:00
+#SBATCH --account=h039v
+#SBATCH --partition=test
+#SBATCH --ear=off
+
+srun sh -c 'if [ $SLURM_LOCALID == 0 ]; then /lrz/sys/tools/dcdb/bin/perfstop.sh; fi'
+
+export PAPI_EVENTS="PAPI_L2_TCM, PAPI_L2_TCA, PAPI_L3_TCM, PAPI_L3_TCA"
+export PAPI_OUTPUT_DIRECTORY=~/heat_base/papi_reports
+export PAPI_REPORT=1
+export PAPI_HL_VERBOSE=1
+
+./heat test.dat
