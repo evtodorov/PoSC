@@ -12,8 +12,18 @@
 #include "input.h"
 #include "timing.h"
 
+#include "papi.h"
+
 void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
+}
+
+// https://bitbucket.org/icl/papi/wiki/PAPI-Error-Handling
+void handle_error (int retval)
+{
+    /* print error to stderr and exit */
+    fprintf(stderr, "\nPAPI Error code: %d\n", retval);
+    exit(1);
 }
 
 int main(int argc, char *argv[]) {
@@ -31,6 +41,9 @@ int main(int argc, char *argv[]) {
 	double floprate[1000];
 	int resolution[1000];
 	int experiment=0;
+
+	// PAPI error checking
+	int retval;
 
 	// check arguments
 	if (argc < 2) {
@@ -97,6 +110,11 @@ int main(int argc, char *argv[]) {
 		runtime = wtime();
 		residual = 999999999;
 
+		// PAPI start measurement
+		retval = PAPI_hl_region_begin(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
+
 		iter = 0;
 		while (1) {
 
@@ -129,6 +147,11 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
 
+		// PAPI stop measurement
+		retval = PAPI_hl_region_end(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
+			
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;
 		// stopping time
