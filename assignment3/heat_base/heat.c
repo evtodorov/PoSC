@@ -42,6 +42,9 @@ int main(int argc, char *argv[]) {
 	int resolution[1000];
 	int experiment=0;
 
+	// Temporary swap pointer
+	double* uswap;
+
 	// PAPI error checking
 	int retval;
 
@@ -127,6 +130,9 @@ int main(int argc, char *argv[]) {
 			case 0: // JACOBI
 
 				relax_jacobi(param.u, param.uhelp, np, np);
+				uswap = param.u;
+				param.u = param.uhelp;
+				param.uhelp = param.u;
 				residual = residual_jacobi(param.u, np, np);
 				break;
 
@@ -155,7 +161,7 @@ int main(int argc, char *argv[]) {
 		retval = PAPI_hl_region_end(region_name);
 		if ( retval != PAPI_OK )
 			handle_error(1); 
-			
+
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;
 		// stopping time
