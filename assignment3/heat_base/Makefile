@@ -1,6 +1,6 @@
 # Intel compiler
 CC =  icc
-CFLAGS = -O0
+CFLAGS = -O3 -xCORE-AVX512 -qopt-zmm-usage=high -fno-alias
 
 MPICC = mpicc
 

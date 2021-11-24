@@ -103,6 +103,10 @@ int main(int argc, char *argv[]) {
 
 		fprintf(stderr, "Resolution: %5u\r", param.act_res);
 
+		// Creae PAPI region name
+		char region_name[10];
+		snprintf(region_name, 10, "%d", param.act_res);
+
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
 
