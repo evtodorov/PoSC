@@ -132,7 +132,7 @@ int main(int argc, char *argv[]) {
 				relax_jacobi(param.u, param.uhelp, np, np);
 				uswap = param.u;
 				param.u = param.uhelp;
-				param.uhelp = param.u;
+				param.uhelp = uswap;
 				residual = residual_jacobi(param.u, np, np);
 				break;
 
