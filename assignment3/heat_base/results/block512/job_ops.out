@@ -1,0 +1,91 @@
+Plugin perfevent: Sensors stopped
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  perf::TASK-CLOCK
+  PAPI_VEC_DP
+  PAPI_DP_OPS
+  200; 0.160; 2.745
+ 1200; 0.078; 8093.088
+ 2200; 0.418; 5097.552
+ 3200; 0.970; 4646.050
+ 4200; 1.690; 4591.907
+ 5200; 2.646; 4495.752
+ 6200; 4.311; 3923.406
+PAPI-HL Info: Print results...
+
+
+PAPI-HL Output:
+{
+  "cpu in mhz":"2701",
+  "threads":[
+    {
+      "id":"360338",
+      "regions":[
+        {
+          "200":{
+            "region_count":"1",
+            "cycles":"40174",
+            "perf::TASK-CLOCK":"15152",
+            "PAPI_VEC_DP":"9",
+            "PAPI_DP_OPS":"9"
+          }
+        },
+        {
+          "1200":{
+            "region_count":"1",
+            "cycles":"210864772",
+            "perf::TASK-CLOCK":"78281537",
+            "PAPI_VEC_DP":"73255049",
+            "PAPI_DP_OPS":"466324089"
+          }
+        },
+        {
+          "2200":{
+            "region_count":"1",
+            "cycles":"1125302948",
+            "perf::TASK-CLOCK":"417755518",
+            "PAPI_VEC_DP":"289583369",
+            "PAPI_DP_OPS":"1866208489"
+          }
+        },
+        {
+          "3200":{
+            "region_count":"1",
+            "cycles":"2612190288",
+            "perf::TASK-CLOCK":"969704478",
+            "PAPI_VEC_DP":"648984969",
+            "PAPI_DP_OPS":"4199653209"
+          }
+        },
+        {
+          "4200":{
+            "region_count":"1",
+            "cycles":"4552983272",
+            "perf::TASK-CLOCK":"1690187910",
+            "PAPI_VEC_DP":"1151459849",
+            "PAPI_DP_OPS":"7466658249"
+          }
+        },
+        {
+          "5200":{
+            "region_count":"1",
+            "cycles":"7128472266",
+            "perf::TASK-CLOCK":"2646249718",
+            "PAPI_VEC_DP":"1797008009",
+            "PAPI_DP_OPS":"11667223609"
+          }
+        },
+        {
+          "6200":{
+            "region_count":"1",
+            "cycles":"11612156356",
+            "perf::TASK-CLOCK":"4310562638",
+            "PAPI_VEC_DP":"2585629449",
+            "PAPI_DP_OPS":"16801349289"
+          }
+        }
+      ]
+    }
+  ]
+}
+
