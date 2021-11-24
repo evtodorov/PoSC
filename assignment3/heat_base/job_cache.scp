@@ -12,7 +12,7 @@
 
 srun sh -c 'if [ $SLURM_LOCALID == 0 ]; then /lrz/sys/tools/dcdb/bin/perfstop.sh; fi'
 
-export PAPI_EVENTS="PAPI_L2_TCM, PAPI_L2_TCA, PAPI_L3_TCM, PAPI_L3_TCA, PAPI_PRF_DM, PAPI_LD_INS, PAPI_SR_INS"
+export PAPI_EVENTS="PAPI_L2_TCM, PAPI_L2_TCA, PAPI_L3_TCM, PAPI_L3_TCA"
 export PAPI_OUTPUT_DIRECTORY=~/pos_21_group12/assignment3/heat_base/papi_reports/cache
 export PAPI_REPORT=1
 export PAPI_HL_VERBOSE=1
