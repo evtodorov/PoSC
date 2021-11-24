@@ -33,15 +33,26 @@ double residual_jacobi(double *u, unsigned sizex, unsigned sizey) {
 /*
  * One Jacobi iteration step
  */
-void relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
+void relax_jacobi(double* restrict u, double * restrict utmp, unsigned sizex, unsigned sizey) {
 	int i, j;
 
-	for (j = 1; j < sizex - 1; j++) {
-		for (i = 1; i < sizey - 1; i++) {
+	for (i = 1; i < sizey - 1; i++) {
+		for (j = 1; j < sizex - 1; j++) {
+			utmp[i * sizex + j] = u[(i - 1) * sizex + j];  // top
+		}
+	}
+
+	for (i = 1; i < sizey - 1; i++) {
+		for (j = 1; j < sizex - 1; j++) {
+			utmp[i * sizex + j] += u[(i + 1) * sizex + j]; // bottom
+		}
+	}
+
+	for (i = 1; i < sizey - 1; i++) {
+		for (j = 1; j < sizex - 1; j++) {
 			utmp[i * sizex + j] = 0.25 * (u[i * sizex + (j - 1)] +  // left
 										  u[i * sizex + (j + 1)] +  // right
-										  u[(i - 1) * sizex + j] +  // top
-										  u[(i + 1) * sizex + j]); // bottom
+										  utmp[i * sizex + j]); // top + bottom
 		}
 	}
 }
