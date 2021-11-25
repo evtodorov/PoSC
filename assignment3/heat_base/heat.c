@@ -104,8 +104,8 @@ int main(int argc, char *argv[]) {
 
 			case 0: // JACOBI
 
-				relax_jacobi(param.u, param.uhelp, np, np);
-				residual = residual_jacobi(param.u, np, np);
+				//relax_jacobi(param.u, param.uhelp, np, np);
+				residual = relax_jacobi(param.u, param.uhelp, np, np);
 				break;
 
 			case 1: // GAUSS
