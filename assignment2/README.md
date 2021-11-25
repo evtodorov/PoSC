@@ -89,4 +89,4 @@ There are 2 sources of obtaining the processor clock frequency from the PAPI mea
 
 #### 2.6
 
-From the PAPI reports, it can be concluded that the code was indeed vectorized for both the versions as the field "PAPI_VEC_DP" has a high value in both cases. The number of vector operations used varies between the two compiled versions because -O3 uses additional optimizations as comapared to -O2 
+From the PAPI reports, it can be concluded that the code was indeed vectorized for both the versions as the field "PAPI_VEC_DP" has a high value in both cases. The number of vector operations used varies between the two compiled versions. -O3-xhost uses about half the vector operations as -O2 because each vector operation is twice in size. 
