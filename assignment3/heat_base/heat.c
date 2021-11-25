@@ -32,6 +32,10 @@ int main(int argc, char *argv[]) {
 	int resolution[1000];
 	int experiment=0;
 
+	// Temporary swap pointer
+	double* uswap;
+
+
 	// check arguments
 	if (argc < 2) {
 		usage(argv[0]);
@@ -106,6 +110,9 @@ int main(int argc, char *argv[]) {
 
 				//relax_jacobi(param.u, param.uhelp, np, np);
 				residual = relax_jacobi(param.u, param.uhelp, np, np);
+				uswap = param.u;
+				param.u = param.uhelp;
+				param.uhelp = uswap;
 				break;
 
 			case 1: // GAUSS
