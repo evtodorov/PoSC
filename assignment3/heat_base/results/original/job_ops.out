@@ -4,7 +4,7 @@ PAPI-HL Info: Using the following events:
   perf::TASK-CLOCK
   PAPI_VEC_DP
   PAPI_DP_OPS
-  200; 0.173; 101.625
+  200; 0.002; 8604.240
  1200; 0.130; 4882.555
  2200; 0.584; 3646.469
  3200; 1.368; 3292.698
