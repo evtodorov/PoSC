@@ -1,7 +1,3 @@
-## Task 1
-
-## Task 2
-
 ### Setup
 
 To build the code with PAPI and compiler flags `-O2`:
