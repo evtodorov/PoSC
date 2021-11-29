@@ -12,8 +12,18 @@
 #include "input.h"
 #include "timing.h"
 
+#include "papi.h"
+
 void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
+}
+
+// https://bitbucket.org/icl/papi/wiki/PAPI-Error-Handling
+void handle_error (int retval)
+{
+    /* print error to stderr and exit */
+    fprintf(stderr, "\nPAPI Error code: %d\n", retval);
+    exit(1);
 }
 
 int main(int argc, char *argv[]) {
@@ -35,6 +45,8 @@ int main(int argc, char *argv[]) {
 	// Temporary swap pointer
 	double* uswap;
 
+	// PAPI error checking
+	int retval;
 
 	// check arguments
 	if (argc < 2) {
@@ -94,12 +106,21 @@ int main(int argc, char *argv[]) {
 
 		fprintf(stderr, "Resolution: %5u\r", param.act_res);
 
+		// Creae PAPI region name
+		char region_name[10];
+		snprintf(region_name, 10, "%d", param.act_res);
+
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
 
 		// starting time
 		runtime = wtime();
 		residual = 999999999;
+
+		// PAPI start measurement
+		retval = PAPI_hl_region_begin(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 
 		iter = 0;
 		while (1) {
@@ -108,7 +129,6 @@ int main(int argc, char *argv[]) {
 
 			case 0: // JACOBI
 
-				//relax_jacobi(param.u, param.uhelp, np, np);
 				residual = relax_jacobi(param.u, param.uhelp, np, np);
 				uswap = param.u;
 				param.u = param.uhelp;
@@ -135,6 +155,11 @@ int main(int argc, char *argv[]) {
 			if (iter % 100 == 0)
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
+
+		// PAPI stop measurement
+		retval = PAPI_hl_region_end(region_name);
+		if ( retval != PAPI_OK )
+			handle_error(1); 
 
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;

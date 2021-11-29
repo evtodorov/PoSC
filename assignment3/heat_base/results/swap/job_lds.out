@@ -1,0 +1,91 @@
+Plugin perfevent: Sensors stopped
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_PRF_DM
+  PAPI_LD_INS
+  PAPI_SR_INS
+  200; 0.205; 86.003
+ 1200; 0.083; 7617.308
+ 2200; 0.378; 5634.935
+ 3200; 0.860; 5239.187
+ 4200; 1.516; 5119.383
+ 5200; 2.371; 5017.942
+ 6200; 3.429; 4933.046
+PAPI-HL Info: Print results...
+
+
+PAPI-HL Output:
+{
+  "cpu in mhz":"2701",
+  "threads":[
+    {
+      "id":"2348389",
+      "regions":[
+        {
+          "200":{
+            "region_count":"1",
+            "cycles":"3965208",
+            "PAPI_PRF_DM":"9554",
+            "PAPI_LD_INS":"2009859",
+            "PAPI_SR_INS":"257353"
+          }
+        },
+        {
+          "1200":{
+            "region_count":"1",
+            "cycles":"224043800",
+            "PAPI_PRF_DM":"18444561",
+            "PAPI_LD_INS":"66049248",
+            "PAPI_SR_INS":"7537042"
+          }
+        },
+        {
+          "2200":{
+            "region_count":"1",
+            "cycles":"1017988666",
+            "PAPI_PRF_DM":"63575552",
+            "PAPI_LD_INS":"220089255",
+            "PAPI_SR_INS":"24817042"
+          }
+        },
+        {
+          "3200":{
+            "region_count":"1",
+            "cycles":"2316467750",
+            "PAPI_PRF_DM":"133070055",
+            "PAPI_LD_INS":"464129149",
+            "PAPI_SR_INS":"52097042"
+          }
+        },
+        {
+          "4200":{
+            "region_count":"1",
+            "cycles":"4083873080",
+            "PAPI_PRF_DM":"229314907",
+            "PAPI_LD_INS":"798169249",
+            "PAPI_SR_INS":"89377042"
+          }
+        },
+        {
+          "5200":{
+            "region_count":"1",
+            "cycles":"6386650868",
+            "PAPI_PRF_DM":"349935306",
+            "PAPI_LD_INS":"1222209072",
+            "PAPI_SR_INS":"136657042"
+          }
+        },
+        {
+          "6200":{
+            "region_count":"1",
+            "cycles":"9235509152",
+            "PAPI_PRF_DM":"498304043",
+            "PAPI_LD_INS":"1736247514",
+            "PAPI_SR_INS":"193937041"
+          }
+        }
+      ]
+    }
+  ]
+}
+

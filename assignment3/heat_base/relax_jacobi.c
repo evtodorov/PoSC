@@ -7,9 +7,6 @@
 
 #include "heat.h"
 
-/*
- * One Jacobi iteration step
- */
 double relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
 	int i, j;
 	double unew, diff, sum = 0.0;
@@ -26,6 +23,9 @@ double relax_jacobi(double *u, double *utmp, unsigned sizex, unsigned sizey) {
 			sum += diff * diff; // Residual calculation here
 		}
 	}
+	// utmp stores the u for the next step, whereas the residual is calculated for the current step.
+	// In practice, this would result in one extra iteration after the residual has reached the threshold.
 
 	return sum;
 }
+

@@ -1,0 +1,99 @@
+Plugin perfevent: Sensors stopped
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_L2_TCM
+  PAPI_L2_TCA
+  PAPI_L3_TCM
+  PAPI_L3_TCA
+  200; 0.229; 76.941, 0.000
+ 1200; 0.139; 4567.308, 0.000
+ 2200; 0.633; 3362.746, 0.000
+ 3200; 1.565; 2879.318, 0.000
+ 4200; 2.692; 2883.440, 0.000
+ 5200; 4.184; 2843.262, 0.000
+ 6200; 6.008; 2815.199, 0.000
+PAPI-HL Info: Print results...
+
+
+PAPI-HL Output:
+{
+  "cpu in mhz":"2701",
+  "threads":[
+    {
+      "id":"2526066",
+      "regions":[
+        {
+          "200":{
+            "region_count":"1",
+            "cycles":"6827612",
+            "PAPI_L2_TCM":"10528",
+            "PAPI_L2_TCA":"599687",
+            "PAPI_L3_TCM":"2504",
+            "PAPI_L3_TCA":"10528"
+          }
+        },
+        {
+          "1200":{
+            "region_count":"1",
+            "cycles":"373663778",
+            "PAPI_L2_TCM":"36032718",
+            "PAPI_L2_TCA":"27876666",
+            "PAPI_L3_TCM":"2552150",
+            "PAPI_L3_TCA":"36032718"
+          }
+        },
+        {
+          "2200":{
+            "region_count":"1",
+            "cycles":"1705864716",
+            "PAPI_L2_TCM":"97513385",
+            "PAPI_L2_TCA":"104351728",
+            "PAPI_L3_TCM":"58959908",
+            "PAPI_L3_TCA":"97513385"
+          }
+        },
+        {
+          "3200":{
+            "region_count":"1",
+            "cycles":"4215078886",
+            "PAPI_L2_TCM":"205838085",
+            "PAPI_L2_TCA":"228894675",
+            "PAPI_L3_TCM":"166298425",
+            "PAPI_L3_TCA":"205838085"
+          }
+        },
+        {
+          "4200":{
+            "region_count":"1",
+            "cycles":"7250772864",
+            "PAPI_L2_TCM":"354158599",
+            "PAPI_L2_TCA":"394470416",
+            "PAPI_L3_TCM":"314599020",
+            "PAPI_L3_TCA":"354158599"
+          }
+        },
+        {
+          "5200":{
+            "region_count":"1",
+            "cycles":"11271639800",
+            "PAPI_L2_TCM":"542652761",
+            "PAPI_L2_TCA":"612081949",
+            "PAPI_L3_TCM":"502100291",
+            "PAPI_L3_TCA":"542652761"
+          }
+        },
+        {
+          "6200":{
+            "region_count":"1",
+            "cycles":"16183475832",
+            "PAPI_L2_TCM":"770845062",
+            "PAPI_L2_TCA":"873024753",
+            "PAPI_L3_TCM":"728496099",
+            "PAPI_L3_TCA":"770845062"
+          }
+        }
+      ]
+    }
+  ]
+}
+

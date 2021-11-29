@@ -11,17 +11,21 @@
 
 #include "input.h"
 #include "timing.h"
+
 #include "papi.h"
 
 void usage(char *s) {
 	fprintf(stderr, "Usage: %s <input file> [result file]\n\n", s);
 }
 
-void handle_error(int retval)
+// https://bitbucket.org/icl/papi/wiki/PAPI-Error-Handling
+void handle_error (int retval)
 {
-	fprintf(stderr, "\nPAPI Error Code: %d\n", retval);
-	exit(1);
+    /* print error to stderr and exit */
+    fprintf(stderr, "\nPAPI Error code: %d\n", retval);
+    exit(1);
 }
+
 
 
 int main(int argc, char *argv[]) {
@@ -40,7 +44,10 @@ int main(int argc, char *argv[]) {
 	int resolution[1000];
 	int experiment=0;
 
+	// PAPI error checking
 	int retval;
+	// PAPI floprate counting
+	double hwfloprate[1000];
 
 	// check arguments
 	if (argc < 2) {
@@ -97,9 +104,17 @@ int main(int argc, char *argv[]) {
 
 			usage(argv[0]);
 		}
-		char region[10];
-		snprintf(region, 10, "%d", param.act_res);
+
 		fprintf(stderr, "Resolution: %5u\r", param.act_res);
+
+		// Creae PAPI region name
+		char region_name[10];
+		snprintf(region_name, 10, "%d", param.act_res);
+
+		// PAPI hwflopcounters setup
+		float real_time, proc_time;
+		float mflops = 0;
+  		long long flpops;
 
 		// full size (param.act_res are only the inner points)
 		np = param.act_res + 2;
@@ -108,8 +123,12 @@ int main(int argc, char *argv[]) {
 		runtime = wtime();
 		residual = 999999999;
 
-		// Start PAPI counters
-		retval = PAPI_hl_region_begin(region)
+		// PAPI start measurement
+		#ifndef RATE
+		retval = PAPI_hl_region_begin(region_name);
+		#else
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops);
+		#endif
 		if ( retval != PAPI_OK )
 			handle_error(1); 
 
@@ -145,10 +164,14 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "residual %f, %d iterations\n", residual, iter);
 		}
 
-		// End PAPI counters
-		retval = PAPI_hl_region_end(region);
+		// PAPI stop measurement
+		#ifndef RATE
+		retval = PAPI_hl_region_end(region_name);
+		#else
+		retval = PAPI_flops_rate(PAPI_DP_OPS, &real_time, &proc_time, &flpops, &mflops);
+		#endif
 		if ( retval != PAPI_OK )
-			handle_error(1);
+			handle_error(1); 
 
 		// Flop count after <i> iterations
 		flop = iter * 11.0 * param.act_res * param.act_res;
@@ -157,13 +180,15 @@ int main(int argc, char *argv[]) {
 
 		fprintf(stderr, "Resolution: %5u, ", param.act_res);
 		fprintf(stderr, "Time: %04.3f ", runtime);
-		fprintf(stderr, "(%3.3f GFlop => %6.2f MFlop/s, ", flop / 1000000000.0, flop / runtime / 1000000);
+		fprintf(stderr, "(%3.3f GFlop => %6.2f MFlop/s (HW: %6.2f), ", flop / 1000000000.0, flop / runtime / 1000000, mflops);
 		fprintf(stderr, "residual %f, %d iterations)\n", residual, iter);
 
 		// for plot...
 		time[experiment]=runtime;
 		floprate[experiment]=flop / runtime / 1000000;
 		resolution[experiment]=param.act_res;
+		hwfloprate[experiment] = mflops;
+
 		experiment++;
 
 		if (param.act_res + param.res_step_size > param.max_res)
@@ -173,7 +198,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	for (i=0;i<experiment; i++){
-		printf("%5d; %5.3f; %5.3f\n", resolution[i], time[i], floprate[i]);
+		printf("%5d; %5.3f; %5.3f, %5.3f\n", resolution[i], time[i], floprate[i], hwfloprate[i]);
 
 	}
 
