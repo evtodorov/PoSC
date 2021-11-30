@@ -1,0 +1,70 @@
+
+
+Resolution: 6500
+===================
+Threads: 1
+Execution time: 1.671404
+Residual: 3.049154
+
+megaflops:  3538.9
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 2
+Execution time: 0.856142
+Residual: 3.049154
+
+megaflops:  6908.9
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 4
+Execution time: 0.474141
+Residual: 3.049154
+
+megaflops:  12475.2
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 8
+Execution time: 0.395405
+Residual: 3.049154
+
+megaflops:  14959.4
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 16
+Execution time: 0.394609
+Residual: 3.049154
+
+megaflops:  14989.5
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 32
+Execution time: 0.307995
+Residual: 3.049154
+
+megaflops:  19204.9
+  flop instructions (M):  5915.000
+
+
+Resolution: 6500
+===================
+Threads: 48
+Execution time: 0.256577
+Residual: 3.049154
+
+megaflops:  23053.5
+  flop instructions (M):  5915.000
