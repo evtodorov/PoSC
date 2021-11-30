@@ -1,11 +1,7 @@
 #!/bin/bash
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
-#SBATCH --get-user-env
 #SBATCH --partition=test
-#SBATCH --nodes=2
-#SBATCH --ntasks=2
-#SBATCH --ntasks-per-node=1
 #Output and error (also --output, --error):
 #SBATCH -o task_4_1.out
 #SBATCH -e task_4_1.err
@@ -13,14 +9,13 @@
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
 #SBATCH --ear=off
-#SBATCH --export=NONE
 
-module load slurm_setup
-
-for i in 1 2 4 8 12 16 24 32 48
+threads=(1 2 4 8 12 16 24 32 48)
+for i in "${threads[@]}"
 do
    echo "Running with $i threads"
-   export OMP_NUM_THREADS=$i
-   mpiexec ./heat test.dat
+	export OMP_NUM_THREADS=$i
+	./heat test.dat
 done
+
 
