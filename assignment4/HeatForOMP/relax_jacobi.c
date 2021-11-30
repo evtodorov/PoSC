@@ -18,7 +18,7 @@ double relax_jacobi( double **u1, double **utmp1,
   u=*u1;
   double unew, diff, sum=0.0;
 
-
+#pragma omp parallel for private(unew, diff) reduction(+:sum)
   for( i=1; i<sizey-1; i++ ) {
   	int ii=i*sizex;
   	int iim1=(i-1)*sizex;

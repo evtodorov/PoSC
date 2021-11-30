@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <omp.h>
+
 #include "input.h"
 #include "heat.h"
 #include "timing.h"
@@ -88,9 +90,10 @@ int main(int argc, char *argv[]) {
 		}
 
 		time[exp_number] = wtime() - time[exp_number];
-
+		
 		printf("\n\nResolution: %u\n", param.act_res);
 		printf("===================\n");
+		printf("Threads: %u\n", omp_get_max_threads());
 		printf("Execution time: %f\n", time[exp_number]);
 		printf("Residual: %f\n\n", residual);
 
