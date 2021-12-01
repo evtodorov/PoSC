@@ -19,13 +19,12 @@ double relax_jacobi( double **u1, double **utmp1,
   u=*u1;
   double unew, diff, sum=0.0;
 
-  #pragma omp parallel
+  #pragma omp parallel for schedule(dynamic, 70)
   for( i=1; i<sizey-1; i++ ) {
   	int ii=i*sizex;
   	int iim1=(i-1)*sizex;
   	int iip1=(i+1)*sizex;
     #pragma ivdep
-    #pragma omp for schedule(static)
     for( j=1; j<sizex-1; j++ ){
        unew = 0.25 * (u[ ii+(j-1) ]+
         		            u[ ii+(j+1) ]+
