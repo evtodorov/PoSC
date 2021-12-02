@@ -5,16 +5,10 @@
 #SBATCH -o job_kmp.out
 #SBATCH -e job_kmp.out
 # Wall clock limit:
-#SBATCH --time=00:30:00
+#SBATCH --time=00:10:00
 #SBATCH --account=h039v
-#SBATCH --partition=test
-
-./heat test.dat
-./heat test.dat
-./heat test.dat
-./heat test.dat
-./heat test.dat
-
+#SBATCH --partition=micro
+#SBATCH --ear=off
 
 thread_nums=(1 2 4 8 12 16 24 32 48)
 for t in "${thread_nums[@]}"
