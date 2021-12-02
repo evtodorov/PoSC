@@ -2,8 +2,8 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o job_kmp_compact_socket.out
-#SBATCH -e job_kmp_compact_socket.out
+#SBATCH -o job_kmp_scatter.out
+#SBATCH -e job_kmp_scatter.out
 # Wall clock limit:
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
@@ -14,6 +14,6 @@ thread_nums=(1 2 4 8 12 16 24 32 48)
 for t in "${thread_nums[@]}"
 do
 	export OMP_NUM_THREADS=$t
-	export KMP_AFFINITY="compact,granularity=socket"
+	export KMP_AFFINITY="scatter"
 	./heat test.dat
 done
