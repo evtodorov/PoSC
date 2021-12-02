@@ -1,0 +1,126 @@
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 1.153792
+Residual: 3.049154
+
+megaflops:  5126.6
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.722368
+Residual: 3.049154
+
+megaflops:  8188.3
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.385719
+Residual: 3.049154
+
+megaflops:  15335.0
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.236109
+Residual: 3.049154
+
+megaflops:  25052.0
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.186477
+Residual: 3.049154
+
+megaflops:  31719.7
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.174707
+Residual: 3.049154
+
+megaflops:  33856.7
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.172897
+Residual: 3.049154
+
+megaflops:  34211.1
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.160361
+Residual: 3.049154
+
+megaflops:  36885.5
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.175418
+Residual: 3.049154
+
+megaflops:  33719.4
+  flop instructions (M):  5915.000
