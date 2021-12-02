@@ -1,5 +1,5 @@
 CC =  icc
-CFLAGS = -O3 -xCORE-AVX512 -qopt-zmm-usage=high -fno-alias  -fopenmp
+CFLAGS = -O3 -xCORE-AVX512 -qopt-zmm-usage=high -fno-alias -qopenmp
 
 MPICC = mpicc
 
