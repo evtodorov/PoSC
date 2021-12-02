@@ -54,7 +54,7 @@ int initialize( algoparam_t *param )
     for( i=0; i<param->numsrcs; i++ )
     {
 	/* top row */
-	#pragma omp for schedule(dynamic,64) 
+	#pragma omp for schedule(static) 
 	for( j=0; j<np; j++ )
 	{
 	    dist = sqrt( pow((double)j/(double)(np-1) -
@@ -71,7 +71,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* bottom row */
-	#pragma omp for nowait schedule(dynamic,64)
+	#pragma omp for nowait schedule(static)
 	for( j=0; j<np; j++ )
 	{
 	    dist = sqrt( pow((double)j/(double)(np-1) -
@@ -88,7 +88,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* leftmost column */
-	#pragma omp for nowait schedule(dynamic,64)
+	#pragma omp for nowait schedule(static)
 	for( j=1; j<np-1; j++ )
 	{
 	    dist = sqrt( pow(param->heatsrcs[i].posx, 2)+
@@ -105,7 +105,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* rightmost column */
-	#pragma omp for nowait schedule(dynamic,64)
+	#pragma omp for nowait schedule(static)
 	for( j=1; j<np-1; j++ )
 	{
 	    dist = sqrt( pow(1-param->heatsrcs[i].posx, 2)+
