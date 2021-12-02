@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
 
 			usage(argv[0]);
 		}
-
+	#pragma omp parallel for default(none) shared(param) private(j) schedule(dynamic,16)
 		for (i = 0; i < param.act_res + 2; i++) {
 			for (j = 0; j < param.act_res + 2; j++) {
 				param.uhelp[i * (param.act_res + 2) + j] = param.u[i * (param.act_res + 2) + j];
