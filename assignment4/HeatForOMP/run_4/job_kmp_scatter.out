@@ -1,9 +1,126 @@
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
-/var/spool/slurm/job1499284/slurm_script: line 18: ./heat: No such file or directory
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 1.173183
+Residual: 3.049154
+
+megaflops:  5041.8
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.581825
+Residual: 3.049154
+
+megaflops:  10166.3
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.302323
+Residual: 3.049154
+
+megaflops:  19565.2
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.155036
+Residual: 3.049154
+
+megaflops:  38152.4
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.123307
+Residual: 3.049154
+
+megaflops:  47969.7
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.115151
+Residual: 3.049154
+
+megaflops:  51367.4
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.106780
+Residual: 3.049154
+
+megaflops:  55394.4
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.105579
+Residual: 3.049154
+
+megaflops:  56024.3
+  flop instructions (M):  5915.000
+Resolutions       : (6500, 7500, ... 6500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+
+
+Resolution: 6500
+===================
+Execution time: 0.121211
+Residual: 3.049154
+
+megaflops:  48799.2
+  flop instructions (M):  5915.000
