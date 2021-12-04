@@ -1,4 +1,4 @@
-#Compiling the Program
+# Compiling the Program
 ##
 1. make clean
 2. make

@@ -3,14 +3,14 @@
 #include <math.h>
 #include <mpi.h>
 
-#define ROUNDS 100
+#define ROUNDS 1000
 
 int main(int argc, char *argv[])
 {
     int rank, size, init;
     double start_time, end_time, duration;
     int length = atoi(argv[1]);
-    char data[length];
+    char *data = (char *)malloc(pow(2,length)*sizeof(char));
     init = MPI_Init(NULL,NULL);
     
     if(init != MPI_SUCCESS)
@@ -24,8 +24,7 @@ int main(int argc, char *argv[])
 
     if(rank==0)
     {
-        printf("\nData Size is of power : %d", length);
-        printf("\nStarting Meaurement with data-size 2^%d", length);
+        printf("\nStarting Measurement with data-size 2^%d", length);
         start_time = MPI_Wtime(); 
         for(int round=0; round<ROUNDS; round++)
         {   
@@ -35,9 +34,9 @@ int main(int argc, char *argv[])
         }
         end_time = MPI_Wtime();
         duration = (end_time - start_time) / ROUNDS;
-        printf("\nData size: 2^%d, Time : %lf \n", length, duration);            
+        printf("\nData size: 2^%d, Time(ms) : %lf \n", length, duration * 1000);            
     }
-    else
+    else if(rank==1)
     {
         for(int round=0; round<ROUNDS; round++)
         {
