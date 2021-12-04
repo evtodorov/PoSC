@@ -8,7 +8,7 @@
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
 #SBATCH --partition=general
-#SBATCH --nodes=16
+#SBATCH --nodes=128
 #SBATCH --ntasks-per-node=48
 #SBATCH --ear=off
  
