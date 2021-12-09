@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=ping_pong
+#SBATCH --output=ping_pong-n1.out
+#SBATCH --error=ping_pong-n1.err
+#SBATCH --time=00:10:00
+#SBATCH --account=h039v
+#SBATCH --partition=micro
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --ear=off
+
+module load slurm_setup
+
+export SLURM_CPU_BIND=verbose
+
+echo "Config 1: Same socket, different cores"
+export SRUN_CONFIG="--sockets-per-node=1 --cores-per-socket=2 --threads-per-core=1"
+source ping_pong_loop.sh
+
+echo "Config 2: Same node, different sockets"
+export SRUN_CONFIG="--sockets-per-node=2 --cores-per-socket=1 --threads-per-core=1"
+source ping_pong_loop.sh
