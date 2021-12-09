@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
+    if(size != 2)
+    {
+        printf("Exactly 2 processors need to be allocated for this task. Current allotment is %d\n", size);
+        MPI_Abort(MPI_COMM_WORLD,1);
+    }
 
     MPI_Barrier(MPI_COMM_WORLD);
 
@@ -36,7 +41,7 @@ int main(int argc, char *argv[])
 
         duration = (end_time - start_time) / ROUNDS;
         double bandwidth = pow(2, length) / duration;
-        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (GB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1000000);
+        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (MB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1.0e+6);
     }
     else if(rank==1)
     {
@@ -48,4 +53,5 @@ int main(int argc, char *argv[])
 
     }
     MPI_Finalize();
+    free(data);
 }
