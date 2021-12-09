@@ -12,9 +12,9 @@
 #SBATCH --ntasks=2
 #SBATCH --ear=off
 
-echo "mpiexec -genv I_MPI_DEBUG=4 -n 2"
+echo "mpiexec -n 2"
 
 for i in {0..20}
 do
-    mpiexec -genv I_MPI_DEBUG=4 -n 2 ./pingpong $i
+    mpiexec -n 2 ./pingpong $i
 done
