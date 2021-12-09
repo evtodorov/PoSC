@@ -1,0 +1,65 @@
+srun -n 2 -N 2
+/var/spool/slurm/job1565793/slurm_script: line 16: cpu_info: command not found
+
+Starting Measurement with data-size 2^0
+Data size : 2^0 (B), Time (ms) :     0.002556058, Bandwidth (MB/s) :     0.391227426
+
+Starting Measurement with data-size 2^1
+Data size : 2^1 (B), Time (ms) :     0.002776203, Bandwidth (MB/s) :     0.720408383
+
+Starting Measurement with data-size 2^2
+Data size : 2^2 (B), Time (ms) :     0.002578009, Bandwidth (MB/s) :     1.551584787
+
+Starting Measurement with data-size 2^3
+Data size : 2^3 (B), Time (ms) :     0.002770511, Bandwidth (MB/s) :     2.887554281
+
+Starting Measurement with data-size 2^4
+Data size : 2^4 (B), Time (ms) :     0.002742767, Bandwidth (MB/s) :     5.833525924
+
+Starting Measurement with data-size 2^5
+Data size : 2^5 (B), Time (ms) :     0.002566590, Bandwidth (MB/s) :    12.467906822
+
+Starting Measurement with data-size 2^6
+Data size : 2^6 (B), Time (ms) :     0.002786349, Bandwidth (MB/s) :    22.969125989
+
+Starting Measurement with data-size 2^7
+Data size : 2^7 (B), Time (ms) :     0.002779429, Bandwidth (MB/s) :    46.052620838
+
+Starting Measurement with data-size 2^8
+Data size : 2^8 (B), Time (ms) :     0.002775849, Bandwidth (MB/s) :    92.224035705
+
+Starting Measurement with data-size 2^9
+Data size : 2^9 (B), Time (ms) :     0.003497692, Bandwidth (MB/s) :   146.382258037
+
+Starting Measurement with data-size 2^10
+Data size : 2^10 (B), Time (ms) :     0.003489996, Bandwidth (MB/s) :   293.410052631
+
+Starting Measurement with data-size 2^11
+Data size : 2^11 (B), Time (ms) :     0.003034673, Bandwidth (MB/s) :   674.866806686
+
+Starting Measurement with data-size 2^12
+Data size : 2^12 (B), Time (ms) :     0.003018656, Bandwidth (MB/s) :  1356.895086371
+
+Starting Measurement with data-size 2^13
+Data size : 2^13 (B), Time (ms) :     0.003043464, Bandwidth (MB/s) :  2691.669744247
+
+Starting Measurement with data-size 2^14
+Data size : 2^14 (B), Time (ms) :     0.003025790, Bandwidth (MB/s) :  5414.785027556
+
+Starting Measurement with data-size 2^15
+Data size : 2^15 (B), Time (ms) :     0.003045741, Bandwidth (MB/s) : 10758.628182034
+
+Starting Measurement with data-size 2^16
+Data size : 2^16 (B), Time (ms) :     0.003058869, Bandwidth (MB/s) : 21424.912145534
+
+Starting Measurement with data-size 2^17
+Data size : 2^17 (B), Time (ms) :     0.003030455, Bandwidth (MB/s) : 43251.594644540
+
+Starting Measurement with data-size 2^18
+Data size : 2^18 (B), Time (ms) :     0.003515750, Bandwidth (MB/s) : 74562.749724148
+
+Starting Measurement with data-size 2^19
+Data size : 2^19 (B), Time (ms) :     0.003041496, Bandwidth (MB/s) : 172378.332922501
+
+Starting Measurement with data-size 2^20
+Data size : 2^20 (B), Time (ms) :     0.003035859, Bandwidth (MB/s) : 345396.824399008

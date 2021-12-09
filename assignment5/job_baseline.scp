@@ -2,15 +2,19 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o ping_pong.out
-#SBATCH -e ping_pong.err
+#SBATCH -o pingpong_nton.out
+#SBATCH -e pingpong_nton.out
 # Wall clock limit:
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
 #SBATCH --partition=micro
+#SBATCH --nodes=2
+#SBATCH --ntasks=2
 #SBATCH --ear=off
- 
+
+echo "mpiexec -genv I_MPI_DEBUG=4 -n 2"
+
 for i in {0..20}
 do
-    srun -n 2 ./pingpong $i
+    mpiexec -genv I_MPI_DEBUG=4 -n 2 ./pingpong $i
 done
