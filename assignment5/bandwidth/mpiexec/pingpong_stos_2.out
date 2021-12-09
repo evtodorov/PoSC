@@ -1,0 +1,274 @@
+mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=socket -n 2
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4007875  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4007876  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^0
+Data size : 2^0 (B), Time (ms) :     0.001344474, Bandwidth (MB/s) :     0.743785284
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4007933  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4007934  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^1
+Data size : 2^1 (B), Time (ms) :     0.001366352, Bandwidth (MB/s) :     1.463751343
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008052  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008053  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^2
+Data size : 2^2 (B), Time (ms) :     0.001357271, Bandwidth (MB/s) :     2.947090637
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008146  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008147  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^3
+Data size : 2^3 (B), Time (ms) :     0.001385863, Bandwidth (MB/s) :     5.772575844
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008207  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008208  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^4
+Data size : 2^4 (B), Time (ms) :     0.001355761, Bandwidth (MB/s) :    11.801494050
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008266  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008267  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^5
+Data size : 2^5 (B), Time (ms) :     0.001339188, Bandwidth (MB/s) :    23.895079473
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008324  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008325  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^6
+Data size : 2^6 (B), Time (ms) :     0.001373245, Bandwidth (MB/s) :    46.604926471
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008382  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008383  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^7
+Data size : 2^7 (B), Time (ms) :     0.001347554, Bandwidth (MB/s) :    94.986936067
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008441  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008442  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^8
+Data size : 2^8 (B), Time (ms) :     0.001349538, Bandwidth (MB/s) :   189.694572673
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008500  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008501  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^9
+Data size : 2^9 (B), Time (ms) :     0.001332009, Bandwidth (MB/s) :   384.381672518
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008558  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008559  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^10
+Data size : 2^10 (B), Time (ms) :     0.001345919, Bandwidth (MB/s) :   760.818192860
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008617  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008618  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^11
+Data size : 2^11 (B), Time (ms) :     0.001359445, Bandwidth (MB/s) :  1506.497089150
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008675  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008676  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^12
+Data size : 2^12 (B), Time (ms) :     0.001371436, Bandwidth (MB/s) :  2986.650878672
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008733  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008734  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^13
+Data size : 2^13 (B), Time (ms) :     0.001337683, Bandwidth (MB/s) :  6124.020990081
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008791  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008792  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^14
+Data size : 2^14 (B), Time (ms) :     0.001348642, Bandwidth (MB/s) : 12148.516141580
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008849  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008850  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^15
+Data size : 2^15 (B), Time (ms) :     0.001362370, Bandwidth (MB/s) : 24052.197370879
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008908  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008909  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^16
+Data size : 2^16 (B), Time (ms) :     0.001347428, Bandwidth (MB/s) : 48637.842518724
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4008966  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4008967  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^17
+Data size : 2^17 (B), Time (ms) :     0.001339933, Bandwidth (MB/s) : 97819.850593969
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4009024  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4009025  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^18
+Data size : 2^18 (B), Time (ms) :     0.001356875, Bandwidth (MB/s) : 193196.872767593
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4009082  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4009083  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^19
+Data size : 2^19 (B), Time (ms) :     0.001381943, Bandwidth (MB/s) : 379384.677306542
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       4009140  i01r05c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       4009141  i01r05c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,72,73,74
+                                    ,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95}
+
+Starting Measurement with data-size 2^20
+Data size : 2^20 (B), Time (ms) :     0.001369401, Bandwidth (MB/s) : 765718.592064236
