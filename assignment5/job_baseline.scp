@@ -7,14 +7,10 @@
 # Wall clock limit:
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
-#SBATCH --partition=general
-#SBATCH --nodes=128
-#SBATCH --ntasks-per-node=48
+#SBATCH --partition=micro
 #SBATCH --ear=off
- 
-module load slurm_setup
  
 for i in {0..20}
 do
-    mpiexec -n $SLURM_NTASKS ./pingpong $i
+    srun -n 2 ./pingpong $i
 done
