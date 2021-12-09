@@ -1,6 +1,13 @@
-# Compiling the Program
-##
+## Compiling the Program
 1. make clean
 2. make
-3. mpiexec -np 2 ./pingpong "power of two (1, 2,...20)"
-    e.g : mpiexec -np 2 ./pingpong 8
+
+## Running in different configurations
+See [communication_enforcement](communication_enforcement.md)
+
+## Measurement results
+See [measurements](measurements/), raw results in [mpiexec](measurements/mpiexec)
+
+## Plots
+![Bandwidth](Graph1.png)
+![Latency](Graph2.png)
