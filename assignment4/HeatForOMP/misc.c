@@ -36,8 +36,7 @@ int initialize( algoparam_t *param )
     (param->uvis)  = (double*)calloc( sizeof(double),
 				      (param->visres+2) *
 				      (param->visres+2) );
-
-#pragma omp parallel for schedule(static)
+	#pragma omp parallel for collapse(2)
     for (i=0;i<np;i++){
     	for (j=0;j<np;j++){
     		param->u[i*np+j]=0;
@@ -51,9 +50,11 @@ int initialize( algoparam_t *param )
 	return 0;
     }
 
+#pragma omp parallel default(none) shared(param) private(dist) firstprivate(i)
     for( i=0; i<param->numsrcs; i++ )
     {
 	/* top row */
+	#pragma omp for schedule(static) 
 	for( j=0; j<np; j++ )
 	{
 	    dist = sqrt( pow((double)j/(double)(np-1) -
@@ -70,6 +71,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* bottom row */
+	#pragma omp for nowait schedule(static)
 	for( j=0; j<np; j++ )
 	{
 	    dist = sqrt( pow((double)j/(double)(np-1) -
@@ -86,6 +88,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* leftmost column */
+	#pragma omp for nowait schedule(static)
 	for( j=1; j<np-1; j++ )
 	{
 	    dist = sqrt( pow(param->heatsrcs[i].posx, 2)+
@@ -102,6 +105,7 @@ int initialize( algoparam_t *param )
 	}
 
 	/* rightmost column */
+	#pragma omp for nowait schedule(static)
 	for( j=1; j<np-1; j++ )
 	{
 	    dist = sqrt( pow(1-param->heatsrcs[i].posx, 2)+
@@ -159,32 +163,38 @@ void write_image( FILE * f, double *u,
     double min, max;
 
     j=1023;
-
+#pragma omp parallel
+{
+	#pragma omp for nowait schedule(static)
     // prepare RGB table
     for( i=0; i<256; i++ )
     {
 	r[j]=255; g[j]=i; b[j]=0;
 	j--;
     }
+	#pragma omp for nowait schedule(static)
     for( i=0; i<256; i++ )
     {
 	r[j]=255-i; g[j]=255; b[j]=0;
 	j--;
     }
+	#pragma omp for nowait schedule(static)
     for( i=0; i<256; i++ )
     {
 	r[j]=0; g[j]=255; b[j]=i;
 	j--;
     }
+	#pragma omp for nowait schedule(static)
     for( i=0; i<256; i++ )
     {
 	r[j]=0; g[j]=255-i; b[j]=255;
 	j--;
     }
+}
 
     min=DBL_MAX;
     max=-DBL_MAX;
-
+	#pragma omp parallel for schedule(static)
     // find minimum and maximum
     for( i=0; i<sizey; i++ )
     {
@@ -201,7 +211,7 @@ void write_image( FILE * f, double *u,
     fprintf(f, "P3\n");
     fprintf(f, "%u %u\n", sizex, sizey);
     fprintf(f, "%u\n", 255);
-
+	#pragma omp parallel for schedule(static)
     for( i=0; i<sizey; i++ )
     {
 	for( j=0; j<sizex; j++ )
@@ -238,7 +248,7 @@ int coarsen( double *uold, unsigned oldx, unsigned oldy ,
     //printf("rx=%f, ry=%f\n",stepx,stepy);
     // NOTE: this only takes the top-left corner,
     // and doesnt' do any real coarsening
-
+	#pragma omp parallel for schedule(static)
     for( i=0; i<stopy; i++ ){
        ii=stepy*i;
        for( j=0; j<stopx; j++ ){
