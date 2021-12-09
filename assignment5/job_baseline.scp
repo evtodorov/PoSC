@@ -1,0 +1,21 @@
+#!/bin/bash
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#Output and error (also --output, --error):
+#SBATCH -o ping_pong.out
+#SBATCH -e ping_pong.err
+# Wall clock limit:
+#SBATCH --time=00:10:00
+#SBATCH --account=h039v
+#SBATCH --partition=general
+#SBATCH --nodes=128
+#SBATCH --ntasks-per-node=48
+#SBATCH --ear=off
+ 
+module load slurm_setup
+ 
+powers_of_two=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
+for i in "${powers_of_two[@]}"
+do
+    mpiexec -n $SLURM_NTASKS ./pingpong $i
+done
