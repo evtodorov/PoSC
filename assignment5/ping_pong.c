@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-
     MPI_Barrier(MPI_COMM_WORLD);
 
     if(rank==0)
@@ -27,8 +26,7 @@ int main(int argc, char *argv[])
         printf("\nStarting Measurement with data-size 2^%d", length);
         start_time = MPI_Wtime(); 
         for(int round=0; round<ROUNDS; round++)
-        {   
-            
+        {    
             MPI_Send(data, length, MPI_CHAR, 1, 10, MPI_COMM_WORLD);
             MPI_Recv(data, length, MPI_CHAR, 1, 20, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         }
@@ -36,7 +34,7 @@ int main(int argc, char *argv[])
 
         duration = (end_time - start_time) / ROUNDS;
         double bandwidth = pow(2, length) / duration;
-        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (GB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1000000);
+        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (MB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1000000);
     }
     else if(rank==1)
     {
@@ -45,7 +43,11 @@ int main(int argc, char *argv[])
             MPI_Recv(data, length, MPI_CHAR, 0, 10, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Send(data, length, MPI_CHAR, 0, 20, MPI_COMM_WORLD);
         }
-
     }
+
+    free(data);
+
     MPI_Finalize();
+
+    return 0;
 }
