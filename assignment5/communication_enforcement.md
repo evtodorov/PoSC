@@ -1,9 +1,10 @@
-Explain how you placed the MPI Processes in different locations (node, socket, processor) to evaluate PingPong as well as latency of 4 byte message.
+# Explain how you placed the MPI Processes in different locations (node, socket, processor) to evaluate PingPong as well as latency of 4 byte message.
 
-1. communication of processes on different cores in the same processor (core-to-core)
+## 1. communication of processes on different cores in the same processor (core-to-core)
 
-Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_PROCESSOR_LIST=0,2 -n 2"
+Executed program with command `mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_PROCESSOR_LIST=0,2 -n 2`
 
+```
 [0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
 [0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
 [0] MPI startup(): library kind: release
@@ -15,14 +16,15 @@ Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_PROCES
 
 Starting Measurement with data-size 2^2
 Data size : 2^2 (B), Time (ms) :     0.000812448, Bandwidth (MB/s) :     4.923389748
-
+```
 
 Here it can be seen that process runs on different cores on same socket on same node
 
-2. same node but different processors (socket-to-socket)
+## 2. same node but different processors (socket-to-socket)
 
-Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=socket -n 2"
+Executed program with command `mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=socket -n 2`
 
+```
 [0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
 [0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
 [0] MPI startup(): library kind: release
@@ -36,14 +38,15 @@ Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN
 
 Starting Measurement with data-size 2^2
 Data size : 2^2 (B), Time (ms) :     0.001348863, Bandwidth (MB/s) :     2.965460986
-
+```
 
 Here it can be seen that process runs on different cores on different sockets on same node.
 
-3. and for processes on different nodes.
+## 3. and for processes on different nodes.
 
-Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -n 2" (node-to-node)
+Executed program with command `mpiexec -genv I_MPI_DEBUG=4 -n 2` (node-to-node)
 
+```
 [0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
 [0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
 [0] MPI startup(): library kind: release
@@ -61,5 +64,5 @@ Executed program with command "mpiexec -genv I_MPI_DEBUG=4 -n 2" (node-to-node)
 
 Starting Measurement with data-size 2^2
 Data size : 2^2 (B), Time (ms) :     0.003078929, Bandwidth (MB/s) :     1.299152987
-
+```
 Here it can be seen that process runs on different cores on different nodes.
