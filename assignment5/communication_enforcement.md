@@ -42,9 +42,9 @@ Data size : 2^2 (B), Time (ms) :     0.001348863, Bandwidth (MB/s) :     2.96546
 
 Here it can be seen that process runs on different cores on different sockets on same node.
 
-## 3. and for processes on different nodes.
+## 3. and for processes on different nodes (node-to-node)
 
-Executed program with command `mpiexec -genv I_MPI_DEBUG=4 -n 2` (node-to-node)
+Executed program with command `mpiexec -genv I_MPI_DEBUG=4 -n 2`
 
 ```
 [0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
