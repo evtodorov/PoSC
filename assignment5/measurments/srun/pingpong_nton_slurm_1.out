@@ -1,0 +1,64 @@
+srun -n 2 -N 2
+
+Starting Measurement with data-size 2^0
+Data size : 2^0 (B), Time (ms) :     0.002552837, Bandwidth (MB/s) :     0.391721119
+
+Starting Measurement with data-size 2^1
+Data size : 2^1 (B), Time (ms) :     0.002557088, Bandwidth (MB/s) :     0.782139608
+
+Starting Measurement with data-size 2^2
+Data size : 2^2 (B), Time (ms) :     0.002567353, Bandwidth (MB/s) :     1.558025217
+
+Starting Measurement with data-size 2^3
+Data size : 2^3 (B), Time (ms) :     0.002569251, Bandwidth (MB/s) :     3.113747773
+
+Starting Measurement with data-size 2^4
+Data size : 2^4 (B), Time (ms) :     0.002750584, Bandwidth (MB/s) :     5.816945489
+
+Starting Measurement with data-size 2^5
+Data size : 2^5 (B), Time (ms) :     0.002769004, Bandwidth (MB/s) :    11.556500372
+
+Starting Measurement with data-size 2^6
+Data size : 2^6 (B), Time (ms) :     0.002551124, Bandwidth (MB/s) :    25.086980691
+
+Starting Measurement with data-size 2^7
+Data size : 2^7 (B), Time (ms) :     0.002567128, Bandwidth (MB/s) :    49.861169641
+
+Starting Measurement with data-size 2^8
+Data size : 2^8 (B), Time (ms) :     0.002564501, Bandwidth (MB/s) :    99.824502099
+
+Starting Measurement with data-size 2^9
+Data size : 2^9 (B), Time (ms) :     0.003487825, Bandwidth (MB/s) :   146.796362845
+
+Starting Measurement with data-size 2^10
+Data size : 2^10 (B), Time (ms) :     0.003072836, Bandwidth (MB/s) :   333.242699888
+
+Starting Measurement with data-size 2^11
+Data size : 2^11 (B), Time (ms) :     0.003034657, Bandwidth (MB/s) :   674.870244771
+
+Starting Measurement with data-size 2^12
+Data size : 2^12 (B), Time (ms) :     0.003524646, Bandwidth (MB/s) :  1162.102466629
+
+Starting Measurement with data-size 2^13
+Data size : 2^13 (B), Time (ms) :     0.003022862, Bandwidth (MB/s) :  2710.014346721
+
+Starting Measurement with data-size 2^14
+Data size : 2^14 (B), Time (ms) :     0.003040451, Bandwidth (MB/s) :  5388.673920067
+
+Starting Measurement with data-size 2^15
+Data size : 2^15 (B), Time (ms) :     0.003516885, Bandwidth (MB/s) :  9317.335024836
+
+Starting Measurement with data-size 2^16
+Data size : 2^16 (B), Time (ms) :     0.003026183, Bandwidth (MB/s) : 21656.321850035
+
+Starting Measurement with data-size 2^17
+Data size : 2^17 (B), Time (ms) :     0.003013089, Bandwidth (MB/s) : 43500.865351733
+
+Starting Measurement with data-size 2^18
+Data size : 2^18 (B), Time (ms) :     0.003022166, Bandwidth (MB/s) : 86740.427353890
+
+Starting Measurement with data-size 2^19
+Data size : 2^19 (B), Time (ms) :     0.003040617, Bandwidth (MB/s) : 172428.142964923
+
+Starting Measurement with data-size 2^20
+Data size : 2^20 (B), Time (ms) :     0.003447988, Bandwidth (MB/s) : 304112.421083137
