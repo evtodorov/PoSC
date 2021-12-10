@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     int rank, size, init;
     double start_time, end_time, duration;
     int length = atoi(argv[1]);
-    char *data = (char *)malloc(pow(2,length)*sizeof(char));
+    char *data = (char *)calloc(pow(2,length)*sizeof(char));
     init = MPI_Init(NULL,NULL);
     
     if(init != MPI_SUCCESS)
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
         duration = (end_time - start_time) / ROUNDS;
         double bandwidth = pow(2, length) / duration;
-        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (MB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1.0e+6);
+        printf("\nData size : 2^%d (B), Time (ms) : %15.9f, Bandwidth (GB/s) : %15.9f\n", length, duration * 1000, bandwidth / 1.0e+9);
     }
     else if(rank==1)
     {
@@ -54,4 +54,5 @@ int main(int argc, char *argv[])
     }
     MPI_Finalize();
     free(data);
+    return 0;
 }
