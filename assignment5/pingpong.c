@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     int rank, size, init;
     double start_time, end_time, duration;
     int length = atoi(argv[1]);
-    char *data = (char *)malloc(pow(2,length)*sizeof(char));
+    char *data = (char *)malloc(pow(2,length) * sizeof(char));
     init = MPI_Init(NULL,NULL);
     
     if(init != MPI_SUCCESS)
@@ -50,8 +50,11 @@ int main(int argc, char *argv[])
             MPI_Recv(data, length, MPI_CHAR, 0, 10, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Send(data, length, MPI_CHAR, 0, 20, MPI_COMM_WORLD);
         }
-
     }
+
     MPI_Finalize();
+
     free(data);
+
+    return 0;
 }
