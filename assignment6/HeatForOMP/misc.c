@@ -15,6 +15,8 @@
 
 #include "heat.h"
 
+#define min(a,b) (((a)<(b))?(a):(b))
+
 /*
  * Initialize the iterative solver
  * - allocate memory for matrices
@@ -118,6 +120,35 @@ int initialize( algoparam_t *param )
     }
 
     return 1;
+}
+
+/*
+ * Configure the grid boundaries based
+*/
+void configure_grid(const algoparam_t *algoparam, gridparam_t *gridparam){
+    // points excluding the border
+	const unsigned compute_points = algoparam->act_res;
+	// total number of points (including border)
+	const unsigned store_points = compute_points + 2;
+
+	const unsigned num_rows = gridparam->grid_num_rows;
+	const unsigned num_cols = gridparam->grid_num_cols;
+	const unsigned row = gridparam->grid_row;
+	const unsigned col = gridparam->grid_col;
+	const unsigned row_stride = (compute_points + num_rows - 1)/num_rows;
+	const unsigned col_stride = (compute_points + num_cols - 1)/num_cols;
+
+	(gridparam->store_row_start) = row * row_stride;
+	(gridparam->store_col_start) = col * col_stride;
+	(gridparam->compute_row_start) = (gridparam->store_row_start) + 1;
+	(gridparam->compute_col_start) = (gridparam->store_col_start) + 1;
+
+	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points);
+	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points);
+	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
+	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
+
+
 }
 
 /*
