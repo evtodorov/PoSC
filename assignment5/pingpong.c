@@ -33,21 +33,21 @@ int main(int argc, char *argv[])
         start_time = MPI_Wtime(); 
         for(int round=0; round<ROUNDS; round++)
         {   
-            MPI_Send(data, length, MPI_CHAR, 1, 10, MPI_COMM_WORLD);
-            MPI_Recv(data, length, MPI_CHAR, 1, 20, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Send(data, pow(2,length), MPI_CHAR, 1, 10, MPI_COMM_WORLD);
+            MPI_Recv(data, pow(2,length), MPI_CHAR, 1, 20, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         }
         end_time = MPI_Wtime();
 
         duration = (end_time - start_time) / (2 * ROUNDS);
-        long double bandwidth = pow(2, length) / duration;
+        double bandwidth = pow(2, length) / duration;
         printf("\nData size : 2^%d (B), Time (s) : %15.9f, Bandwidth (B/s) : %15.9f\n", length, duration, bandwidth);
     }
     else if(rank==1)
     {
         for(int round=0; round<ROUNDS; round++)
         {
-            MPI_Recv(data, length, MPI_CHAR, 0, 10, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Send(data, length, MPI_CHAR, 0, 20, MPI_COMM_WORLD);
+            MPI_Recv(data, pow(2,length), MPI_CHAR, 0, 10, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Send(data, pow(2,length), MPI_CHAR, 0, 20, MPI_COMM_WORLD);
         }
     }
 
