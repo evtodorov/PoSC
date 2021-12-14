@@ -125,18 +125,18 @@ int initialize( algoparam_t *param )
 /*
  * Configure the grid boundaries based
 */
-void configure_grid(const algoparam_t *algoparam, gridparam_t *gridparam){
+void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
     // points excluding the border
-	const unsigned compute_points = algoparam->act_res;
+	int compute_points = algoparam->act_res;
 	// total number of points (including border)
-	const unsigned store_points = compute_points + 2;
+	int store_points = compute_points + 2;
 
-	const unsigned num_rows = gridparam->grid_num_rows;
-	const unsigned num_cols = gridparam->grid_num_cols;
-	const unsigned row = gridparam->grid_row;
-	const unsigned col = gridparam->grid_col;
-	const unsigned row_stride = (compute_points + num_rows - 1)/num_rows;
-	const unsigned col_stride = (compute_points + num_cols - 1)/num_cols;
+	int num_rows = gridparam->grid_num_rows;
+	int num_cols = gridparam->grid_num_cols;
+	int row = gridparam->grid_row;
+	int col = gridparam->grid_col;
+	int row_stride = (compute_points + num_rows - 1)/num_rows;
+	int col_stride = (compute_points + num_cols - 1)/num_cols;
 
 	(gridparam->store_row_start) = row * row_stride;
 	(gridparam->store_col_start) = col * col_stride;

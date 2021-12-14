@@ -60,24 +60,6 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	// configure grid NB doesn't do any memory allocation; usage TBD
-	gridparam_t gridparam;
-	gridparam.grid_num_rows = 3; // TODO: get correct number from config
-	gridparam.grid_num_cols = 4; // TODO: get correct number from config
-	gridparam.grid_row = 1; // TODO: get correct row from MPI
-	gridparam.grid_col = 2; // TODO: get correct col from MPI
-	configure_grid(&param, &gridparam);
-
-	printf("\nCompute: \u<=row<\u, \u<=col<\u\nStore: \u<=row<\u, \u<=col<\u\n", 
-		    gridparam.compute_row_start,
-	 		gridparam.compute_row_end,
-			gridparam.compute_col_start,
-			gridparam.compute_col_end,
-			gridparam.store_row_start,
-	 		gridparam.store_row_end,
-			gridparam.store_col_start,
-			gridparam.store_col_end);
-
 
 	print_params(&param);
 	time = (double *) calloc(sizeof(double), (int) (param.max_res - param.initial_res + param.res_step_size) / param.res_step_size);
@@ -90,6 +72,24 @@ int main(int argc, char *argv[]) {
 
 			usage(argv[0]);
 		}
+
+		// configure grid NB doesn't do any memory allocation; usage TBD
+		gridparam_t gridparam;
+		gridparam.grid_num_rows = 3; // TODO: get correct number from config
+		gridparam.grid_num_cols = 4; // TODO: get correct number from config
+		gridparam.grid_row = 2; // TODO: get correct row from MPI
+		gridparam.grid_col = 1; // TODO: get correct col from MPI
+		configure_grid(&param, &gridparam);
+
+		printf("\nCompute: %u<=row<%u, %u<=col<%u\nStore: %u<=row<%u, %u<=col<%u\n", 
+				gridparam.compute_row_start,
+				gridparam.compute_row_end,
+				gridparam.compute_col_start,
+				gridparam.compute_col_end,
+				gridparam.store_row_start,
+				gridparam.store_row_end,
+				gridparam.store_col_start,
+				gridparam.store_col_end);
 
 		for (i = 0; i < param.act_res + 2; i++) {
 			for (j = 0; j < param.act_res + 2; j++) {
