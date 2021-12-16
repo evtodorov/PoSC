@@ -55,6 +55,10 @@ int main(int argc, char *argv[]) {
 	dims[1] = atoi(argv[3]);
 	periods[0] = 1;
 	periods[1] = 1;
+	if(dims[0] == 1)
+		periods[0] = 0;
+	if(dims[1] == 1)
+		periods[1] = 0;
 	reorder = 0;
 
     if(size != dims[0]*dims[1])
