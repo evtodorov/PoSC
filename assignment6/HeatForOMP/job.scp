@@ -14,4 +14,4 @@
 
 echo "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 4"
 
-mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 16 ./heat test.dat 1 4
+mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 4 ./heat test.dat 1 4
