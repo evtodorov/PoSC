@@ -1,8 +1,7 @@
-
 Sample input
 ### mpirun -n 16 ./heat test.dat 4 4
 
-1.1 Sample output
+Sample output
 ```
 rank= 2 coords= 0 2 neighbours(up,down,left,right)= 14 6 1 3
 rank= 0 coords= 0 0 neighbours(up,down,left,right)= 12 4 3 1
@@ -23,7 +22,7 @@ rank= 15 coords= 3 3 neighbours(up,down,left,right)= 11 3 14 12
 ```
 
 Sample input
-> mpirun -n 4 ./heat test.dat 1 4
+### mpirun -n 4 ./heat test.dat 1 4
 
 Sample output
 ```
@@ -34,7 +33,7 @@ rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 -1 2 0
 ```
 
 Sample input
-> mpirun -n 9 ./heat test.dat 3 3
+### mpirun -n 9 ./heat test.dat 3 3
 
 Sample output
 ```
