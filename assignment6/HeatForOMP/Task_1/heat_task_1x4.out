@@ -1,0 +1,35 @@
+mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 4
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+The product of dimensions 4 is not equal to number of requested processes 16
+The product of dimensions 4 is not equal to number of requested processes 16
+The product of dimensions 4 is not equal to number of requested processes 16
+The product of dimensions 4 is not equal to number of requested processes 16
+The product of dimensions 4 is not equal to number of requested processes 16
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 1 (rank 1 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 1
+Abort(1) on node 2 (rank 2 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 2
+Abort(1) on node 3 (rank 3 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 3
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 4 (rank 4 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 4
+Abort(1) on node 5 (rank 5 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 5
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 6 (rank 6 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 6
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 7 (rank 7 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 7
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 9 (rank 9 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 9
+Abort(1) on node 10 (rank 10 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 10
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 11 (rank 11 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 11
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 12 (rank 12 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 12
+Abort(1) on node 13 (rank 13 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 13
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 14 (rank 14 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 14
+The product of dimensions 4 is not equal to number of requested processes 16
+Abort(1) on node 15 (rank 15 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 15
+The product of dimensions 4 is not equal to number of requested processes 16
