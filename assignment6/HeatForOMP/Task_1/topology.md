@@ -31,6 +31,7 @@ rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 -1 0 2
 rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 -1 1 3
 rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 -1 2 0
 ```
+`For 1D Grid, -1 represents null neighbours`
 
 Sample input
 ### mpirun -n 9 ./heat test.dat 3 3
@@ -47,3 +48,4 @@ rank= 6 coords= 2 0 neighbours(up,down,left,right)= 3 0 8 7
 rank= 7 coords= 2 1 neighbours(up,down,left,right)= 4 1 6 8
 rank= 8 coords= 2 2 neighbours(up,down,left,right)= 5 2 7 6
 ```
+`Here the boundaries are periodic in both x and y direction. Total processes are 9 and the domain is decomposed into 3x3 cartisian topology starting from (0,0) (0,1) .... (2,2) with MPI_Cart_create. The rank of processes are mapped to the coordinates in cartesian topology without reordering. MPI_Cart_coords gets the coordinates for each rank in the processes. Neighbours of each rank is obtained with MPI_Cart_shift using direction and displacement.`
