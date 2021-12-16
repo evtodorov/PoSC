@@ -1,7 +1,8 @@
-Sample input
-> mpirun -n 16 ./heat test.dat 4 4
 
-Sample output
+Sample input
+### mpirun -n 16 ./heat test.dat 4 4
+
+1.1 Sample output
 ```
 rank= 2 coords= 0 2 neighbours(up,down,left,right)= 14 6 1 3
 rank= 0 coords= 0 0 neighbours(up,down,left,right)= 12 4 3 1
