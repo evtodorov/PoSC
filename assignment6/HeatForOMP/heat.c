@@ -93,7 +93,11 @@ int main(int argc, char *argv[]) {
 	}
 
 	if(rank == 0)
+	{
 		print_params(&param);
+		printf("\n\nResolution: %u\n", param.act_res);
+			printf("===================\n");
+	}
 
 	time = (double *) calloc(sizeof(double), (int) (param.max_res - param.initial_res + param.res_step_size) / param.res_step_size);
 
@@ -123,6 +127,12 @@ int main(int argc, char *argv[]) {
 		gridparam.grid_col = coord[1];
 		configure_grid(&param, &gridparam);
 
+		if (rank==0)
+		{
+			printf("\n\nResolution: %u\n", param.act_res);
+			printf("===================\n");
+		}
+
 		printf("\nRank: %d ; Coord: %d %d ; Rows: %d; Cols: %d", rank, coord[0], coord[1], 
 				gridparam.store_row_end - gridparam.store_row_start, 
 				gridparam.store_col_end - gridparam.store_col_start);
@@ -144,17 +154,17 @@ int main(int argc, char *argv[]) {
 
 		time[exp_number] = wtime() - time[exp_number];
 
-		if (rank==0)
-		{
-			printf("\n\nResolution: %u\n", param.act_res);
-			printf("===================\n");
-			//printf("Execution time: %f\n", time[exp_number]);
-			//printf("Residual: %f\n\n", residual);
+		// if (rank==0)
+		// {
+		// 	printf("\n\nResolution: %u\n", param.act_res);
+		// 	printf("===================\n");
+		// 	printf("Execution time: %f\n", time[exp_number]);
+		// 	printf("Residual: %f\n\n", residual);
 
-			//printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
-			//printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
+		// 	printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
+		// 	printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
 
-		}
+		// }
 		
 		exp_number++;
 	}
