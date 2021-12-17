@@ -1,0 +1,113 @@
+mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 9
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       1536038  i01r06c04s02  {0,48}
+[0] MPI startup(): 1       1536039  i01r06c04s02  {1,49}
+[0] MPI startup(): 2       1536040  i01r06c04s02  {2,50}
+[0] MPI startup(): 3       1536041  i01r06c04s02  {3,51}
+[0] MPI startup(): 4       1536042  i01r06c04s02  {4,52}
+[0] MPI startup(): 5       1536043  i01r06c04s02  {24,72}
+[0] MPI startup(): 6       1536044  i01r06c04s02  {25,73}
+[0] MPI startup(): 7       1536045  i01r06c04s02  {26,74}
+[0] MPI startup(): 8       1536046  i01r06c04s02  {27,75}
+ 3 processes distributed in X-direction
+ 3 processes distributed in Y-direction
+Resolutions       : (200, 1200, ... 200)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= 6 3 2 1
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= 7 4 0 2
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= 8 5 1 0
+rank= 3 coords= 1 0 neighbours(up,down,left,right)= 0 6 5 4
+rank= 4 coords= 1 1 neighbours(up,down,left,right)= 1 7 3 5
+rank= 5 coords= 1 2 neighbours(up,down,left,right)= 2 8 4 3
+rank= 6 coords= 2 0 neighbours(up,down,left,right)= 3 0 8 7
+rank= 7 coords= 2 1 neighbours(up,down,left,right)= 4 1 6 8
+rank= 8 coords= 2 2 neighbours(up,down,left,right)= 5 2 7 6
+
+
+Resolution: 200
+===================
+Execution time: 0.000359
+Residual: 0.094075
+
+megaflops:  15596.3
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000361
+Residual: 0.094075
+
+megaflops:  15513.9
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000375
+Residual: 0.094075
+
+megaflops:  14932.0
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000358
+Residual: 0.094075
+
+megaflops:  15637.9
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000359
+Residual: 0.094075
+
+megaflops:  15596.3
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000366
+Residual: 0.094075
+
+megaflops:  15291.7
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000391
+Residual: 0.094075
+
+megaflops:  14322.0
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000361
+Residual: 0.094075
+
+megaflops:  15503.7
+  flop instructions (M):  5.600
+
+
+Resolution: 200
+===================
+Execution time: 0.000421
+Residual: 0.094075
+
+megaflops:  13300.2
+  flop instructions (M):  5.600

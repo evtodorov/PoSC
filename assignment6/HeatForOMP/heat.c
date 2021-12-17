@@ -106,6 +106,7 @@ int main(int argc, char *argv[]) {
 	MPI_Cart_coords(comm_2d, rank, 2, coord);
 	MPI_Cart_shift(comm_2d, 0, 1, &up, &down);
 	MPI_Cart_shift(comm_2d, 1, 1, &left, &right);
+	//printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
 
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
 		np = param.act_res + 2;
