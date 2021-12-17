@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <mpi.h>
 #include "input.h"
 #include "heat.h"
 #include "timing.h"
@@ -16,6 +16,8 @@ int main(int argc, char *argv[]) {
 	FILE *infile, *resfile;
 	char *resfilename;
 	int np, iter, chkflag;
+	int dims[2], periods[2], coord[2], reorder;
+	int up, down, left, right;
 
 	
 	// algorithmic parameters
@@ -28,8 +30,16 @@ int main(int argc, char *argv[]) {
 	// set the visualization resolution
 	param.visres = 100;
 
+	int rank, size;
+	MPI_Status s;
+	MPI_Init(&argc, &argv);
+	MPI_Comm_size(MPI_COMM_WORLD, &size);
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+	MPI_Comm comm_2d;
+
+
 	// check arguments
-	if (argc < 2) {
+	if (argc < 4) {
 		usage(argv[0]);
 		return 1;
 	}
@@ -41,6 +51,27 @@ int main(int argc, char *argv[]) {
 		usage(argv[0]);
 		return 1;
 	}
+
+	// Dimensions for virtual topology
+	dims[0] = atoi(argv[2]); // X-dimension
+	dims[1] = atoi(argv[3]); // Y-dimension
+	periods[0] = 1;
+	periods[1] = 1;
+	if(dims[0] == 1)
+		periods[0] = 0;
+	if(dims[1] == 1)
+		periods[1] = 0;
+	reorder = 0;
+
+    if(size != dims[0] * dims[1])
+    {
+        printf("The product of dimensions %d is not equal to number of requested processes %d\n", dims[0]*dims[1], size);
+        MPI_Abort(MPI_COMM_WORLD,1);
+    }
+
+	if (rank == 0)
+		printf(" %d processes distributed in X-direction\n %d ; processes distributed in Y-direction\n", dims[0], dims[1]);
+
 
 	// check result file
 	resfilename = (argc >= 3) ? argv[2] : "heat.ppm";
@@ -60,13 +91,29 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
+	if(rank == 0)
+		print_params(&param);
+
 
 	print_params(&param);
+
 	time = (double *) calloc(sizeof(double), (int) (param.max_res - param.initial_res + param.res_step_size) / param.res_step_size);
 
 	int exp_number = 0;
 
+	// Create Virtual topology
+	MPI_Cart_create(MPI_COMM_WORLD, 2, dims, periods, reorder, &comm_2d);
+	MPI_Cart_coords(comm_2d, rank, 2, coord);
+	MPI_Cart_shift(comm_2d, 0, 1, &up, &down);
+	MPI_Cart_shift(comm_2d, 1, 1, &left, &right);
+	printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right);
+
+
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
+		np = param.act_res + 2;
+		int send_count = np * np;
+
+		
 		if (!initialize(&param)) {
 			fprintf(stderr, "Error in Jacobi initialization.\n\n");
 
@@ -75,13 +122,14 @@ int main(int argc, char *argv[]) {
 
 		// configure grid NB doesn't do any memory allocation; usage TBD
 		gridparam_t gridparam;
-		gridparam.grid_num_rows = 3; // TODO: get correct number from config
-		gridparam.grid_num_cols = 4; // TODO: get correct number from config
-		gridparam.grid_row = 2; // TODO: get correct row from MPI
-		gridparam.grid_col = 1; // TODO: get correct col from MPI
+		gridparam.grid_num_rows = dims[0]; // TODO: get correct number from config
+		gridparam.grid_num_cols = dims[1]; // TODO: get correct number from config
+		gridparam.grid_row = coord[0]; // TODO: get correct row from MPI
+		gridparam.grid_col = coord[1]; // TODO: get correct col from MPI
 		configure_grid(&param, &gridparam);
 
-		printf("\nCompute: %u<=row<%u, %u<=col<%u\nStore: %u<=row<%u, %u<=col<%u\n", 
+		printf("\nRank: %u,\nCompute: %u<=row<%u, %u<=col<%u\nStore: %u<=row<%u, %u<=col<%u\n", 
+				rank,
 				gridparam.compute_row_start,
 				gridparam.compute_row_end,
 				gridparam.compute_col_start,
@@ -126,5 +174,10 @@ int main(int argc, char *argv[]) {
 	write_image(resfile, param.uvis, param.visres + 2, param.visres + 2);
 
 	finalize(&param);
+
+	MPI_Barrier(MPI_COMM_WORLD);
+
+	MPI_Finalize();
+
 	return 0;
 }
