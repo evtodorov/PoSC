@@ -125,7 +125,7 @@ int main(int argc, char *argv[]) {
 		gridparam.grid_col = coord[1];
 		configure_grid(&param, &gridparam);
 
-		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d Rank-Y: %d ; Rows: %d; Cols: %d", 
+		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rows: %d; Cols: %d", 
 				dims[0], dims[1],
 				param.act_res, rank, coord[0], coord[1], 
 				gridparam.store_row_end - gridparam.store_row_start, 
