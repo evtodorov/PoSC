@@ -1,0 +1,111 @@
+
+3 processes distributed in X-direction
+ 3 ; processes distributed in Y-direction
+
+
+
+
+
+
+
+
+
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 200 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 68; Cols: 68
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 300 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 101; Cols: 101
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 135; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 135; Cols: 134
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 134; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 134; Cols: 134
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 135; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 135; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 135; Cols: 134
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 135; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 400 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 134; Cols: 135
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 500 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 168; Cols: 168
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 600 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 201; Cols: 201
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 234; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 235; Cols: 234
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 235; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 235; Cols: 234
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 234; Cols: 234
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 235; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 235; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 235; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 700 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 234; Cols: 235
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 800 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 268; Cols: 268
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 900 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 301; Cols: 301
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 334; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 335; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 335; Cols: 334
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 335; Cols: 334
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 334; Cols: 334
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 335; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 335; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 335; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1000 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 334; Cols: 335
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 1 ; Rank-X: 0 Rank-Y: 1 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 2 ; Rank-X: 0 Rank-Y: 2 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1100 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 368; Cols: 368
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 7 ; Rank-X: 2 Rank-Y: 1 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 5 ; Rank-X: 1 Rank-Y: 2 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 8 ; Rank-X: 2 Rank-Y: 2 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 4 ; Rank-X: 1 Rank-Y: 1 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 6 ; Rank-X: 2 Rank-Y: 0 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 3 ; Rank-X: 1 Rank-Y: 0 ; Rows: 401; Cols: 401
+Num-X: 3 ; Num-Y: 3 ; Resolution: 1200 ; Rank: 0 ; Rank-X: 0 Rank-Y: 0 ; Rows: 401; Cols: 401
