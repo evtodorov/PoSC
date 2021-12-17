@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <mpi.h>
 #include "input.h"
 #include "heat.h"
 #include "timing.h"
+
+#include <mpi.h>
 
 double* time;
 
@@ -65,12 +66,12 @@ int main(int argc, char *argv[]) {
 
     if(size != dims[0] * dims[1])
     {
-        printf("The product of dimensions %d is not equal to number of requested processes %d\n", dims[0]*dims[1], size);
+        printf("\nThe product of dimensions %d is not equal to number of requested processes %d\n", dims[0]*dims[1], size);
         MPI_Abort(MPI_COMM_WORLD,1);
     }
 
 	if (rank == 0)
-		printf(" %d processes distributed in X-direction\n %d ; processes distributed in Y-direction\n", dims[0], dims[1]);
+		printf("\n%d processes distributed in X-direction\n %d ; processes distributed in Y-direction\n", dims[0], dims[1]);
 
 
 	// check result file
@@ -94,9 +95,6 @@ int main(int argc, char *argv[]) {
 	if(rank == 0)
 		print_params(&param);
 
-
-	print_params(&param);
-
 	time = (double *) calloc(sizeof(double), (int) (param.max_res - param.initial_res + param.res_step_size) / param.res_step_size);
 
 	int exp_number = 0;
@@ -106,8 +104,6 @@ int main(int argc, char *argv[]) {
 	MPI_Cart_coords(comm_2d, rank, 2, coord);
 	MPI_Cart_shift(comm_2d, 0, 1, &up, &down);
 	MPI_Cart_shift(comm_2d, 1, 1, &left, &right);
-	printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right);
-
 
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
 		np = param.act_res + 2;
@@ -116,28 +112,20 @@ int main(int argc, char *argv[]) {
 		
 		if (!initialize(&param)) {
 			fprintf(stderr, "Error in Jacobi initialization.\n\n");
-
 			usage(argv[0]);
 		}
 
 		// configure grid NB doesn't do any memory allocation; usage TBD
 		gridparam_t gridparam;
-		gridparam.grid_num_rows = dims[0]; // TODO: get correct number from config
-		gridparam.grid_num_cols = dims[1]; // TODO: get correct number from config
-		gridparam.grid_row = coord[0]; // TODO: get correct row from MPI
-		gridparam.grid_col = coord[1]; // TODO: get correct col from MPI
+		gridparam.grid_num_rows = dims[0];
+		gridparam.grid_num_cols = dims[1];
+		gridparam.grid_row = coord[0];
+		gridparam.grid_col = coord[1];
 		configure_grid(&param, &gridparam);
 
-		printf("\nRank: %u,\nCompute: %u<=row<%u, %u<=col<%u\nStore: %u<=row<%u, %u<=col<%u\n", 
-				rank,
-				gridparam.compute_row_start,
-				gridparam.compute_row_end,
-				gridparam.compute_col_start,
-				gridparam.compute_col_end,
-				gridparam.store_row_start,
-				gridparam.store_row_end,
-				gridparam.store_col_start,
-				gridparam.store_col_end);
+		printf("\nRank: %d ; Coord: %d %d ; Rows: %d; Cols: %d", rank, coord[0], coord[1], 
+				gridparam.store_row_end - gridparam.store_row_start, 
+				gridparam.store_col_end - gridparam.store_col_start);
 
 		for (i = 0; i < param.act_res + 2; i++) {
 			for (j = 0; j < param.act_res + 2; j++) {
@@ -156,14 +144,18 @@ int main(int argc, char *argv[]) {
 
 		time[exp_number] = wtime() - time[exp_number];
 
-		printf("\n\nResolution: %u\n", param.act_res);
-		printf("===================\n");
-		printf("Execution time: %f\n", time[exp_number]);
-		printf("Residual: %f\n\n", residual);
+		if (rank==0)
+		{
+			printf("\n\nResolution: %u\n", param.act_res);
+			printf("===================\n");
+			//printf("Execution time: %f\n", time[exp_number]);
+			//printf("Residual: %f\n\n", residual);
 
-		printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
-		printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
+			//printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
+			//printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
 
+		}
+		
 		exp_number++;
 	}
 
