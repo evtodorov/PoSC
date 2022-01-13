@@ -95,7 +95,7 @@ int initialize( algoparam_t *param, gridparam_t *gridparam )
 
 				if( dist <= param->heatsrcs[i].range )
 				{
-				(param->u)[(np_cols)*np_cols+(j-col_start)]+=
+				(param->u)[(np_rows-1)*np_cols+(j-col_start)]+=
 					(param->heatsrcs[i].range-dist) /
 					param->heatsrcs[i].range *
 					param->heatsrcs[i].temp;
