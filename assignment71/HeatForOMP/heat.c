@@ -145,23 +145,66 @@ int main(int argc, char *argv[]) {
 		residual = 999999999;
 		np = param.act_res + 2;
 
+		MPI_Status status;
+		double *firstcolumn, *secondcolumn, *lastcolumn, *secondtolastcolumn;
+		firstcolumn = (double*)malloc( sizeof(double)* nprows );
+		lastcolumn = (double*)malloc( sizeof(double)* nprows );
+		secondcolumn = (double*)malloc( sizeof(double)* nprows );
+		secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
 		for (iter = 0; iter < param.maxiter; iter++) {
 			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
+			if (left!=-1){
+				for (int i=0; i < nprows; i++){
+					secondcolumn[i] = param.u[i*npcols+1]; 
+				}
+				// send left, recv left
+				MPI_Sendrecv(&secondcolumn, nprows, MPI_DOUBLE, left, 10,
+							 &firstcolumn, nprows, MPI_DOUBLE, left, 10, 
+							 comm_2d, &status)
+				for (int i=0; i < nprows; i++){
+					param.u[i*npcols] = firstcolumn[i]; 
+				} 
+			}
+			if (right!=-1){
+				for (int i=0; i < nprows; i++){
+					secondtolastcolumn[i] = param.u[(i+1)*npcols-2];
+				}
+				// send right, recv right
+				MPI_Sendrecv(&secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
+							 &lastcolumn, nprows, MPI_DOUBLE, right, 20, 
+							 comm_2d, &status)
+				for (int i=0; i < nprows; i++){
+					param.u[(i+1)*npcols-1] = lastcolumn[i]; 
+				} 
+			}
+			if (up!=-1){
+				// send up, recv up
+				MPI_Sendrecv(&(param.u+npcols), npcols, MPI_DOUBLE, up, 30,
+							 &(param.u), npcols, MPI_DOUBLE, up, 30, 
+							 comm_2d, &status)
+			}
+			if (down!=-1){
+				// send down, recv down
+				MPI_Sendrecv(&(param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
+							 &(param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 40, 
+							 comm_2d, &status)
+			}
 		}
+		free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);
 
 		time[exp_number] = wtime() - time[exp_number];
 
-		// if (rank==0)
-		// {
-		// 	printf("\n\nResolution: %u\n", param.act_res);
-		// 	printf("===================\n");
-		// 	printf("Execution time: %f\n", time[exp_number]);
-		// 	printf("Residual: %f\n\n", residual);
+		if (rank==0)
+		{
+			printf("\n\nResolution: %u\n", param.act_res);
+			printf("===================\n");
+			printf("Execution time: %f\n", time[exp_number]);
+			printf("Residual: %f\n\n", residual);
 
-		// 	printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
-		// 	printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
+			printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
+			printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
 
-		// }
+		}
 		
 		exp_number++;
 	}
@@ -184,6 +227,7 @@ int main(int argc, char *argv[]) {
 		uvisfinal  = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
 		//TODO: gather result
 		write_image(resfile, uvisfinal, param.visres + 2, param.visres + 2);
+		free(uvisfinal);
 	}	
 
 	finalize(&param);
