@@ -166,11 +166,11 @@ int main(int argc, char *argv[]) {
 					MPI_Recv(lastcolumn, nprows, MPI_DOUBLE, right, 10,
 							comm_2d, &status);
 					MPI_Send(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
-							comm_2d, &status);
+							comm_2d);
 				}
 				else if (right==-1){
 					MPI_Send(secondcolumn, nprows, MPI_DOUBLE, left, 10,
-							comm_2d, &status);
+							comm_2d);
 					MPI_Recv(firstcolumn, nprows, MPI_DOUBLE, left, 20,
 							comm_2d, &status);
 				}
@@ -183,7 +183,7 @@ int main(int argc, char *argv[]) {
 								comm_2d, &status);
 				}
 				for (int i=0; i < nprows; i++){
-					param.u[i*npcols] = firstcolumn[i]
+					param.u[i*npcols] = firstcolumn[i];
 					param.u[(i+1)*npcols-1] = lastcolumn[i]; 
 				} 
 			}
@@ -195,11 +195,11 @@ int main(int argc, char *argv[]) {
 					MPI_Recv((param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 30, 
 							comm_2d, &status);
 					MPI_Send((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
-							comm_2d, &status);
+							comm_2d);
 				}
 				if (down!=-1){
 					MPI_Send((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
-							comm_2d, &status);
+							comm_2d);
 					MPI_Recv((param.u), npcols, MPI_DOUBLE, up, 40, 
 								comm_2d, &status);
 				}
