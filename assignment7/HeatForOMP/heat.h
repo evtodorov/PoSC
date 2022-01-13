@@ -60,7 +60,7 @@ gridparam_t;
 // function declarations
 
 // misc.c
-int initialize( algoparam_t *param );
+int initialize( algoparam_t *param , gridparam_t *gridparam);
 int finalize( algoparam_t *param );
 void write_image( FILE * f, double *u,
 		  unsigned sizex, unsigned sizey );
