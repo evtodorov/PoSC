@@ -28,24 +28,33 @@ int initialize( algoparam_t *param, gridparam_t *gridparam )
     double dist;
 
     // total number of points (including border)
-	const int nptot = param->act_res + 2;
+    const int np = param->act_res + 2;
 
-	// local number of points
-    const int nprows = gridparam->store_row_end - gridparam->store_row_start;
-	const int npcols = gridparam->store_col_end - gridparam->store_col_start;
-    const int vprows = gridparam->vis_row_end - gridparam->vis_row_start;
-	const int vpcols = gridparam->vis_col_end - gridparam->vis_col_start;
+	// Get info about local region
+	int col_start = gridparam->store_col_start;
+	int col_end = gridparam->store_col_end;
+	int row_start = gridparam->store_row_start;
+	int row_end = gridparam->store_row_end;
+
+	// total number of local rows
+	const int np_rows = row_end - row_start + 1;
+
+	// total number of local columns
+	const int np_cols = col_end - col_start + 1;
+
     //
     // allocate memory
     //
-    (param->u)     = (double*)malloc( sizeof(double)* nprows*npcols );
-    (param->uhelp) = (double*)malloc( sizeof(double)* nprows*npcols );
-    (param->uvis)  = (double*)calloc( sizeof(double), vprows*vpcols );
+    (param->u)     = (double*)malloc( sizeof(double)* np_rows * np_cols);
+    (param->uhelp) = (double*)malloc( sizeof(double)* np_rows * np_cols);
+    (param->uvis)  = (double*)calloc( sizeof(double),
+				      (param->visres+2) *
+				      (param->visres+2) );
 
-    for (i=0;i<nprows;i++){
-    	for (j=0;j<npcols;j++){
-    		param->u[i*npcols+j]=0;
-			param->uhelp[i*npcols+j]=0;
+    for (i=0;i<np_rows;i++){
+    	for (j=0;j<np_cols;j++){
+    		param->u[i*np_cols+j]=0.0;
+			param->uhelp[i*np_cols+j]=0.0;
     	}
     }
 
@@ -57,92 +66,85 @@ int initialize( algoparam_t *param, gridparam_t *gridparam )
 
     for( i=0; i<param->numsrcs; i++ )
     {
-	/* top row */
-	if (gridparam->grid_row==0){
-	for( j=0; j<nptot; j++ )
-	{
-	    dist = sqrt( pow((double)j/(double)(nptot-1) -
-			     param->heatsrcs[i].posx, 2)+
-			 pow(param->heatsrcs[i].posy, 2));
+		/* top row */
+		if (gridparam->grid_row == 0)
+		{
+			for( j=col_start; j<col_end; j++ )
+			{
+				dist = sqrt( pow((double)j/(double)(np-1) -
+						param->heatsrcs[i].posx, 2)+
+					pow(param->heatsrcs[i].posy, 2));
 
-	    if( dist <= param->heatsrcs[i].range )
-	    {
-			if( j >= gridparam->store_col_start &&
-			    j <  gridparam->store_col_end){
-				(param->u)[j-gridparam->store_col_start] +=
+				if( dist <= param->heatsrcs[i].range )
+				{
+				(param->u)[j-col_start] +=
 					(param->heatsrcs[i].range-dist) /
 					param->heatsrcs[i].range *
 					param->heatsrcs[i].temp;
+				}
 			}
-	    }
-	}
-	}
-	/* bottom row */
-	if (gridparam->grid_row==gridparam->grid_num_rows-1){
-	for( j=0; j<nptot; j++ )
-	{
-	    dist = sqrt( pow((double)j/(double)(nptot-1) -
-			     param->heatsrcs[i].posx, 2)+
-			 pow(1-param->heatsrcs[i].posy, 2));
+		}
+		/* bottom row */
+		if(gridparam->grid_row == gridparam->grid_num_rows - 1)
+		{
+			for( j=col_start; j<col_end; j++ )
+			{
+				dist = sqrt( pow((double)j/(double)(np-1) -
+						param->heatsrcs[i].posx, 2)+
+					pow(1-param->heatsrcs[i].posy, 2));
 
-	    if( dist <= param->heatsrcs[i].range )
-	    {
-			if( j >= gridparam->store_col_start &&
-			    j <  gridparam->store_col_end){
-				(param->u)[(gridparam->store_col_end - 2)*npcols+j-gridparam->store_col_start]+=
+				if( dist <= param->heatsrcs[i].range )
+				{
+				(param->u)[(np_rows-1)*np_cols+(j-col_start)]+=
 					(param->heatsrcs[i].range-dist) /
 					param->heatsrcs[i].range *
 					param->heatsrcs[i].temp;
+				}
 			}
+		}
 
-	    }
-	}
-	}
-	/* leftmost column */
-	if (gridparam->grid_col==0){
-	for( j=1; j<nptot-1; j++ )
-	{
-	    dist = sqrt( pow(param->heatsrcs[i].posx, 2)+
-			 pow((double)j/(double)(nptot-1) -
-			     param->heatsrcs[i].posy, 2));
+		/* leftmost column */
+		if(gridparam->grid_col == 0)
+		{
+			for( j=row_start; j<row_end; j++ ) // check for row_end because here it skips the last row
+			{
+				dist = sqrt( pow(param->heatsrcs[i].posx, 2)+
+					pow((double)j/(double)(np-1) -
+						param->heatsrcs[i].posy, 2));
 
-	    if( dist <= param->heatsrcs[i].range )
-	    {
-			if( j >= gridparam->store_row_start &&
-			    j <  gridparam->store_row_end){
-				(param->u)[ (j-gridparam->store_row_start)*npcols ]+=
+				if( dist <= param->heatsrcs[i].range )
+				{
+				(param->u)[ (j-row_start)*np_cols ]+=
 					(param->heatsrcs[i].range-dist) /
 					param->heatsrcs[i].range *
 					param->heatsrcs[i].temp;
+				}
 			}
+		}
+		
+		/* rightmost column */
+		if(gridparam->grid_col == gridparam->grid_num_cols - 1)
+		{
+			for( j=row_start; j<row_end; j++ ) // check for row_end because here it skips the last row
+			{
+				dist = sqrt( pow(1-param->heatsrcs[i].posx, 2)+
+					pow((double)j/(double)(np-1) -
+						param->heatsrcs[i].posy, 2));
 
-	    }
-	}
-	}
-	/* rightmost column */
-	if (gridparam->grid_col==gridparam->grid_num_cols-1){
-	for( j=1; j<nptot; j++ )
-	{
-	    dist = sqrt( pow(1-param->heatsrcs[i].posx, 2)+
-			 pow((double)j/(double)(nptot-1) -
-			     param->heatsrcs[i].posy, 2));
-
-	    if( dist <= param->heatsrcs[i].range )
-	    {
-			if( j >= gridparam->store_row_start &&
-			    j <  gridparam->store_row_end){
-				(param->u)[ (j-gridparam->store_row_start)*npcols+(npcols-1) ]+=
+				if( dist <= param->heatsrcs[i].range )
+				{
+				(param->u)[ (j-row_start)*np_cols+(np_cols-1) ]+=
 					(param->heatsrcs[i].range-dist) /
 					param->heatsrcs[i].range *
 					param->heatsrcs[i].temp;
+				}
 			}
-	    }
-	}
-	}
+		}
     }
 
     return 1;
 }
+
 
 /*
  * Configure the grid boundaries based
@@ -171,8 +173,8 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	(gridparam->compute_row_start) = (gridparam->store_row_start) + 1;
 	(gridparam->compute_col_start) = (gridparam->store_col_start) + 1;
 
-	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points);
-	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points);
+	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points - 1);
+	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points - 1);
 	(gridparam->vis_row_end) = min((row+1)*vis_row_stride+1, vis_points);
 	(gridparam->vis_col_end) = min((col+1)*vis_col_stride+1, vis_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
@@ -185,7 +187,7 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 void print_array(double *u, int sizex, int sizey){
 	for (int i=0; i < sizey; i++){
 		for (int j=0; j < sizex; j++){
-			printf("%d ", u[i*sizex + j]);
+			printf("%f ", u[i*sizex + j]);
 		}
 		printf("\n");
 	}

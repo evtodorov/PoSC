@@ -123,7 +123,7 @@ int main(int argc, char *argv[]) {
 		}
 
 		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d;", 
-				dims[0], dims[1], 
+				dims[1], dims[0], 
 				param.act_res, rank, coord[0], coord[1], 
 				gridparam.store_row_start, gridparam.store_row_end,
 				gridparam.store_row_end - gridparam.store_row_start,
@@ -152,6 +152,16 @@ int main(int argc, char *argv[]) {
 		secondcolumn = (double*)malloc( sizeof(double)* nprows );
 		secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
 		for (iter = 0; iter < param.maxiter; iter++) {
+			MPI_Barrier(comm_2d);
+			for (int r=0; r<size; r++){
+				if (rank==r){
+						printf("\n-------------\nRank:%u\n", rank);
+						print_array(param.u, npcols, nprows);
+						printf("\n");
+				}
+			MPI_Barrier(comm_2d);
+			}
+
 			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
 
 			// Communicate
@@ -167,12 +177,18 @@ int main(int argc, char *argv[]) {
 							comm_2d, &status);
 					MPI_Send(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
 							comm_2d);
+					for (int i=0; i < nprows; i++){
+						param.u[(i+1)*npcols-1] = lastcolumn[i]; 
+					} 
 				}
 				else if (right==-1){
 					MPI_Send(secondcolumn, nprows, MPI_DOUBLE, left, 10,
 							comm_2d);
 					MPI_Recv(firstcolumn, nprows, MPI_DOUBLE, left, 20,
 							comm_2d, &status);
+					for (int i=0; i < nprows; i++){
+						param.u[i*npcols] = firstcolumn[i];
+					} 
 				}
 				else {				
 					MPI_Sendrecv(secondcolumn, nprows, MPI_DOUBLE, left, 10,
@@ -181,11 +197,12 @@ int main(int argc, char *argv[]) {
 					MPI_Sendrecv(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
 								firstcolumn, nprows, MPI_DOUBLE, left, 20, 
 								comm_2d, &status);
+					for (int i=0; i < nprows; i++){
+						param.u[i*npcols] = firstcolumn[i];
+						param.u[(i+1)*npcols-1] = lastcolumn[i]; 
+					} 
 				}
-				for (int i=0; i < nprows; i++){
-					param.u[i*npcols] = firstcolumn[i];
-					param.u[(i+1)*npcols-1] = lastcolumn[i]; 
-				} 
+
 			}
 
 			if (dims[1]>1){
