@@ -245,13 +245,44 @@ int main(int argc, char *argv[]) {
 
 	coarsen(param.u, npcols, nprows, param.uvis, vpcols, vprows);
 
+	// collect
 	if (rank==0){
-		double *uvisfinal;
+		double *uvisfinal, *uvistemp;
 		uvisfinal  = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
-		//TODO: gather result
+		uvistemp = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
+		MPI_Status status;
+		for (int rx=0; rx < dims[0]; rx++){
+			for (int ry=0; ry < dims[1]; ry++){
+				gridparam.grid_row = rx;
+				gridparam.grid_col = ry;
+				configure_grid(&param, &gridparam);
+				int rvprows = gridparam.vis_row_end - gridparam.vis_row_start;
+				int rvpcols = gridparam.vis_col_end - gridparam.vis_col_start;
+				if (rx+ry!=0) {
+					// recv
+					MPI_Recv(uvistemp, rvprows*rvpcols, MPI_DOUBLE, rx*dims[0]+ry, 99, 
+							 comm_2d, &status);
+				}
+				else {
+					for (int i=0; i< rvprows*rvpcols; i++){
+						uvistemp[i] = param.uvis[i];
+					}
+				}
+				for (int i = gridparam.vis_row_start; i < gridparam.vis_row_end; i++){
+					for (int j=gridparam.vis_col_start; j < gridparam.vis_col_end; j++){
+						uvisfinal[i*(param.visres + 2) + j] = uvistemp[(i-gridparam.vis_row_start)*rvpcols+j-gridparam.vis_col_start];
+					}
+				}
+			}
+		}
 		write_image(resfile, uvisfinal, param.visres + 2, param.visres + 2);
-		free(uvisfinal);
-	}	
+		free(uvisfinal); free(uvistemp);
+	}
+	else {
+		//send
+		MPI_Send(param.uvis, vprows*vpcols, MPI_DOUBLE, 0, 99,
+				 comm_2d);
+	}
 
 	finalize(&param);
 
