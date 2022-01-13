@@ -120,7 +120,7 @@ int main(int argc, char *argv[]) {
 		configure_grid(&param, &gridparam);
 
 		
-		if (!initialize(&param)) {
+		if (!initialize(&param, &gridparam)) {
 			fprintf(stderr, "Error in Jacobi initialization.\n\n");
 			usage(argv[0]);
 		}
@@ -134,8 +134,8 @@ int main(int argc, char *argv[]) {
 				gridparam.store_col_end - gridparam.store_col_start);
 
 		// local number of points
-		nprows = gridparam->store_row_end - gridparam->store_row_start;
-		npcols = gridparam->store_col_end - gridparam->store_col_start;
+		nprows = gridparam.store_row_end - gridparam.store_row_start;
+		npcols = gridparam.store_col_end - gridparam.store_col_start;
 
 		for (i = 0; i < nprows; i++) {
 			for (j = 0; j <npcols; j++) {
