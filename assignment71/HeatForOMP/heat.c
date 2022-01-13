@@ -31,6 +31,7 @@ int main(int argc, char *argv[]) {
 	// set the visualization resolution
 	param.visres = 100;
 
+	int nprows, npcols;
 	int rank, size;
 	MPI_Status s;
 	MPI_Init(&argc, &argv);
@@ -109,14 +110,6 @@ int main(int argc, char *argv[]) {
 	//printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
 
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
-		np = param.act_res + 2;
-		int send_count = np * np;
-
-		
-		if (!initialize(&param)) {
-			fprintf(stderr, "Error in Jacobi initialization.\n\n");
-			usage(argv[0]);
-		}
 
 		// configure grid NB doesn't do any memory allocation; usage TBD
 		gridparam_t gridparam;
@@ -126,17 +119,27 @@ int main(int argc, char *argv[]) {
 		gridparam.grid_col = coord[1];
 		configure_grid(&param, &gridparam);
 
+		
+		if (!initialize(&param)) {
+			fprintf(stderr, "Error in Jacobi initialization.\n\n");
+			usage(argv[0]);
+		}
+
 		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d", 
 				dims[0], dims[1],
 				param.act_res, rank, coord[0], coord[1], 
 				gridparam.store_row_start, gridparam.store_row_end,
 				gridparam.store_row_end - gridparam.store_row_start,
-			        gridparam.store_col_start, gridparam.store_col_end,	       
+			    gridparam.store_col_start, gridparam.store_col_end,	       
 				gridparam.store_col_end - gridparam.store_col_start);
 
-		for (i = 0; i < param.act_res + 2; i++) {
-			for (j = 0; j < param.act_res + 2; j++) {
-				param.uhelp[i * (param.act_res + 2) + j] = param.u[i * (param.act_res + 2) + j];
+		// local number of points
+		nprows = gridparam->store_row_end - gridparam->store_row_start;
+		npcols = gridparam->store_col_end - gridparam->store_col_start;
+
+		for (i = 0; i < nprows; i++) {
+			for (j = 0; j <npcols; j++) {
+				param.uhelp[i * npcols + j] = param.u[i * npcols + j];
 			}
 		}
 
@@ -146,7 +149,7 @@ int main(int argc, char *argv[]) {
 		np = param.act_res + 2;
 
 		for (iter = 0; iter < param.maxiter; iter++) {
-			residual = relax_jacobi(&(param.u), &(param.uhelp), np, np);
+			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
 		}
 
 		time[exp_number] = wtime() - time[exp_number];
@@ -168,7 +171,7 @@ int main(int argc, char *argv[]) {
 
 	param.act_res = param.act_res - param.res_step_size;
 
-	coarsen(param.u, param.act_res + 2, param.act_res + 2, param.uvis, param.visres + 2, param.visres + 2);
+	coarsen(param.u, npcols, nprows, param.uvis, param.visres + 2, param.visres + 2);
 
 	write_image(resfile, param.uvis, param.visres + 2, param.visres + 2);
 
