@@ -258,6 +258,8 @@ int main(int argc, char *argv[]) {
 		free(unten);
 		free(links);
 		free(rechts);
+		free(oben_help);
+		free(unten_help);
 		free(links_help);
 		free(rechts_help);
 
