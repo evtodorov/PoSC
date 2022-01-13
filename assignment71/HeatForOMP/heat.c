@@ -122,8 +122,8 @@ int main(int argc, char *argv[]) {
 			usage(argv[0]);
 		}
 
-		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d", 
-				dims[0], dims[1],
+		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d;", 
+				dims[0], dims[1], 
 				param.act_res, rank, coord[0], coord[1], 
 				gridparam.store_row_start, gridparam.store_row_end,
 				gridparam.store_row_end - gridparam.store_row_start,
@@ -153,41 +153,64 @@ int main(int argc, char *argv[]) {
 		secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
 		for (iter = 0; iter < param.maxiter; iter++) {
 			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
-			if (left!=-1){
+
+			// Communicate
+			if (dims[0] > 1){
 				for (int i=0; i < nprows; i++){
 					secondcolumn[i] = param.u[i*npcols+1]; 
-				}
-				// send left, recv left
-				MPI_Sendrecv(secondcolumn, nprows, MPI_DOUBLE, left, 10,
-							 firstcolumn, nprows, MPI_DOUBLE, left, 10, 
-							 comm_2d, &status);
-				for (int i=0; i < nprows; i++){
-					param.u[i*npcols] = firstcolumn[i]; 
-				} 
-			}
-			if (right!=-1){
-				for (int i=0; i < nprows; i++){
 					secondtolastcolumn[i] = param.u[(i+1)*npcols-2];
 				}
-				// send right, recv right
-				MPI_Sendrecv(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
-							 lastcolumn, nprows, MPI_DOUBLE, right, 20, 
-							 comm_2d, &status);
+				// send left, recv right
+				// send right, recv left
+				if (left==-1){
+					MPI_Recv(lastcolumn, nprows, MPI_DOUBLE, right, 10,
+							comm_2d, &status);
+					MPI_Send(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
+							comm_2d, &status);
+				}
+				else if (right==-1){
+					MPI_Send(secondcolumn, nprows, MPI_DOUBLE, left, 10,
+							comm_2d, &status);
+					MPI_Recv(firstcolumn, nprows, MPI_DOUBLE, left, 20,
+							comm_2d, &status);
+				}
+				else {				
+					MPI_Sendrecv(secondcolumn, nprows, MPI_DOUBLE, left, 10,
+								lastcolumn, nprows, MPI_DOUBLE, right, 10, 
+								comm_2d, &status);
+					MPI_Sendrecv(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
+								firstcolumn, nprows, MPI_DOUBLE, left, 20, 
+								comm_2d, &status);
+				}
 				for (int i=0; i < nprows; i++){
+					param.u[i*npcols] = firstcolumn[i]
 					param.u[(i+1)*npcols-1] = lastcolumn[i]; 
 				} 
 			}
-			if (up!=-1){
-				// send up, recv up
-				MPI_Sendrecv((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
-							 (param.u), npcols, MPI_DOUBLE, up, 30, 
-							 comm_2d, &status)
-			}
-			if (down!=-1){
-				// send down, recv down
-				MPI_Sendrecv((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
-							 (param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 40, 
-							 comm_2d, &status)
+
+			if (dims[1]>1){
+				// send up, recv down
+				// send down, recv up
+				if (up==-1){
+					MPI_Recv((param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 30, 
+							comm_2d, &status);
+					MPI_Send((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
+							comm_2d, &status);
+				}
+				if (down!=-1){
+					MPI_Send((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
+							comm_2d, &status);
+					MPI_Recv((param.u), npcols, MPI_DOUBLE, up, 40, 
+								comm_2d, &status);
+				}
+				else {
+					MPI_Sendrecv((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
+								(param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 30, 
+								comm_2d, &status);
+					MPI_Sendrecv((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
+								(param.u), npcols, MPI_DOUBLE, up, 40, 
+								comm_2d, &status);
+				}
 			}
 		}
 		free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);

@@ -173,8 +173,8 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 
 	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points);
 	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points);
-	(gridparam->store_row_end) = min((row+1)*vis_row_stride+1, vis_points);
-	(gridparam->store_col_end) = min((col+1)*vis_col_stride+1, vis_points);
+	(gridparam->vis_row_end) = min((row+1)*vis_row_stride+1, vis_points);
+	(gridparam->vis_col_end) = min((col+1)*vis_col_stride+1, vis_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
 	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
 
