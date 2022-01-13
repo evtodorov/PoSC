@@ -260,7 +260,7 @@ int main(int argc, char *argv[]) {
 				int rvpcols = gridparam.vis_col_end - gridparam.vis_col_start;
 				if (rx+ry!=0) {
 					// recv
-					MPI_Recv(uvistemp, rvprows*rvpcols, MPI_DOUBLE, rx*dims[0]+ry, 99, 
+					MPI_Recv(uvistemp, rvprows*rvpcols, MPI_DOUBLE, rx*dims[1]+ry, 99, 
 							 comm_2d, &status);
 				}
 				else {
