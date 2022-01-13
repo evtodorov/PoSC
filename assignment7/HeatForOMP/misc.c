@@ -129,7 +129,7 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
     // points excluding the border
 	int compute_points = algoparam->act_res;
 	// total number of points (including border)
-	int store_points = compute_points + 2;
+	int store_points = compute_points + 1;
 
 	int num_rows = gridparam->grid_num_rows;
 	int num_cols = gridparam->grid_num_cols;
@@ -147,8 +147,6 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
 	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
-
-
 }
 
 /*

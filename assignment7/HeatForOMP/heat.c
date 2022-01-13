@@ -56,8 +56,8 @@ int main(int argc, char *argv[]) {
 	// Dimensions for virtual topology
 	dims[0] = atoi(argv[2]); // X-dimension
 	dims[1] = atoi(argv[3]); // Y-dimension
-	periods[0] = 1;
-	periods[1] = 1;
+	periods[0] = 0; //false
+	periods[1] = 0; //false
 	if(dims[0] == 1)
 		periods[0] = 0;
 	if(dims[1] == 1)
@@ -106,17 +106,11 @@ int main(int argc, char *argv[]) {
 	MPI_Cart_coords(comm_2d, rank, 2, coord);
 	MPI_Cart_shift(comm_2d, 0, 1, &up, &down);
 	MPI_Cart_shift(comm_2d, 1, 1, &left, &right);
-	//printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
+	printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
 
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
 		np = param.act_res + 2;
 		int send_count = np * np;
-
-		
-		if (!initialize(&param)) {
-			fprintf(stderr, "Error in Jacobi initialization.\n\n");
-			usage(argv[0]);
-		}
 
 		// configure grid NB doesn't do any memory allocation; usage TBD
 		gridparam_t gridparam;
@@ -126,11 +120,16 @@ int main(int argc, char *argv[]) {
 		gridparam.grid_col = coord[1];
 		configure_grid(&param, &gridparam);
 
-		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rows: %d; Cols: %d", 
+		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Row_start: %d; Row_end: %d; Col_start: %d; Col_end: %d\n", 
 				dims[0], dims[1],
 				param.act_res, rank, coord[0], coord[1], 
-				gridparam.store_row_end - gridparam.store_row_start, 
-				gridparam.store_col_end - gridparam.store_col_start);
+				gridparam.store_row_start, gridparam.store_row_end,
+				gridparam.store_col_start, gridparam.store_col_end);
+
+		if (!initialize(&param)) {
+			fprintf(stderr, "Error in Jacobi initialization.\n\n");
+			usage(argv[0]);
+		}
 
 		for (i = 0; i < param.act_res + 2; i++) {
 			for (j = 0; j < param.act_res + 2; j++) {
@@ -149,17 +148,13 @@ int main(int argc, char *argv[]) {
 
 		time[exp_number] = wtime() - time[exp_number];
 
-		// if (rank==0)
-		// {
-		// 	printf("\n\nResolution: %u\n", param.act_res);
-		// 	printf("===================\n");
-		// 	printf("Execution time: %f\n", time[exp_number]);
-		// 	printf("Residual: %f\n\n", residual);
+		printf("\n\nResolution: %u\n", param.act_res);
+		printf("===================\n");
+		printf("Execution time: %f\n", time[exp_number]);
+		printf("Residual: %f\n\n", residual);
 
-		// 	printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
-		// 	printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
-
-		// }
+		printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
+		printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
 		
 		exp_number++;
 	}
