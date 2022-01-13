@@ -158,9 +158,9 @@ int main(int argc, char *argv[]) {
 					secondcolumn[i] = param.u[i*npcols+1]; 
 				}
 				// send left, recv left
-				MPI_Sendrecv(&secondcolumn, nprows, MPI_DOUBLE, left, 10,
-							 &firstcolumn, nprows, MPI_DOUBLE, left, 10, 
-							 comm_2d, &status)
+				MPI_Sendrecv(secondcolumn, nprows, MPI_DOUBLE, left, 10,
+							 firstcolumn, nprows, MPI_DOUBLE, left, 10, 
+							 comm_2d, &status);
 				for (int i=0; i < nprows; i++){
 					param.u[i*npcols] = firstcolumn[i]; 
 				} 
@@ -170,23 +170,23 @@ int main(int argc, char *argv[]) {
 					secondtolastcolumn[i] = param.u[(i+1)*npcols-2];
 				}
 				// send right, recv right
-				MPI_Sendrecv(&secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
-							 &lastcolumn, nprows, MPI_DOUBLE, right, 20, 
-							 comm_2d, &status)
+				MPI_Sendrecv(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
+							 lastcolumn, nprows, MPI_DOUBLE, right, 20, 
+							 comm_2d, &status);
 				for (int i=0; i < nprows; i++){
 					param.u[(i+1)*npcols-1] = lastcolumn[i]; 
 				} 
 			}
 			if (up!=-1){
 				// send up, recv up
-				MPI_Sendrecv(&(param.u+npcols), npcols, MPI_DOUBLE, up, 30,
-							 &(param.u), npcols, MPI_DOUBLE, up, 30, 
+				MPI_Sendrecv((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
+							 (param.u), npcols, MPI_DOUBLE, up, 30, 
 							 comm_2d, &status)
 			}
 			if (down!=-1){
 				// send down, recv down
-				MPI_Sendrecv(&(param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
-							 &(param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 40, 
+				MPI_Sendrecv((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
+							 (param.u+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 40, 
 							 comm_2d, &status)
 			}
 		}
