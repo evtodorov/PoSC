@@ -57,12 +57,9 @@ int main(int argc, char *argv[]) {
 	// Dimensions for virtual topology
 	dims[0] = atoi(argv[2]); // X-dimension
 	dims[1] = atoi(argv[3]); // Y-dimension
-	periods[0] = 1;
-	periods[1] = 1;
-	if(dims[0] == 1)
-		periods[0] = 0;
-	if(dims[1] == 1)
-		periods[1] = 0;
+	periods[0] = 0;
+	periods[1] = 0;
+
 	reorder = 0;
 
     if(size != dims[0] * dims[1])
@@ -107,7 +104,7 @@ int main(int argc, char *argv[]) {
 	MPI_Cart_coords(comm_2d, rank, 2, coord);
 	MPI_Cart_shift(comm_2d, 0, 1, &up, &down);
 	MPI_Cart_shift(comm_2d, 1, 1, &left, &right);
-	//printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
+	printf("rank= %d coords= %d %d neighbours(up,down,left,right)= %d %d %d %d\n", rank, coord[0], coord[1], up, down, left, right); 
 
 	for (param.act_res = param.initial_res; param.act_res <= param.max_res; param.act_res = param.act_res + param.res_step_size) {
 
@@ -171,9 +168,23 @@ int main(int argc, char *argv[]) {
 
 	param.act_res = param.act_res - param.res_step_size;
 
-	coarsen(param.u, npcols, nprows, param.uvis, param.visres + 2, param.visres + 2);
+	gridparam_t gridparam;
+	gridparam.grid_num_rows = dims[0];
+	gridparam.grid_num_cols = dims[1];
+	gridparam.grid_row = coord[0];
+	gridparam.grid_col = coord[1];
+	configure_grid(&param, &gridparam);
+	int vprows = gridparam.vis_row_end - gridparam.vis_row_start;
+	int vpcols = gridparam.vis_col_end - gridparam.vis_col_start;
 
-	write_image(resfile, param.uvis, param.visres + 2, param.visres + 2);
+	coarsen(param.u, npcols, nprows, param.uvis, vpcols, vprows);
+
+	if (rank==0){
+		double *uvisfinal;
+		uvisfinal  = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
+		//TODO: gather result
+		write_image(resfile, uvisfinal, param.visres + 2, param.visres + 2);
+	}	
 
 	finalize(&param);
 

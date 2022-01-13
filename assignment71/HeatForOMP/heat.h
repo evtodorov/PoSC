@@ -53,7 +53,11 @@ typedef struct
     int compute_row_end;   // end row for computation in this cell
     int store_col_end;     // end column for storage in this cell
     int compute_col_end;   // end column for computation in this cell
-    
+    int vis_row_start;     // start row for visualization in this cell
+    int vis_col_start;     // start column for visualization in this cell
+    int vis_row_end;       // end row for visualization in this cell
+    int vis_col_end;       // end column for visualization in this cell
+
 }
 gridparam_t;
 

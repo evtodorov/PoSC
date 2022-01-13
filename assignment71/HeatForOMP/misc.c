@@ -33,16 +33,14 @@ int initialize( algoparam_t *param, gridparam_t *gridparam )
 	// local number of points
     const int nprows = gridparam->store_row_end - gridparam->store_row_start;
 	const int npcols = gridparam->store_col_end - gridparam->store_col_start;
-
+    const int vprows = gridparam->vis_row_end - gridparam->vis_row_start;
+	const int vpcols = gridparam->vis_col_end - gridparam->vis_col_start;
     //
     // allocate memory
     //
     (param->u)     = (double*)malloc( sizeof(double)* nprows*npcols );
     (param->uhelp) = (double*)malloc( sizeof(double)* nprows*npcols );
-	// TODO: fix when doing coarsening
-    (param->uvis)  = (double*)calloc( sizeof(double),
-				      (param->visres+2) *
-				      (param->visres+2) );
+    (param->uvis)  = (double*)calloc( sizeof(double), vprows*vpcols );
 
     for (i=0;i<nprows;i++){
     	for (j=0;j<npcols;j++){
@@ -154,6 +152,8 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	int compute_points = algoparam->act_res;
 	// total number of points (including border)
 	int store_points = compute_points + 2;
+	// total visualisation points
+	int vis_points = algoparam->visres + 2;
 
 	int num_rows = gridparam->grid_num_rows;
 	int num_cols = gridparam->grid_num_cols;
@@ -161,16 +161,24 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	int col = gridparam->grid_col;
 	int row_stride = (compute_points + num_rows - 1)/num_rows;
 	int col_stride = (compute_points + num_cols - 1)/num_cols;
+	int vis_row_stride = (vis_points + num_rows - 1)/num_rows;
+	int vis_col_stride = (vis_points + num_cols - 1)/num_cols;
 
 	(gridparam->store_row_start) = row * row_stride;
 	(gridparam->store_col_start) = col * col_stride;
+	(gridparam->vis_row_start) = row * vis_row_stride;
+	(gridparam->vis_col_start) = col * vis_col_stride;
 	(gridparam->compute_row_start) = (gridparam->store_row_start) + 1;
 	(gridparam->compute_col_start) = (gridparam->store_col_start) + 1;
 
 	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points);
 	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points);
+	(gridparam->store_row_end) = min((row+1)*vis_row_stride+1, vis_points);
+	(gridparam->store_col_end) = min((col+1)*vis_col_stride+1, vis_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
 	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
+
+
 
 }
 
