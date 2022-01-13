@@ -197,7 +197,7 @@ int main(int argc, char *argv[]) {
 					MPI_Send((param.u+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
 							comm_2d);
 				}
-				if (down!=-1){
+				else if (down==-1){
 					MPI_Send((param.u+npcols), npcols, MPI_DOUBLE, up, 30,
 							comm_2d);
 					MPI_Recv((param.u), npcols, MPI_DOUBLE, up, 40, 

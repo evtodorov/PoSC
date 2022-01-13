@@ -182,6 +182,14 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 
 }
 
+void print_array(double *u, int sizex, int sizey){
+	for (int i=0; i < sizey; i++){
+		for (int j=0; j < sizex; j++){
+			printf("%d ", u[i*sizex + j]);
+		}
+		printf("\n");
+	}
+}
 /*
  * free used memory
  */
