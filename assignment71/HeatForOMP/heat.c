@@ -131,8 +131,8 @@ int main(int argc, char *argv[]) {
 				gridparam.store_col_end - gridparam.store_col_start);
 
 		// local number of points
-		nprows = gridparam.store_row_end - gridparam.store_row_start;
-		npcols = gridparam.store_col_end - gridparam.store_col_start;
+		nprows = gridparam.store_row_end - gridparam.store_row_start + 1;
+		npcols = gridparam.store_col_end - gridparam.store_col_start + 1;
 
 		for (i = 0; i < nprows; i++) {
 			for (j = 0; j <npcols; j++) {
