@@ -72,6 +72,7 @@ int coarsen(double *uold, unsigned oldx, unsigned oldy ,
 	    double *unew, unsigned newx, unsigned newy );
 
 void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam);
+void print_array(double *u, int sizex, int sizey);
 
 // Gauss-Seidel: relax_gauss.c
 double residual_gauss( double *u, double *utmp,
