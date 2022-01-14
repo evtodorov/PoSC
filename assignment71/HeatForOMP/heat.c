@@ -262,7 +262,7 @@ int main(int argc, char *argv[]) {
 	int vpcols = gridparam.vis_col_end - gridparam.vis_col_start;
 
 	coarsen(param.u, npcols, nprows, param.uvis, vpcols, vprows);
-
+	/*
 	// collect
 	if (rank==0){
 		double *uvisfinal, *uvistemp;
@@ -301,6 +301,7 @@ int main(int argc, char *argv[]) {
 		MPI_Send(param.uvis, vprows*vpcols, MPI_DOUBLE, 0, 99,
 				 comm_2d);
 	}
+	*/
 
 	finalize(&param);
 
