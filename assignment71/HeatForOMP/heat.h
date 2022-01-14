@@ -83,8 +83,8 @@ void relax_gauss( double *u,
 // Jacobi: relax_jacobi.c
 double residual_jacobi( double *u,
 			unsigned sizex, unsigned sizey );
-double relax_jacobi( double **u, double **utmp,
-		   unsigned sizex, unsigned sizey ); 
+double relax_jacobi( double **u1, double **utmp1,
+         unsigned sizex, unsigned sizey, MPI_Status *status, MPI_Request *request, MPI_Comm* comm_2d)
 
 
 #endif // JACOBI_H_INCLUDED

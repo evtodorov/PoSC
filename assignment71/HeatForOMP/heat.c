@@ -230,10 +230,10 @@ int main(int argc, char *argv[]) {
 								(param.u), npcols, MPI_DOUBLE, up, 40, 
 								comm_2d, &status);
 				}
-			}
+			}		*/
+
 		}
-		free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);
-		*/
+		//free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);
 		time[exp_number] = wtime() - time[exp_number];
 		MPI_Reduce(&residual, &tot_residual, 1, MPI_DOUBLE, MPI_SUM, 0, comm_2d);
 		if (rank==0)
