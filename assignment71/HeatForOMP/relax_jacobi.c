@@ -81,8 +81,8 @@ double relax_jacobi( double **u1, double **utmp1,
 						*comm_2d, &request[4]); // recv left
   }
   else {
-    requests[0] = MPI_REQUEST_NULL;
-    requests[4] = MPI_REQUEST_NULL;
+    request[0] = MPI_REQUEST_NULL;
+    request[4] = MPI_REQUEST_NULL;
   }
   if (right!=-1){ 
     	MPI_Isend(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
@@ -90,8 +90,8 @@ double relax_jacobi( double **u1, double **utmp1,
       MPI_Irecv(lastcolumn, nprows, MPI_DOUBLE, right, 10,
 							*comm_2d, &request[5]); // recv right
   }  else {
-    requests[1] = MPI_REQUEST_NULL;
-    requests[5] = MPI_REQUEST_NULL;
+    request[1] = MPI_REQUEST_NULL;
+    request[5] = MPI_REQUEST_NULL;
   }
   if (up!=-1){
       MPI_Isend((utmp+npcols), npcols, MPI_DOUBLE, up, 30,
@@ -99,8 +99,8 @@ double relax_jacobi( double **u1, double **utmp1,
       MPI_Irecv(utmp, npcols, MPI_DOUBLE, up, 40, 
 								*comm_2d, &request[6]); // recv up
   }  else {
-    requests[2] = MPI_REQUEST_NULL;
-    requests[6] = MPI_REQUEST_NULL;
+    request[2] = MPI_REQUEST_NULL;
+    request[6] = MPI_REQUEST_NULL;
   }          
   if (down!=-1){
 	    MPI_Isend((utmp+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
@@ -108,8 +108,8 @@ double relax_jacobi( double **u1, double **utmp1,
       MPI_Irecv((utmp+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 30, 
 							*comm_2d, &request[7]);
   }  else {
-    requests[3] = MPI_REQUEST_NULL;
-    requests[7] = MPI_REQUEST_NULL;
+    request[3] = MPI_REQUEST_NULL;
+    request[7] = MPI_REQUEST_NULL;
   }
     
   // compute the rest
