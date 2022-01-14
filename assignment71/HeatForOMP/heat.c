@@ -180,7 +180,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	param.act_res = param.act_res - param.res_step_size;
-	/*
+	
 	gridparam_t gridparam;
 	gridparam.grid_num_rows = dims[0];
 	gridparam.grid_num_cols = dims[1];
@@ -230,7 +230,7 @@ int main(int argc, char *argv[]) {
 		MPI_Send(param.uvis, vprows*vpcols, MPI_DOUBLE, 0, 99,
 				 comm_2d);
 	}
-	*/
+	
 	finalize(&param);
 
 	MPI_Barrier(MPI_COMM_WORLD);
