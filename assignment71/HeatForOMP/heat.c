@@ -145,12 +145,14 @@ int main(int argc, char *argv[]) {
 		residual = 999999999;
 		np = param.act_res + 2;
 
-		MPI_Status status;
-		double *firstcolumn, *secondcolumn, *lastcolumn, *secondtolastcolumn;
+		MPI_Status status[8];
+		MPI_Request request[8];
+		/*double *firstcolumn, *secondcolumn, *lastcolumn, *secondtolastcolumn;
 		firstcolumn = (double*)malloc( sizeof(double)* nprows );
 		lastcolumn = (double*)malloc( sizeof(double)* nprows );
 		secondcolumn = (double*)malloc( sizeof(double)* nprows );
 		secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
+		*/
 		double tot_residual = 0;
 		for (iter = 0; iter < param.maxiter; iter++) {
 			/*MPI_Barrier(comm_2d);
@@ -163,10 +165,9 @@ int main(int argc, char *argv[]) {
 			MPI_Barrier(comm_2d);
 			}
 			*/
-			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
-
-			// Communicate
-			if (dims[0] > 1){
+			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows, status, request, &comm_2d);
+			// Blocking communication
+			/*if (dims[0] > 1){
 				for (int i=0; i < nprows; i++){
 					secondcolumn[i] = param.u[i*npcols+1]; 
 					secondtolastcolumn[i] = param.u[(i+1)*npcols-2];
@@ -232,7 +233,7 @@ int main(int argc, char *argv[]) {
 			}
 		}
 		free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);
-
+		*/
 		time[exp_number] = wtime() - time[exp_number];
 		MPI_Reduce(&residual, &tot_residual, 1, MPI_DOUBLE, MPI_SUM, 0, comm_2d);
 		if (rank==0)
