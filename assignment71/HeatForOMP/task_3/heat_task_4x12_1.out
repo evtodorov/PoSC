@@ -1,0 +1,447 @@
+mpiexec -genv I_MPI_DEBUG=4 -n 48
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2823371  i01r01c02s08  {0,48}
+[0] MPI startup(): 1       2823372  i01r01c02s08  {1,49}
+[0] MPI startup(): 2       2823373  i01r01c02s08  {2,50}
+[0] MPI startup(): 3       2823374  i01r01c02s08  {3,51}
+[0] MPI startup(): 4       2823375  i01r01c02s08  {4,52}
+[0] MPI startup(): 5       2823376  i01r01c02s08  {5,53}
+[0] MPI startup(): 6       2823377  i01r01c02s08  {6,54}
+[0] MPI startup(): 7       2823378  i01r01c02s08  {7,55}
+[0] MPI startup(): 8       2823379  i01r01c02s08  {8,56}
+[0] MPI startup(): 9       2823380  i01r01c02s08  {9,57}
+[0] MPI startup(): 10      2823381  i01r01c02s08  {10,58}
+[0] MPI startup(): 11      2823382  i01r01c02s08  {11,59}
+[0] MPI startup(): 12      2823383  i01r01c02s08  {12,60}
+[0] MPI startup(): 13      2823384  i01r01c02s08  {13,61}
+[0] MPI startup(): 14      2823385  i01r01c02s08  {14,62}
+[0] MPI startup(): 15      2823386  i01r01c02s08  {15,63}
+[0] MPI startup(): 16      2823387  i01r01c02s08  {16,64}
+[0] MPI startup(): 17      2823388  i01r01c02s08  {17,65}
+[0] MPI startup(): 18      2823389  i01r01c02s08  {18,66}
+[0] MPI startup(): 19      2823390  i01r01c02s08  {19,67}
+[0] MPI startup(): 20      2823391  i01r01c02s08  {20,68}
+[0] MPI startup(): 21      2823392  i01r01c02s08  {21,69}
+[0] MPI startup(): 22      2823393  i01r01c02s08  {22,70}
+[0] MPI startup(): 23      2823394  i01r01c02s08  {23,71}
+[0] MPI startup(): 24      2823395  i01r01c02s08  {24,72}
+[0] MPI startup(): 25      2823396  i01r01c02s08  {25,73}
+[0] MPI startup(): 26      2823397  i01r01c02s08  {26,74}
+[0] MPI startup(): 27      2823398  i01r01c02s08  {27,75}
+[0] MPI startup(): 28      2823399  i01r01c02s08  {28,76}
+[0] MPI startup(): 29      2823400  i01r01c02s08  {29,77}
+[0] MPI startup(): 30      2823401  i01r01c02s08  {30,78}
+[0] MPI startup(): 31      2823402  i01r01c02s08  {31,79}
+[0] MPI startup(): 32      2823403  i01r01c02s08  {32,80}
+[0] MPI startup(): 33      2823404  i01r01c02s08  {33,81}
+[0] MPI startup(): 34      2823405  i01r01c02s08  {34,82}
+[0] MPI startup(): 35      2823406  i01r01c02s08  {35,83}
+[0] MPI startup(): 36      2823407  i01r01c02s08  {36,84}
+[0] MPI startup(): 37      2823408  i01r01c02s08  {37,85}
+[0] MPI startup(): 38      2823409  i01r01c02s08  {38,86}
+[0] MPI startup(): 39      2823410  i01r01c02s08  {39,87}
+[0] MPI startup(): 40      2823411  i01r01c02s08  {40,88}
+[0] MPI startup(): 41      2823412  i01r01c02s08  {41,89}
+[0] MPI startup(): 42      2823413  i01r01c02s08  {42,90}
+[0] MPI startup(): 43      2823414  i01r01c02s08  {43,91}
+[0] MPI startup(): 44      2823415  i01r01c02s08  {44,92}
+[0] MPI startup(): 45      2823416  i01r01c02s08  {45,93}
+[0] MPI startup(): 46      2823417  i01r01c02s08  {46,94}
+[0] MPI startup(): 47      2823418  i01r01c02s08  {47,95}
+
+4 processes distributed in X-direction
+ 12 ; processes distributed in Y-direction
+Resolutions       : (20, 120, ... 20)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 6 coords= 0 6 neighbours(up,down,left,right)= -1 18 5 7
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 6 ; Rank-X: 0 ; Rank-Y: 6 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 12; Colend: 15; Cols: 3;rank= 32 coords= 2 8 neighbours(up,down,left,right)= 20 44 31 33
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 32 ; Rank-X: 2 ; Rank-Y: 8 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 16; Colend: 19; Cols: 3;rank= 33 coords= 2 9 neighbours(up,down,left,right)= 21 45 32 34
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 33 ; Rank-X: 2 ; Rank-Y: 9 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 18; Colend: 21; Cols: 3;rank= 35 coords= 2 11 neighbours(up,down,left,right)= 23 47 34 -1
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 35 ; Rank-X: 2 ; Rank-Y: 11 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 22; Colend: 21; Cols: -1;rank= 40 coords= 3 4 neighbours(up,down,left,right)= 28 -1 39 41
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 40 ; Rank-X: 3 ; Rank-Y: 4 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 8; Colend: 11; Cols: 3;rank= 45 coords= 3 9 neighbours(up,down,left,right)= 33 -1 44 46
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 45 ; Rank-X: 3 ; Rank-Y: 9 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 18; Colend: 21; Cols: 3;rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 12 -1 1
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 0; Colend: 3; Cols: 3;rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 13 0 2
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 14 1 3
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 4; Colend: 7; Cols: 3;rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 15 2 4
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 3 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 6; Colend: 9; Cols: 3;rank= 4 coords= 0 4 neighbours(up,down,left,right)= -1 16 3 5
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 4 ; Rank-X: 0 ; Rank-Y: 4 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 8; Colend: 11; Cols: 3;rank= 5 coords= 0 5 neighbours(up,down,left,right)= -1 17 4 6
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 5 ; Rank-X: 0 ; Rank-Y: 5 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 10; Colend: 13; Cols: 3;rank= 7 coords= 0 7 neighbours(up,down,left,right)= -1 19 6 8
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 7 ; Rank-X: 0 ; Rank-Y: 7 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 14; Colend: 17; Cols: 3;rank= 8 coords= 0 8 neighbours(up,down,left,right)= -1 20 7 9
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 8 ; Rank-X: 0 ; Rank-Y: 8 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 16; Colend: 19; Cols: 3;rank= 9 coords= 0 9 neighbours(up,down,left,right)= -1 21 8 10
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 9 ; Rank-X: 0 ; Rank-Y: 9 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 18; Colend: 21; Cols: 3;rank= 10 coords= 0 10 neighbours(up,down,left,right)= -1 22 9 11
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 10 ; Rank-X: 0 ; Rank-Y: 10 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 20; Colend: 21; Cols: 1;rank= 12 coords= 1 0 neighbours(up,down,left,right)= 0 24 -1 13
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 12 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 0; Colend: 3; Cols: 3;rank= 13 coords= 1 1 neighbours(up,down,left,right)= 1 25 12 14
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 13 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 2; Colend: 5; Cols: 3;rank= 15 coords= 1 3 neighbours(up,down,left,right)= 3 27 14 16
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 15 ; Rank-X: 1 ; Rank-Y: 3 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 6; Colend: 9; Cols: 3;rank= 16 coords= 1 4 neighbours(up,down,left,right)= 4 28 15 17
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 16 ; Rank-X: 1 ; Rank-Y: 4 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 8; Colend: 11; Cols: 3;rank= 17 coords= 1 5 neighbours(up,down,left,right)= 5 29 16 18
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 17 ; Rank-X: 1 ; Rank-Y: 5 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 10; Colend: 13; Cols: 3;rank= 19 coords= 1 7 neighbours(up,down,left,right)= 7 31 18 20
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 19 ; Rank-X: 1 ; Rank-Y: 7 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 14; Colend: 17; Cols: 3;rank= 20 coords= 1 8 neighbours(up,down,left,right)= 8 32 19 21
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 20 ; Rank-X: 1 ; Rank-Y: 8 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 16; Colend: 19; Cols: 3;rank= 22 coords= 1 10 neighbours(up,down,left,right)= 10 34 21 23
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 22 ; Rank-X: 1 ; Rank-Y: 10 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 20; Colend: 21; Cols: 1;rank= 23 coords= 1 11 neighbours(up,down,left,right)= 11 35 22 -1
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 23 ; Rank-X: 1 ; Rank-Y: 11 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 22; Colend: 21; Cols: -1;rank= 24 coords= 2 0 neighbours(up,down,left,right)= 12 36 -1 25
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 24 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 0; Colend: 3; Cols: 3;rank= 25 coords= 2 1 neighbours(up,down,left,right)= 13 37 24 26
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 25 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 2; Colend: 5; Cols: 3;rank= 26 coords= 2 2 neighbours(up,down,left,right)= 14 38 25 27
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 26 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 4; Colend: 7; Cols: 3;rank= 27 coords= 2 3 neighbours(up,down,left,right)= 15 39 26 28
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 27 ; Rank-X: 2 ; Rank-Y: 3 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 6; Colend: 9; Cols: 3;rank= 28 coords= 2 4 neighbours(up,down,left,right)= 16 40 27 29
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 28 ; Rank-X: 2 ; Rank-Y: 4 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 8; Colend: 11; Cols: 3;rank= 29 coords= 2 5 neighbours(up,down,left,right)= 17 41 28 30
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 29 ; Rank-X: 2 ; Rank-Y: 5 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 10; Colend: 13; Cols: 3;rank= 30 coords= 2 6 neighbours(up,down,left,right)= 18 42 29 31
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 30 ; Rank-X: 2 ; Rank-Y: 6 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 12; Colend: 15; Cols: 3;rank= 31 coords= 2 7 neighbours(up,down,left,right)= 19 43 30 32
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 31 ; Rank-X: 2 ; Rank-Y: 7 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 14; Colend: 17; Cols: 3;rank= 34 coords= 2 10 neighbours(up,down,left,right)= 22 46 33 35
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 10 ; Rowstart: 10; Rowend: 16; Rows: 6; Colstart: 20; Colend: 21; Cols: 1;rank= 36 coords= 3 0 neighbours(up,down,left,right)= 24 -1 -1 37
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 36 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 0; Colend: 3; Cols: 3;rank= 37 coords= 3 1 neighbours(up,down,left,right)= 25 -1 36 38
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 37 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 2; Colend: 5; Cols: 3;rank= 38 coords= 3 2 neighbours(up,down,left,right)= 26 -1 37 39
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 38 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 4; Colend: 7; Cols: 3;rank= 39 coords= 3 3 neighbours(up,down,left,right)= 27 -1 38 40
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 39 ; Rank-X: 3 ; Rank-Y: 3 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 6; Colend: 9; Cols: 3;rank= 42 coords= 3 6 neighbours(up,down,left,right)= 30 -1 41 43
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 42 ; Rank-X: 3 ; Rank-Y: 6 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 12; Colend: 15; Cols: 3;rank= 43 coords= 3 7 neighbours(up,down,left,right)= 31 -1 42 44
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 43 ; Rank-X: 3 ; Rank-Y: 7 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 14; Colend: 17; Cols: 3;rank= 44 coords= 3 8 neighbours(up,down,left,right)= 32 -1 43 45
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 44 ; Rank-X: 3 ; Rank-Y: 8 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 16; Colend: 19; Cols: 3;rank= 46 coords= 3 10 neighbours(up,down,left,right)= 34 -1 45 47
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 46 ; Rank-X: 3 ; Rank-Y: 10 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 20; Colend: 21; Cols: 1;rank= 47 coords= 3 11 neighbours(up,down,left,right)= 35 -1 46 -1
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 47 ; Rank-X: 3 ; Rank-Y: 11 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 22; Colend: 21; Cols: -1;
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 1 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 2; Colend: 5; Cols: 3;rank= 11 coords= 0 11 neighbours(up,down,left,right)= -1 23 10 -1
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 11 ; Rank-X: 0 ; Rank-Y: 11 ; Rowstart: 0; Rowend: 6; Rows: 6; Colstart: 22; Colend: 21; Cols: -1;rank= 14 coords= 1 2 neighbours(up,down,left,right)= 2 26 13 15
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 14 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 4; Colend: 7; Cols: 3;rank= 18 coords= 1 6 neighbours(up,down,left,right)= 6 30 17 19
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 18 ; Rank-X: 1 ; Rank-Y: 6 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 12; Colend: 15; Cols: 3;rank= 21 coords= 1 9 neighbours(up,down,left,right)= 9 33 20 22
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 21 ; Rank-X: 1 ; Rank-Y: 9 ; Rowstart: 5; Rowend: 11; Rows: 6; Colstart: 18; Colend: 21; Cols: 3;rank= 41 coords= 3 5 neighbours(up,down,left,right)= 29 -1 40 42
+
+Num-X: 12 ; Num-Y: 4 ; Resolution: 20 ; Rank: 41 ; Rank-X: 3 ; Rank-Y: 5 ; Rowstart: 15; Rowend: 21; Rows: 6; Colstart: 10; Colend: 13; Cols: 3;
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 2823371 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 2823372 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 2823373 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 2823374 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 2823375 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 2823376 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 2823377 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 2823378 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 2823379 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 2823380 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 2823381 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 2823382 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 2823383 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 2823384 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 2823385 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 2823386 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 16 PID 2823387 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 2823388 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 2823389 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 19 PID 2823390 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 20 PID 2823391 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 21 PID 2823392 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 22 PID 2823393 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 2823394 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 24 PID 2823395 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 25 PID 2823396 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 26 PID 2823397 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 27 PID 2823398 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 28 PID 2823399 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 29 PID 2823400 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 30 PID 2823401 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 31 PID 2823402 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 32 PID 2823403 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 33 PID 2823404 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 34 PID 2823405 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 35 PID 2823406 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 36 PID 2823407 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 37 PID 2823408 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 38 PID 2823409 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 39 PID 2823410 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 40 PID 2823411 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 41 PID 2823412 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 42 PID 2823413 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 43 PID 2823414 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 44 PID 2823415 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 45 PID 2823416 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 46 PID 2823417 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 47 PID 2823418 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================

@@ -1,0 +1,1963 @@
+mpiexec -genv I_MPI_DEBUG=4 -n 192
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2286588  i01r01c01s02  {0,48}
+[0] MPI startup(): 1       2286589  i01r01c01s02  {1,49}
+[0] MPI startup(): 2       2286590  i01r01c01s02  {2,50}
+[0] MPI startup(): 3       2286591  i01r01c01s02  {3,51}
+[0] MPI startup(): 4       2286592  i01r01c01s02  {4,52}
+[0] MPI startup(): 5       2286593  i01r01c01s02  {5,53}
+[0] MPI startup(): 6       2286594  i01r01c01s02  {6,54}
+[0] MPI startup(): 7       2286595  i01r01c01s02  {7,55}
+[0] MPI startup(): 8       2286596  i01r01c01s02  {8,56}
+[0] MPI startup(): 9       2286597  i01r01c01s02  {9,57}
+[0] MPI startup(): 10      2286598  i01r01c01s02  {10,58}
+[0] MPI startup(): 11      2286599  i01r01c01s02  {11,59}
+[0] MPI startup(): 12      2286600  i01r01c01s02  {12,60}
+[0] MPI startup(): 13      2286601  i01r01c01s02  {13,61}
+[0] MPI startup(): 14      2286602  i01r01c01s02  {14,62}
+[0] MPI startup(): 15      2286603  i01r01c01s02  {15,63}
+[0] MPI startup(): 16      2286604  i01r01c01s02  {16,64}
+[0] MPI startup(): 17      2286605  i01r01c01s02  {17,65}
+[0] MPI startup(): 18      2286606  i01r01c01s02  {18,66}
+[0] MPI startup(): 19      2286607  i01r01c01s02  {19,67}
+[0] MPI startup(): 20      2286608  i01r01c01s02  {20,68}
+[0] MPI startup(): 21      2286609  i01r01c01s02  {21,69}
+[0] MPI startup(): 22      2286610  i01r01c01s02  {22,70}
+[0] MPI startup(): 23      2286611  i01r01c01s02  {23,71}
+[0] MPI startup(): 24      2286612  i01r01c01s02  {24,72}
+[0] MPI startup(): 25      2286613  i01r01c01s02  {25,73}
+[0] MPI startup(): 26      2286614  i01r01c01s02  {26,74}
+[0] MPI startup(): 27      2286615  i01r01c01s02  {27,75}
+[0] MPI startup(): 28      2286616  i01r01c01s02  {28,76}
+[0] MPI startup(): 29      2286617  i01r01c01s02  {29,77}
+[0] MPI startup(): 30      2286618  i01r01c01s02  {30,78}
+[0] MPI startup(): 31      2286619  i01r01c01s02  {31,79}
+[0] MPI startup(): 32      2286620  i01r01c01s02  {32,80}
+[0] MPI startup(): 33      2286621  i01r01c01s02  {33,81}
+[0] MPI startup(): 34      2286622  i01r01c01s02  {34,82}
+[0] MPI startup(): 35      2286623  i01r01c01s02  {35,83}
+[0] MPI startup(): 36      2286624  i01r01c01s02  {36,84}
+[0] MPI startup(): 37      2286625  i01r01c01s02  {37,85}
+[0] MPI startup(): 38      2286626  i01r01c01s02  {38,86}
+[0] MPI startup(): 39      2286627  i01r01c01s02  {39,87}
+[0] MPI startup(): 40      2286628  i01r01c01s02  {40,88}
+[0] MPI startup(): 41      2286629  i01r01c01s02  {41,89}
+[0] MPI startup(): 42      2286630  i01r01c01s02  {42,90}
+[0] MPI startup(): 43      2286631  i01r01c01s02  {43,91}
+[0] MPI startup(): 44      2286632  i01r01c01s02  {44,92}
+[0] MPI startup(): 45      2286633  i01r01c01s02  {45,93}
+[0] MPI startup(): 46      2286634  i01r01c01s02  {46,94}
+[0] MPI startup(): 47      2286635  i01r01c01s02  {47,95}
+[0] MPI startup(): 48      1683846  i01r01c02s07  {0,48}
+[0] MPI startup(): 49      1683847  i01r01c02s07  {1,49}
+[0] MPI startup(): 50      1683848  i01r01c02s07  {2,50}
+[0] MPI startup(): 51      1683849  i01r01c02s07  {3,51}
+[0] MPI startup(): 52      1683850  i01r01c02s07  {4,52}
+[0] MPI startup(): 53      1683851  i01r01c02s07  {5,53}
+[0] MPI startup(): 54      1683852  i01r01c02s07  {6,54}
+[0] MPI startup(): 55      1683853  i01r01c02s07  {7,55}
+[0] MPI startup(): 56      1683854  i01r01c02s07  {8,56}
+[0] MPI startup(): 57      1683855  i01r01c02s07  {9,57}
+[0] MPI startup(): 58      1683856  i01r01c02s07  {10,58}
+[0] MPI startup(): 59      1683857  i01r01c02s07  {11,59}
+[0] MPI startup(): 60      1683858  i01r01c02s07  {12,60}
+[0] MPI startup(): 61      1683859  i01r01c02s07  {13,61}
+[0] MPI startup(): 62      1683860  i01r01c02s07  {14,62}
+[0] MPI startup(): 63      1683861  i01r01c02s07  {15,63}
+[0] MPI startup(): 64      1683862  i01r01c02s07  {16,64}
+[0] MPI startup(): 65      1683863  i01r01c02s07  {17,65}
+[0] MPI startup(): 66      1683864  i01r01c02s07  {18,66}
+[0] MPI startup(): 67      1683865  i01r01c02s07  {19,67}
+[0] MPI startup(): 68      1683866  i01r01c02s07  {20,68}
+[0] MPI startup(): 69      1683867  i01r01c02s07  {21,69}
+[0] MPI startup(): 70      1683868  i01r01c02s07  {22,70}
+[0] MPI startup(): 71      1683869  i01r01c02s07  {23,71}
+[0] MPI startup(): 72      1683870  i01r01c02s07  {24,72}
+[0] MPI startup(): 73      1683871  i01r01c02s07  {25,73}
+[0] MPI startup(): 74      1683872  i01r01c02s07  {26,74}
+[0] MPI startup(): 75      1683873  i01r01c02s07  {27,75}
+[0] MPI startup(): 76      1683874  i01r01c02s07  {28,76}
+[0] MPI startup(): 77      1683875  i01r01c02s07  {29,77}
+[0] MPI startup(): 78      1683876  i01r01c02s07  {30,78}
+[0] MPI startup(): 79      1683877  i01r01c02s07  {31,79}
+[0] MPI startup(): 80      1683878  i01r01c02s07  {32,80}
+[0] MPI startup(): 81      1683879  i01r01c02s07  {33,81}
+[0] MPI startup(): 82      1683880  i01r01c02s07  {34,82}
+[0] MPI startup(): 83      1683881  i01r01c02s07  {35,83}
+[0] MPI startup(): 84      1683882  i01r01c02s07  {36,84}
+[0] MPI startup(): 85      1683883  i01r01c02s07  {37,85}
+[0] MPI startup(): 86      1683884  i01r01c02s07  {38,86}
+[0] MPI startup(): 87      1683885  i01r01c02s07  {39,87}
+[0] MPI startup(): 88      1683886  i01r01c02s07  {40,88}
+[0] MPI startup(): 89      1683887  i01r01c02s07  {41,89}
+[0] MPI startup(): 90      1683888  i01r01c02s07  {42,90}
+[0] MPI startup(): 91      1683889  i01r01c02s07  {43,91}
+[0] MPI startup(): 92      1683890  i01r01c02s07  {44,92}
+[0] MPI startup(): 93      1683891  i01r01c02s07  {45,93}
+[0] MPI startup(): 94      1683892  i01r01c02s07  {46,94}
+[0] MPI startup(): 95      1683893  i01r01c02s07  {47,95}
+[0] MPI startup(): 96      2827712  i01r01c02s08  {0,48}
+[0] MPI startup(): 97      2827713  i01r01c02s08  {1,49}
+[0] MPI startup(): 98      2827714  i01r01c02s08  {2,50}
+[0] MPI startup(): 99      2827715  i01r01c02s08  {3,51}
+[0] MPI startup(): 100     2827716  i01r01c02s08  {4,52}
+[0] MPI startup(): 101     2827717  i01r01c02s08  {5,53}
+[0] MPI startup(): 102     2827718  i01r01c02s08  {6,54}
+[0] MPI startup(): 103     2827719  i01r01c02s08  {7,55}
+[0] MPI startup(): 104     2827720  i01r01c02s08  {8,56}
+[0] MPI startup(): 105     2827721  i01r01c02s08  {9,57}
+[0] MPI startup(): 106     2827722  i01r01c02s08  {10,58}
+[0] MPI startup(): 107     2827723  i01r01c02s08  {11,59}
+[0] MPI startup(): 108     2827724  i01r01c02s08  {12,60}
+[0] MPI startup(): 109     2827725  i01r01c02s08  {13,61}
+[0] MPI startup(): 110     2827726  i01r01c02s08  {14,62}
+[0] MPI startup(): 111     2827727  i01r01c02s08  {15,63}
+[0] MPI startup(): 112     2827728  i01r01c02s08  {16,64}
+[0] MPI startup(): 113     2827729  i01r01c02s08  {17,65}
+[0] MPI startup(): 114     2827730  i01r01c02s08  {18,66}
+[0] MPI startup(): 115     2827731  i01r01c02s08  {19,67}
+[0] MPI startup(): 116     2827732  i01r01c02s08  {20,68}
+[0] MPI startup(): 117     2827733  i01r01c02s08  {21,69}
+[0] MPI startup(): 118     2827734  i01r01c02s08  {22,70}
+[0] MPI startup(): 119     2827735  i01r01c02s08  {23,71}
+[0] MPI startup(): 120     2827736  i01r01c02s08  {24,72}
+[0] MPI startup(): 121     2827737  i01r01c02s08  {25,73}
+[0] MPI startup(): 122     2827738  i01r01c02s08  {26,74}
+[0] MPI startup(): 123     2827739  i01r01c02s08  {27,75}
+[0] MPI startup(): 124     2827740  i01r01c02s08  {28,76}
+[0] MPI startup(): 125     2827741  i01r01c02s08  {29,77}
+[0] MPI startup(): 126     2827742  i01r01c02s08  {30,78}
+[0] MPI startup(): 127     2827743  i01r01c02s08  {31,79}
+[0] MPI startup(): 128     2827744  i01r01c02s08  {32,80}
+[0] MPI startup(): 129     2827745  i01r01c02s08  {33,81}
+[0] MPI startup(): 130     2827746  i01r01c02s08  {34,82}
+[0] MPI startup(): 131     2827747  i01r01c02s08  {35,83}
+[0] MPI startup(): 132     2827748  i01r01c02s08  {36,84}
+[0] MPI startup(): 133     2827749  i01r01c02s08  {37,85}
+[0] MPI startup(): 134     2827750  i01r01c02s08  {38,86}
+[0] MPI startup(): 135     2827751  i01r01c02s08  {39,87}
+[0] MPI startup(): 136     2827752  i01r01c02s08  {40,88}
+[0] MPI startup(): 137     2827753  i01r01c02s08  {41,89}
+[0] MPI startup(): 138     2827754  i01r01c02s08  {42,90}
+[0] MPI startup(): 139     2827755  i01r01c02s08  {43,91}
+[0] MPI startup(): 140     2827756  i01r01c02s08  {44,92}
+[0] MPI startup(): 141     2827757  i01r01c02s08  {45,93}
+[0] MPI startup(): 142     2827758  i01r01c02s08  {46,94}
+[0] MPI startup(): 143     2827759  i01r01c02s08  {47,95}
+[0] MPI startup(): 144     3567187  i01r01c02s09  {0,48}
+[0] MPI startup(): 145     3567188  i01r01c02s09  {1,49}
+[0] MPI startup(): 146     3567189  i01r01c02s09  {2,50}
+[0] MPI startup(): 147     3567190  i01r01c02s09  {3,51}
+[0] MPI startup(): 148     3567191  i01r01c02s09  {4,52}
+[0] MPI startup(): 149     3567192  i01r01c02s09  {5,53}
+[0] MPI startup(): 150     3567193  i01r01c02s09  {6,54}
+[0] MPI startup(): 151     3567194  i01r01c02s09  {7,55}
+[0] MPI startup(): 152     3567195  i01r01c02s09  {8,56}
+[0] MPI startup(): 153     3567196  i01r01c02s09  {9,57}
+[0] MPI startup(): 154     3567197  i01r01c02s09  {10,58}
+[0] MPI startup(): 155     3567198  i01r01c02s09  {11,59}
+[0] MPI startup(): 156     3567199  i01r01c02s09  {12,60}
+[0] MPI startup(): 157     3567200  i01r01c02s09  {13,61}
+[0] MPI startup(): 158     3567201  i01r01c02s09  {14,62}
+[0] MPI startup(): 159     3567202  i01r01c02s09  {15,63}
+[0] MPI startup(): 160     3567203  i01r01c02s09  {16,64}
+[0] MPI startup(): 161     3567204  i01r01c02s09  {17,65}
+[0] MPI startup(): 162     3567205  i01r01c02s09  {18,66}
+[0] MPI startup(): 163     3567206  i01r01c02s09  {19,67}
+[0] MPI startup(): 164     3567207  i01r01c02s09  {20,68}
+[0] MPI startup(): 165     3567208  i01r01c02s09  {21,69}
+[0] MPI startup(): 166     3567209  i01r01c02s09  {22,70}
+[0] MPI startup(): 167     3567210  i01r01c02s09  {23,71}
+[0] MPI startup(): 168     3567211  i01r01c02s09  {24,72}
+[0] MPI startup(): 169     3567212  i01r01c02s09  {25,73}
+[0] MPI startup(): 170     3567213  i01r01c02s09  {26,74}
+[0] MPI startup(): 171     3567214  i01r01c02s09  {27,75}
+[0] MPI startup(): 172     3567215  i01r01c02s09  {28,76}
+[0] MPI startup(): 173     3567216  i01r01c02s09  {29,77}
+[0] MPI startup(): 174     3567217  i01r01c02s09  {30,78}
+[0] MPI startup(): 175     3567218  i01r01c02s09  {31,79}
+[0] MPI startup(): 176     3567219  i01r01c02s09  {32,80}
+[0] MPI startup(): 177     3567220  i01r01c02s09  {33,81}
+[0] MPI startup(): 178     3567221  i01r01c02s09  {34,82}
+[0] MPI startup(): 179     3567222  i01r01c02s09  {35,83}
+[0] MPI startup(): 180     3567223  i01r01c02s09  {36,84}
+[0] MPI startup(): 181     3567224  i01r01c02s09  {37,85}
+[0] MPI startup(): 182     3567225  i01r01c02s09  {38,86}
+[0] MPI startup(): 183     3567226  i01r01c02s09  {39,87}
+[0] MPI startup(): 184     3567227  i01r01c02s09  {40,88}
+[0] MPI startup(): 185     3567228  i01r01c02s09  {41,89}
+[0] MPI startup(): 186     3567229  i01r01c02s09  {42,90}
+[0] MPI startup(): 187     3567230  i01r01c02s09  {43,91}
+[0] MPI startup(): 188     3567231  i01r01c02s09  {44,92}
+[0] MPI startup(): 189     3567232  i01r01c02s09  {45,93}
+[0] MPI startup(): 190     3567233  i01r01c02s09  {46,94}
+[0] MPI startup(): 191     3567234  i01r01c02s09  {47,95}
+
+12 processes distributed in X-direction
+ 16 ; processes distributed in Y-direction
+Resolutions       : (20, 120, ... 20)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 16 -1 1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 17 0 2
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 1 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 18 1 3
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 48 coords= 3 0 neighbours(up,down,left,right)= 32 64 -1 49
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 48 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 4 coords= 0 4 neighbours(up,down,left,right)= -1 20 3 5
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 4 ; Rank-X: 0 ; Rank-Y: 4 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 52 coords= 3 4 neighbours(up,down,left,right)= 36 68 51 53
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 52 ; Rank-X: 3 ; Rank-Y: 4 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 144 coords= 9 0 neighbours(up,down,left,right)= 128 160 -1 145
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 144 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 96 coords= 6 0 neighbours(up,down,left,right)= 80 112 -1 97
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 96 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 6 coords= 0 6 neighbours(up,down,left,right)= -1 22 5 7
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 6 ; Rank-X: 0 ; Rank-Y: 6 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 80 coords= 5 0 neighbours(up,down,left,right)= 64 96 -1 81
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 80 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 146 coords= 9 2 neighbours(up,down,left,right)= 130 162 145 147
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 146 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 100 coords= 6 4 neighbours(up,down,left,right)= 84 116 99 101
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 100 ; Rank-X: 6 ; Rank-Y: 4 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 8 coords= 0 8 neighbours(up,down,left,right)= -1 24 7 9
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 8 ; Rank-X: 0 ; Rank-Y: 8 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 84 coords= 5 4 neighbours(up,down,left,right)= 68 100 83 85
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 84 ; Rank-X: 5 ; Rank-Y: 4 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 148 coords= 9 4 neighbours(up,down,left,right)= 132 164 147 149
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 148 ; Rank-X: 9 ; Rank-Y: 4 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 104 coords= 6 8 neighbours(up,down,left,right)= 88 120 103 105
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 104 ; Rank-X: 6 ; Rank-Y: 8 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 16 coords= 1 0 neighbours(up,down,left,right)= 0 32 -1 17
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 16 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 49 coords= 3 1 neighbours(up,down,left,right)= 33 65 48 50
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 49 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 150 coords= 9 6 neighbours(up,down,left,right)= 134 166 149 151
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 150 ; Rank-X: 9 ; Rank-Y: 6 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 128 coords= 8 0 neighbours(up,down,left,right)= 112 144 -1 129
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 128 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 18 coords= 1 2 neighbours(up,down,left,right)= 2 34 17 19
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 18 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 50 coords= 3 2 neighbours(up,down,left,right)= 34 66 49 51
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 50 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 158 coords= 9 14 neighbours(up,down,left,right)= 142 174 157 159
+rank= 132 coords= 8 4 neighbours(up,down,left,right)= 116 148 131 133
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 132 ; Rank-X: 8 ; Rank-Y: 4 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 32 coords= 2 0 neighbours(up,down,left,right)= 16 48 -1 33
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 32 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 51 coords= 3 3 neighbours(up,down,left,right)= 35 67 50 52
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 51 ; Rank-X: 3 ; Rank-Y: 3 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 136 coords= 8 8 neighbours(up,down,left,right)= 120 152 135 137
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 136 ; Rank-X: 8 ; Rank-Y: 8 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 19 2 4
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 3 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 53 coords= 3 5 neighbours(up,down,left,right)= 37 69 52 54
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 53 ; Rank-X: 3 ; Rank-Y: 5 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 97 coords= 6 1 neighbours(up,down,left,right)= 81 113 96 98
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 97 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 5 coords= 0 5 neighbours(up,down,left,right)= -1 21 4 6
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 5 ; Rank-X: 0 ; Rank-Y: 5 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 54 coords= 3 6 neighbours(up,down,left,right)= 38 70 53 55
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 54 ; Rank-X: 3 ; Rank-Y: 6 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 170 coords= 10 10 neighbours(up,down,left,right)= 154 186 169 171
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 170 ; Rank-X: 10 ; Rank-Y: 10 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 20; Colend: 21; Cols: 1;rank= 98 coords= 6 2 neighbours(up,down,left,right)= 82 114 97 99
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 98 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 7 coords= 0 7 neighbours(up,down,left,right)= -1 23 6 8
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 7 ; Rank-X: 0 ; Rank-Y: 7 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 55 coords= 3 7 neighbours(up,down,left,right)= 39 71 54 56
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 55 ; Rank-X: 3 ; Rank-Y: 7 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 173 coords= 10 13 neighbours(up,down,left,right)= 157 189 172 174
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 173 ; Rank-X: 10 ; Rank-Y: 13 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 26; Colend: 21; Cols: -5;rank= 99 coords= 6 3 neighbours(up,down,left,right)= 83 115 98 100
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 99 ; Rank-X: 6 ; Rank-Y: 3 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 9 coords= 0 9 neighbours(up,down,left,right)= -1 25 8 10
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 9 ; Rank-X: 0 ; Rank-Y: 9 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 56 coords= 3 8 neighbours(up,down,left,right)= 40 72 55 57
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 56 ; Rank-X: 3 ; Rank-Y: 8 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 176 coords= 11 0 neighbours(up,down,left,right)= 160 -1 -1 177
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 176 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 0; Colend: 3; Cols: 3;rank= 101 coords= 6 5 neighbours(up,down,left,right)= 85 117 100 102
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 101 ; Rank-X: 6 ; Rank-Y: 5 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 10 coords= 0 10 neighbours(up,down,left,right)= -1 26 9 11
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 10 ; Rank-X: 0 ; Rank-Y: 10 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 57 coords= 3 9 neighbours(up,down,left,right)= 41 73 56 58
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 57 ; Rank-X: 3 ; Rank-Y: 9 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 179 coords= 11 3 neighbours(up,down,left,right)= 163 -1 178 180
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 179 ; Rank-X: 11 ; Rank-Y: 3 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 6; Colend: 9; Cols: 3;rank= 102 coords= 6 6 neighbours(up,down,left,right)= 86 118 101 103
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 102 ; Rank-X: 6 ; Rank-Y: 6 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 11 coords= 0 11 neighbours(up,down,left,right)= -1 27 10 12
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 11 ; Rank-X: 0 ; Rank-Y: 11 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 58 coords= 3 10 neighbours(up,down,left,right)= 42 74 57 59
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 58 ; Rank-X: 3 ; Rank-Y: 10 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 180 coords= 11 4 neighbours(up,down,left,right)= 164 -1 179 181
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 180 ; Rank-X: 11 ; Rank-Y: 4 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 8; Colend: 11; Cols: 3;rank= 103 coords= 6 7 neighbours(up,down,left,right)= 87 119 102 104
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 103 ; Rank-X: 6 ; Rank-Y: 7 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 12 coords= 0 12 neighbours(up,down,left,right)= -1 28 11 13
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 12 ; Rank-X: 0 ; Rank-Y: 12 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 59 coords= 3 11 neighbours(up,down,left,right)= 43 75 58 60
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 59 ; Rank-X: 3 ; Rank-Y: 11 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 181 coords= 11 5 neighbours(up,down,left,right)= 165 -1 180 182
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 181 ; Rank-X: 11 ; Rank-Y: 5 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 10; Colend: 13; Cols: 3;rank= 105 coords= 6 9 neighbours(up,down,left,right)= 89 121 104 106
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 105 ; Rank-X: 6 ; Rank-Y: 9 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 60 coords= 3 12 neighbours(up,down,left,right)= 44 76 59 61
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 60 ; Rank-X: 3 ; Rank-Y: 12 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 188 coords= 11 12 neighbours(up,down,left,right)= 172 -1 187 189
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 188 ; Rank-X: 11 ; Rank-Y: 12 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 24; Colend: 21; Cols: -3;rank= 106 coords= 6 10 neighbours(up,down,left,right)= 90 122 105 107
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 106 ; Rank-X: 6 ; Rank-Y: 10 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 13 coords= 0 13 neighbours(up,down,left,right)= -1 29 12 14
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 13 ; Rank-X: 0 ; Rank-Y: 13 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 189 coords= 11 13 neighbours(up,down,left,right)= 173 -1 188 190
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 189 ; Rank-X: 11 ; Rank-Y: 13 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 26; Colend: 21; Cols: -5;rank= 107 coords= 6 11 neighbours(up,down,left,right)= 91 123 106 108
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 107 ; Rank-X: 6 ; Rank-Y: 11 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 14 coords= 0 14 neighbours(up,down,left,right)= -1 30 13 15
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 14 ; Rank-X: 0 ; Rank-Y: 14 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 61 coords= 3 13 neighbours(up,down,left,right)= 45 77 60 62
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 61 ; Rank-X: 3 ; Rank-Y: 13 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 145 coords= 9 1 neighbours(up,down,left,right)= 129 161 144 146
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 145 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 108 coords= 6 12 neighbours(up,down,left,right)= 92 124 107 109
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 108 ; Rank-X: 6 ; Rank-Y: 12 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 147 coords= 9 3 neighbours(up,down,left,right)= 131 163 146 148
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 147 ; Rank-X: 9 ; Rank-Y: 3 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 17 coords= 1 1 neighbours(up,down,left,right)= 1 33 16 18
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 17 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 62 coords= 3 14 neighbours(up,down,left,right)= 46 78 61 63
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 62 ; Rank-X: 3 ; Rank-Y: 14 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 149 coords= 9 5 neighbours(up,down,left,right)= 133 165 148 150
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 149 ; Rank-X: 9 ; Rank-Y: 5 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 109 coords= 6 13 neighbours(up,down,left,right)= 93 125 108 110
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 109 ; Rank-X: 6 ; Rank-Y: 13 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 19 coords= 1 3 neighbours(up,down,left,right)= 3 35 18 20
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 19 ; Rank-X: 1 ; Rank-Y: 3 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 63 coords= 3 15 neighbours(up,down,left,right)= 47 79 62 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 63 ; Rank-X: 3 ; Rank-Y: 15 ; Rowstart: 6; Rowend: 9; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 151 coords= 9 7 neighbours(up,down,left,right)= 135 167 150 152
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 151 ; Rank-X: 9 ; Rank-Y: 7 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 110 coords= 6 14 neighbours(up,down,left,right)= 94 126 109 111
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 110 ; Rank-X: 6 ; Rank-Y: 14 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 20 coords= 1 4 neighbours(up,down,left,right)= 4 36 19 21
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 20 ; Rank-X: 1 ; Rank-Y: 4 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 64 coords= 4 0 neighbours(up,down,left,right)= 48 80 -1 65
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 64 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 152 coords= 9 8 neighbours(up,down,left,right)= 136 168 151 153
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 152 ; Rank-X: 9 ; Rank-Y: 8 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 22 coords= 1 6 neighbours(up,down,left,right)= 6 38 21 23
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 22 ; Rank-X: 1 ; Rank-Y: 6 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 65 coords= 4 1 neighbours(up,down,left,right)= 49 81 64 66
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 65 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 153 coords= 9 9 neighbours(up,down,left,right)= 137 169 152 154
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 153 ; Rank-X: 9 ; Rank-Y: 9 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 111 coords= 6 15 neighbours(up,down,left,right)= 95 127 110 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 111 ; Rank-X: 6 ; Rank-Y: 15 ; Rowstart: 12; Rowend: 15; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 23 coords= 1 7 neighbours(up,down,left,right)= 7 39 22 24
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 23 ; Rank-X: 1 ; Rank-Y: 7 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 66 coords= 4 2 neighbours(up,down,left,right)= 50 82 65 67
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 66 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 154 coords= 9 10 neighbours(up,down,left,right)= 138 170 153 155
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 154 ; Rank-X: 9 ; Rank-Y: 10 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 112 coords= 7 0 neighbours(up,down,left,right)= 96 128 -1 113
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 112 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 0; Colend: 3; Cols: 3;rank= 24 coords= 1 8 neighbours(up,down,left,right)= 8 40 23 25
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 24 ; Rank-X: 1 ; Rank-Y: 8 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 67 coords= 4 3 neighbours(up,down,left,right)= 51 83 66 68
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 67 ; Rank-X: 4 ; Rank-Y: 3 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 155 coords= 9 11 neighbours(up,down,left,right)= 139 171 154 156
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 155 ; Rank-X: 9 ; Rank-Y: 11 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 113 coords= 7 1 neighbours(up,down,left,right)= 97 129 112 114
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 113 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 28 coords= 1 12 neighbours(up,down,left,right)= 12 44 27 29
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 28 ; Rank-X: 1 ; Rank-Y: 12 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 68 coords= 4 4 neighbours(up,down,left,right)= 52 84 67 69
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 4 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 156 coords= 9 12 neighbours(up,down,left,right)= 140 172 155 157
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 156 ; Rank-X: 9 ; Rank-Y: 12 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 114 coords= 7 2 neighbours(up,down,left,right)= 98 130 113 115
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 114 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 69 coords= 4 5 neighbours(up,down,left,right)= 53 85 68 70
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 69 ; Rank-X: 4 ; Rank-Y: 5 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 115 coords= 7 3 neighbours(up,down,left,right)= 99 131 114 116
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 115 ; Rank-X: 7 ; Rank-Y: 3 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 33 coords= 2 1 neighbours(up,down,left,right)= 17 49 32 34
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 33 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 72 coords= 4 8 neighbours(up,down,left,right)= 56 88 71 73
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 72 ; Rank-X: 4 ; Rank-Y: 8 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 157 coords= 9 13 neighbours(up,down,left,right)= 141 173 156 158
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 157 ; Rank-X: 9 ; Rank-Y: 13 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 116 coords= 7 4 neighbours(up,down,left,right)= 100 132 115 117
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 116 ; Rank-X: 7 ; Rank-Y: 4 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 36 coords= 2 4 neighbours(up,down,left,right)= 20 52 35 37
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 36 ; Rank-X: 2 ; Rank-Y: 4 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 8; Colend: 11; Cols: 3;rank= 73 coords= 4 9 neighbours(up,down,left,right)= 57 89 72 74
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 73 ; Rank-X: 4 ; Rank-Y: 9 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 117 coords= 7 5 neighbours(up,down,left,right)= 101 133 116 118
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 117 ; Rank-X: 7 ; Rank-Y: 5 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 37 coords= 2 5 neighbours(up,down,left,right)= 21 53 36 38
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 37 ; Rank-X: 2 ; Rank-Y: 5 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 74 coords= 4 10 neighbours(up,down,left,right)= 58 90 73 75
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 74 ; Rank-X: 4 ; Rank-Y: 10 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 158 ; Rank-X: 9 ; Rank-Y: 14 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 118 coords= 7 6 neighbours(up,down,left,right)= 102 134 117 119
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 118 ; Rank-X: 7 ; Rank-Y: 6 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 38 coords= 2 6 neighbours(up,down,left,right)= 22 54 37 39
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 38 ; Rank-X: 2 ; Rank-Y: 6 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 76 coords= 4 12 neighbours(up,down,left,right)= 60 92 75 77
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 76 ; Rank-X: 4 ; Rank-Y: 12 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 120 coords= 7 8 neighbours(up,down,left,right)= 104 136 119 121
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 120 ; Rank-X: 7 ; Rank-Y: 8 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 39 coords= 2 7 neighbours(up,down,left,right)= 23 55 38 40
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 39 ; Rank-X: 2 ; Rank-Y: 7 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 159 coords= 9 15 neighbours(up,down,left,right)= 143 175 158 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 159 ; Rank-X: 9 ; Rank-Y: 15 ; Rowstart: 18; Rowend: 21; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 121 coords= 7 9 neighbours(up,down,left,right)= 105 137 120 122
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 121 ; Rank-X: 7 ; Rank-Y: 9 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 40 coords= 2 8 neighbours(up,down,left,right)= 24 56 39 41
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 40 ; Rank-X: 2 ; Rank-Y: 8 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 81 coords= 5 1 neighbours(up,down,left,right)= 65 97 80 82
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 81 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 122 coords= 7 10 neighbours(up,down,left,right)= 106 138 121 123
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 122 ; Rank-X: 7 ; Rank-Y: 10 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 41 coords= 2 9 neighbours(up,down,left,right)= 25 57 40 42
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 41 ; Rank-X: 2 ; Rank-Y: 9 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 82 coords= 5 2 neighbours(up,down,left,right)= 66 98 81 83
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 82 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 160 coords= 10 0 neighbours(up,down,left,right)= 144 176 -1 161
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 160 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 0; Colend: 3; Cols: 3;rank= 123 coords= 7 11 neighbours(up,down,left,right)= 107 139 122 124
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 123 ; Rank-X: 7 ; Rank-Y: 11 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 42 coords= 2 10 neighbours(up,down,left,right)= 26 58 41 43
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 42 ; Rank-X: 2 ; Rank-Y: 10 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 83 coords= 5 3 neighbours(up,down,left,right)= 67 99 82 84
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 83 ; Rank-X: 5 ; Rank-Y: 3 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 161 coords= 10 1 neighbours(up,down,left,right)= 145 177 160 162
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 161 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 2; Colend: 5; Cols: 3;rank= 124 coords= 7 12 neighbours(up,down,left,right)= 108 140 123 125
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 124 ; Rank-X: 7 ; Rank-Y: 12 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 44 coords= 2 12 neighbours(up,down,left,right)= 28 60 43 45
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 44 ; Rank-X: 2 ; Rank-Y: 12 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 87 coords= 5 7 neighbours(up,down,left,right)= 71 103 86 88
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 87 ; Rank-X: 5 ; Rank-Y: 7 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 162 coords= 10 2 neighbours(up,down,left,right)= 146 178 161 163
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 162 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 4; Colend: 7; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 88 coords= 5 8 neighbours(up,down,left,right)= 72 104 87 89
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 88 ; Rank-X: 5 ; Rank-Y: 8 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 16; Colend: 19; Cols: 3;rank= 163 coords= 10 3 neighbours(up,down,left,right)= 147 179 162 164
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 163 ; Rank-X: 10 ; Rank-Y: 3 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 6; Colend: 9; Cols: 3;rank= 125 coords= 7 13 neighbours(up,down,left,right)= 109 141 124 126
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 125 ; Rank-X: 7 ; Rank-Y: 13 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 45 coords= 2 13 neighbours(up,down,left,right)= 29 61 44 46
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 45 ; Rank-X: 2 ; Rank-Y: 13 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 89 coords= 5 9 neighbours(up,down,left,right)= 73 105 88 90
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 89 ; Rank-X: 5 ; Rank-Y: 9 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 164 coords= 10 4 neighbours(up,down,left,right)= 148 180 163 165
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 164 ; Rank-X: 10 ; Rank-Y: 4 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 8; Colend: 11; Cols: 3;rank= 126 coords= 7 14 neighbours(up,down,left,right)= 110 142 125 127
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 126 ; Rank-X: 7 ; Rank-Y: 14 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 47 coords= 2 15 neighbours(up,down,left,right)= 31 63 46 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 47 ; Rank-X: 2 ; Rank-Y: 15 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 92 coords= 5 12 neighbours(up,down,left,right)= 76 108 91 93
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 92 ; Rank-X: 5 ; Rank-Y: 12 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;rank= 127 coords= 7 15 neighbours(up,down,left,right)= 111 143 126 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 127 ; Rank-X: 7 ; Rank-Y: 15 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 165 coords= 10 5 neighbours(up,down,left,right)= 149 181 164 166
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 165 ; Rank-X: 10 ; Rank-Y: 5 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 10; Colend: 13; Cols: 3;rank= 129 coords= 8 1 neighbours(up,down,left,right)= 113 145 128 130
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 129 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 2; Colend: 5; Cols: 3;rank= 15 coords= 0 15 neighbours(up,down,left,right)= -1 31 14 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 15 ; Rank-X: 0 ; Rank-Y: 15 ; Rowstart: 0; Rowend: 3; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 166 coords= 10 6 neighbours(up,down,left,right)= 150 182 165 167
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 166 ; Rank-X: 10 ; Rank-Y: 6 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 12; Colend: 15; Cols: 3;rank= 130 coords= 8 2 neighbours(up,down,left,right)= 114 146 129 131
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 130 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 70 coords= 4 6 neighbours(up,down,left,right)= 54 86 69 71
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 70 ; Rank-X: 4 ; Rank-Y: 6 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 167 coords= 10 7 neighbours(up,down,left,right)= 151 183 166 168
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 167 ; Rank-X: 10 ; Rank-Y: 7 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 14; Colend: 17; Cols: 3;rank= 131 coords= 8 3 neighbours(up,down,left,right)= 115 147 130 132
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 131 ; Rank-X: 8 ; Rank-Y: 3 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 21 coords= 1 5 neighbours(up,down,left,right)= 5 37 20 22
+rank= 71 coords= 4 7 neighbours(up,down,left,right)= 55 87 70 72
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 71 ; Rank-X: 4 ; Rank-Y: 7 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 168 coords= 10 8 neighbours(up,down,left,right)= 152 184 167 169
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 168 ; Rank-X: 10 ; Rank-Y: 8 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 16; Colend: 19; Cols: 3;rank= 133 coords= 8 5 neighbours(up,down,left,right)= 117 149 132 134
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 133 ; Rank-X: 8 ; Rank-Y: 5 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 25 coords= 1 9 neighbours(up,down,left,right)= 9 41 24 26
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 25 ; Rank-X: 1 ; Rank-Y: 9 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 75 coords= 4 11 neighbours(up,down,left,right)= 59 91 74 76
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 75 ; Rank-X: 4 ; Rank-Y: 11 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 169 coords= 10 9 neighbours(up,down,left,right)= 153 185 168 170
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 169 ; Rank-X: 10 ; Rank-Y: 9 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 18; Colend: 21; Cols: 3;rank= 134 coords= 8 6 neighbours(up,down,left,right)= 118 150 133 135
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 134 ; Rank-X: 8 ; Rank-Y: 6 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;rank= 26 coords= 1 10 neighbours(up,down,left,right)= 10 42 25 27
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 26 ; Rank-X: 1 ; Rank-Y: 10 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 77 coords= 4 13 neighbours(up,down,left,right)= 61 93 76 78
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 77 ; Rank-X: 4 ; Rank-Y: 13 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 171 coords= 10 11 neighbours(up,down,left,right)= 155 187 170 172
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 171 ; Rank-X: 10 ; Rank-Y: 11 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 22; Colend: 21; Cols: -1;rank= 135 coords= 8 7 neighbours(up,down,left,right)= 119 151 134 136
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 135 ; Rank-X: 8 ; Rank-Y: 7 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;rank= 27 coords= 1 11 neighbours(up,down,left,right)= 11 43 26 28
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 27 ; Rank-X: 1 ; Rank-Y: 11 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 172 coords= 10 12 neighbours(up,down,left,right)= 156 188 171 173
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 172 ; Rank-X: 10 ; Rank-Y: 12 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 24; Colend: 21; Cols: -3;rank= 137 coords= 8 9 neighbours(up,down,left,right)= 121 153 136 138
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 137 ; Rank-X: 8 ; Rank-Y: 9 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 18; Colend: 21; Cols: 3;rank= 29 coords= 1 13 neighbours(up,down,left,right)= 13 45 28 30
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 29 ; Rank-X: 1 ; Rank-Y: 13 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 78 coords= 4 14 neighbours(up,down,left,right)= 62 94 77 79
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 78 ; Rank-X: 4 ; Rank-Y: 14 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 138 coords= 8 10 neighbours(up,down,left,right)= 122 154 137 139
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 138 ; Rank-X: 8 ; Rank-Y: 10 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 139 coords= 8 11 neighbours(up,down,left,right)= 123 155 138 140
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 139 ; Rank-X: 8 ; Rank-Y: 11 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 30 coords= 1 14 neighbours(up,down,left,right)= 14 46 29 31
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 30 ; Rank-X: 1 ; Rank-Y: 14 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 79 coords= 4 15 neighbours(up,down,left,right)= 63 95 78 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 79 ; Rank-X: 4 ; Rank-Y: 15 ; Rowstart: 8; Rowend: 11; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 174 coords= 10 14 neighbours(up,down,left,right)= 158 190 173 175
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 174 ; Rank-X: 10 ; Rank-Y: 14 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 28; Colend: 21; Cols: -7;rank= 140 coords= 8 12 neighbours(up,down,left,right)= 124 156 139 141
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 140 ; Rank-X: 8 ; Rank-Y: 12 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 24; Colend: 21; Cols: -3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 31 coords= 1 15 neighbours(up,down,left,right)= 15 47 30 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 31 ; Rank-X: 1 ; Rank-Y: 15 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 85 coords= 5 5 neighbours(up,down,left,right)= 69 101 84 86
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 85 ; Rank-X: 5 ; Rank-Y: 5 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 175 coords= 10 15 neighbours(up,down,left,right)= 159 191 174 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 175 ; Rank-X: 10 ; Rank-Y: 15 ; Rowstart: 20; Rowend: 21; Rows: 1; Colstart: 30; Colend: 21; Cols: -9;rank= 141 coords= 8 13 neighbours(up,down,left,right)= 125 157 140 142
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 141 ; Rank-X: 8 ; Rank-Y: 13 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 86 coords= 5 6 neighbours(up,down,left,right)= 70 102 85 87
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 86 ; Rank-X: 5 ; Rank-Y: 6 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 12; Colend: 15; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 34 coords= 2 2 neighbours(up,down,left,right)= 18 50 33 35
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 4; Colend: 7; Cols: 3;rank= 90 coords= 5 10 neighbours(up,down,left,right)= 74 106 89 91
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 90 ; Rank-X: 5 ; Rank-Y: 10 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 20; Colend: 21; Cols: 1;rank= 177 coords= 11 1 neighbours(up,down,left,right)= 161 -1 176 178
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 177 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 2; Colend: 5; Cols: 3;rank= 142 coords= 8 14 neighbours(up,down,left,right)= 126 158 141 143
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 142 ; Rank-X: 8 ; Rank-Y: 14 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 35 coords= 2 3 neighbours(up,down,left,right)= 19 51 34 36
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 35 ; Rank-X: 2 ; Rank-Y: 3 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 6; Colend: 9; Cols: 3;rank= 91 coords= 5 11 neighbours(up,down,left,right)= 75 107 90 92
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 91 ; Rank-X: 5 ; Rank-Y: 11 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;rank= 178 coords= 11 2 neighbours(up,down,left,right)= 162 -1 177 179
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 178 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 4; Colend: 7; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 43 coords= 2 11 neighbours(up,down,left,right)= 27 59 42 44
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 43 ; Rank-X: 2 ; Rank-Y: 11 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 22; Colend: 21; Cols: -1;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 182 coords= 11 6 neighbours(up,down,left,right)= 166 -1 181 183
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 182 ; Rank-X: 11 ; Rank-Y: 6 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 12; Colend: 15; Cols: 3;rank= 143 coords= 8 15 neighbours(up,down,left,right)= 127 159 142 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 143 ; Rank-X: 8 ; Rank-Y: 15 ; Rowstart: 16; Rowend: 19; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 93 coords= 5 13 neighbours(up,down,left,right)= 77 109 92 94
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 93 ; Rank-X: 5 ; Rank-Y: 13 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 26; Colend: 21; Cols: -5;rank= 183 coords= 11 7 neighbours(up,down,left,right)= 167 -1 182 184
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 183 ; Rank-X: 11 ; Rank-Y: 7 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 14; Colend: 17; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 46 coords= 2 14 neighbours(up,down,left,right)= 30 62 45 47
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 46 ; Rank-X: 2 ; Rank-Y: 14 ; Rowstart: 4; Rowend: 7; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 184 coords= 11 8 neighbours(up,down,left,right)= 168 -1 183 185
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 184 ; Rank-X: 11 ; Rank-Y: 8 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 16; Colend: 19; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 94 coords= 5 14 neighbours(up,down,left,right)= 78 110 93 95
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 94 ; Rank-X: 5 ; Rank-Y: 14 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 28; Colend: 21; Cols: -7;rank= 185 coords= 11 9 neighbours(up,down,left,right)= 169 -1 184 186
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 185 ; Rank-X: 11 ; Rank-Y: 9 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 18; Colend: 21; Cols: 3;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 186 coords= 11 10 neighbours(up,down,left,right)= 170 -1 185 187
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 186 ; Rank-X: 11 ; Rank-Y: 10 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 20; Colend: 21; Cols: 1;rank= 119 coords= 7 7 neighbours(up,down,left,right)= 103 135 118 120
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 119 ; Rank-X: 7 ; Rank-Y: 7 ; Rowstart: 14; Rowend: 17; Rows: 3; Colstart: 14; Colend: 17; Cols: 3;
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 21 ; Rank-X: 1 ; Rank-Y: 5 ; Rowstart: 2; Rowend: 5; Rows: 3; Colstart: 10; Colend: 13; Cols: 3;rank= 95 coords= 5 15 neighbours(up,down,left,right)= 79 111 94 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 95 ; Rank-X: 5 ; Rank-Y: 15 ; Rowstart: 10; Rowend: 13; Rows: 3; Colstart: 30; Colend: 21; Cols: -9;rank= 187 coords= 11 11 neighbours(up,down,left,right)= 171 -1 186 188
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 187 ; Rank-X: 11 ; Rank-Y: 11 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 22; Colend: 21; Cols: -1;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+rank= 190 coords= 11 14 neighbours(up,down,left,right)= 174 -1 189 191
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 190 ; Rank-X: 11 ; Rank-Y: 14 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 28; Colend: 21; Cols: -7;rank= 191 coords= 11 15 neighbours(up,down,left,right)= 175 -1 190 -1
+
+Num-X: 16 ; Num-Y: 12 ; Resolution: 20 ; Rank: 191 ; Rank-X: 11 ; Rank-Y: 15 ; Rowstart: 22; Rowend: 21; Rows: -1; Colstart: 30; Colend: 21; Cols: -9;Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+Error: Cannot allocate memory
+Error in Jacobi initialization.
+
+Usage: ./heat <input file> [result file]
+
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 96 PID 2827712 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 97 PID 2827713 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 98 PID 2827714 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 99 PID 2827715 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 100 PID 2827716 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 101 PID 2827717 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 102 PID 2827718 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 103 PID 2827719 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 104 PID 2827720 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 105 PID 2827721 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 106 PID 2827722 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 107 PID 2827723 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 108 PID 2827724 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 109 PID 2827725 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 110 PID 2827726 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 111 PID 2827727 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 112 PID 2827728 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 113 PID 2827729 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 2286588 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 2286589 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 2286590 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 2286591 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 2286592 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 2286593 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 2286594 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 2286595 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 2286596 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 2286597 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 2286598 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 2286599 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 2286600 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 2286601 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 2286602 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 2286603 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 16 PID 2286604 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 2286605 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 2286606 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 19 PID 2286607 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 20 PID 2286608 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 21 PID 2286609 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 22 PID 2286610 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 2286611 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 24 PID 2286612 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 48 PID 1683846 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 49 PID 1683847 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 50 PID 1683848 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 51 PID 1683849 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 52 PID 1683850 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 53 PID 1683851 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 54 PID 1683852 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 55 PID 1683853 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 56 PID 1683854 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 57 PID 1683855 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 58 PID 1683856 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 59 PID 1683857 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 60 PID 1683858 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 61 PID 1683859 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 62 PID 1683860 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 63 PID 1683861 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 64 PID 1683862 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 65 PID 1683863 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 66 PID 1683864 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 67 PID 1683865 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 68 PID 1683866 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 69 PID 1683867 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 70 PID 1683868 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 71 PID 1683869 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 72 PID 1683870 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 73 PID 1683871 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 74 PID 1683872 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 75 PID 1683873 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 76 PID 1683874 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 77 PID 1683875 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+=   RANK 114 PID 2827730 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 115 PID 2827731 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 116 PID 2827732 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 117 PID 2827733 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 118 PID 2827734 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 119 PID 2827735 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 120 PID 2827736 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 144 PID 3567187 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 145 PID 3567188 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 146 PID 3567189 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 147 PID 3567190 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 148 PID 3567191 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 149 PID 3567192 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 150 PID 3567193 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 151 PID 3567194 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 152 PID 3567195 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 153 PID 3567196 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 154 PID 3567197 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 155 PID 3567198 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 156 PID 3567199 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 157 PID 3567200 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 158 PID 3567201 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 159 PID 3567202 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 160 PID 3567203 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 161 PID 3567204 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 162 PID 3567205 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 163 PID 3567206 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 164 PID 3567207 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 165 PID 3567208 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 166 PID 3567209 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 167 PID 3567210 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 168 PID 3567211 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 169 PID 3567212 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 170 PID 3567213 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 171 PID 3567214 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 172 PID 3567215 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 173 PID 3567216 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 174 PID 3567217 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 25 PID 2286613 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 175 PID 3567218 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 176 PID 3567219 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 26 PID 2286614 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 177 PID 3567220 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 27 PID 2286615 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 28 PID 2286616 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 178 PID 3567221 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 29 PID 2286617 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 30 PID 2286618 RUNNING AT i01r01c01s02
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 179 PID 3567222 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 31 PID 2286619 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 32 PID 2286620 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 180 PID 3567223 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 33 PID 2286621 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 181 PID 3567224 RUNNING AT i01r01c02s09
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 34 PID 2286622 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 35 PID 2286623 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 182 PID 3567225 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 36 PID 2286624 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 183 PID 3567226 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 37 PID 2286625 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 38 PID 2286626 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 184 PID 3567227 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 39 PID 2286627 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 40 PID 2286628 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 41 PID 2286629 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 42 PID 2286630 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 43 PID 2286631 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 44 PID 2286632 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 45 PID 2286633 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 46 PID 2286634 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 47 PID 2286635 RUNNING AT i01r01c01s02
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 121 PID 2827737 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 122 PID 2827738 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 123 PID 2827739 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 124 PID 2827740 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 125 PID 2827741 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 126 PID 2827742 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 127 PID 2827743 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 128 PID 2827744 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 129 PID 2827745 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 130 PID 2827746 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 131 PID 2827747 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 132 PID 2827748 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 133 PID 2827749 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 134 PID 2827750 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 135 PID 2827751 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 136 PID 2827752 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 137 PID 2827753 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 138 PID 2827754 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 139 PID 2827755 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 140 PID 2827756 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 141 PID 2827757 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 142 PID 2827758 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 143 PID 2827759 RUNNING AT i01r01c02s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 78 PID 1683876 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 79 PID 1683877 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 80 PID 1683878 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 81 PID 1683879 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 82 PID 1683880 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 83 PID 1683881 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 84 PID 1683882 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 85 PID 1683883 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 86 PID 1683884 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 87 PID 1683885 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 88 PID 1683886 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 89 PID 1683887 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 90 PID 1683888 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 91 PID 1683889 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 92 PID 1683890 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 93 PID 1683891 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 94 PID 1683892 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 95 PID 1683893 RUNNING AT i01r01c02s07
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 185 PID 3567228 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 186 PID 3567229 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 187 PID 3567230 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 188 PID 3567231 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 189 PID 3567232 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 190 PID 3567233 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 191 PID 3567234 RUNNING AT i01r01c02s09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================

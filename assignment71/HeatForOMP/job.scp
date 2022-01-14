@@ -2,8 +2,8 @@
 # Job Name and Files (also --job-name)
 #SBATCH -J heat
 #Output and error (also --output, --error):
-#SBATCH -o heat_task_12x16_4.out
-#SBATCH -e heat_task_12x16_4.out
+#SBATCH -o heat_task_16x12_4.out
+#SBATCH -e heat_task_16x12_4.out
 # Wall clock limit:
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
@@ -14,4 +14,4 @@
 
 echo "mpiexec -genv I_MPI_DEBUG=4 -n 192"
 
-mpiexec -genv I_MPI_DEBUG=4 -n 192 ./heat test.dat 12 16
+mpiexec -genv I_MPI_DEBUG=4 -n 192 ./heat test.dat 16 12
