@@ -123,7 +123,7 @@ int main(int argc, char *argv[]) {
 		}
 
 		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d;", 
-				dims[1], dims[0], 
+				dims[0], dims[1], 
 				param.act_res, rank, coord[0], coord[1], 
 				gridparam.store_row_start, gridparam.store_row_end,
 				gridparam.store_row_end - gridparam.store_row_start,
