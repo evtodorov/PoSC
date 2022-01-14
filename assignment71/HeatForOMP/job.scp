@@ -7,7 +7,7 @@
 # Wall clock limit:
 #SBATCH --time=00:10:00
 #SBATCH --account=h039v
-#SBATCH --partition=micro
+#SBATCH --partition=test
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
 #SBATCH --ear=off
