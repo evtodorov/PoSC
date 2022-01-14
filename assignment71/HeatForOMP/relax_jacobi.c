@@ -6,6 +6,7 @@
  */
 
 #include "heat.h"
+#include <stdlib.h>
 
 
 double relax_jacobi( double **u1, double **utmp1,
@@ -81,21 +82,21 @@ double relax_jacobi( double **u1, double **utmp1,
   }  
   if (right!=-1){ 
     	MPI_Isend(secondtolastcolumn, nprows, MPI_DOUBLE, right, 20,
-						*comm_2d, request[1]);  // send right
+						*comm_2d, &request[1]);  // send right
       MPI_Irecv(lastcolumn, nprows, MPI_DOUBLE, right, 10,
-							comm_2d, &request[5]); // recv right
+							*comm_2d, &request[5]); // recv right
   }
   if (up!=-1){
       MPI_Isend((utmp+npcols), npcols, MPI_DOUBLE, up, 30,
-							comm_2d, &reqiset[2]); // send up
-      MPI_Irecv((utmp, npcols, MPI_DOUBLE, up, 40, 
-								comm_2d, &request[6]); // recv up
+							*comm_2d, &request[2]); // send up
+      MPI_Irecv(utmp, npcols, MPI_DOUBLE, up, 40, 
+								*comm_2d, &request[6]); // recv up
   }          
   if (down!=-1){
 	    MPI_Isend((utmp+(nprows-2)*npcols), npcols, MPI_DOUBLE, down, 40,
-							comm_2d, &request[3]);
+							*comm_2d, &request[3]);
       MPI_Irecv((utmp+(nprows-1)*npcols), npcols, MPI_DOUBLE, down, 30, 
-							comm_2d, &request[7]);
+							*comm_2d, &request[7]);
   }
     
   // compute the rest
@@ -119,7 +120,7 @@ double relax_jacobi( double **u1, double **utmp1,
 
 
   // wait until all send and recv is completed
-  MPI_Waitall(8, status, request); 
+  MPI_Waitall(8, &status, &request); 
   if (right!=-1){
     for (int i=0; i < nprows; i++){
 			utmp[(i+1)*npcols-1] = lastcolumn[i]; 
