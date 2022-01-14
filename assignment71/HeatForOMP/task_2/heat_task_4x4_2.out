@@ -1,0 +1,72 @@
+mpiexec -genv I_MPI_DEBUG=4 -n 16
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2682266  i01r01c01s06  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 1       2682267  i01r01c01s06  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 2       2682268  i01r01c01s06  {12,13,14,15,16,17,60,61,62,63,64,65}
+[0] MPI startup(): 3       2682269  i01r01c01s06  {18,19,20,21,22,23,66,67,68,69,70,71}
+[0] MPI startup(): 4       2682270  i01r01c01s06  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 5       2682271  i01r01c01s06  {30,31,32,33,34,35,78,79,80,81,82,83}
+[0] MPI startup(): 6       2682272  i01r01c01s06  {36,37,38,39,40,41,84,85,86,87,88,89}
+[0] MPI startup(): 7       2682273  i01r01c01s06  {42,43,44,45,46,47,90,91,92,93,94,95}
+[0] MPI startup(): 8       2964839  i01r01c01s07  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 9       2964840  i01r01c01s07  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 10      2964841  i01r01c01s07  {12,13,14,15,16,17,60,61,62,63,64,65}
+[0] MPI startup(): 11      2964842  i01r01c01s07  {18,19,20,21,22,23,66,67,68,69,70,71}
+[0] MPI startup(): 12      2964843  i01r01c01s07  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 13      2964844  i01r01c01s07  {30,31,32,33,34,35,78,79,80,81,82,83}
+[0] MPI startup(): 14      2964845  i01r01c01s07  {36,37,38,39,40,41,84,85,86,87,88,89}
+[0] MPI startup(): 15      2964846  i01r01c01s07  {42,43,44,45,46,47,90,91,92,93,94,95}
+
+4 processes distributed in X-direction
+ 4 ; processes distributed in Y-direction
+Resolutions       : (12500, 13500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 4 -1 1
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 5 0 2
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 6 1 3
+rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 7 2 -1
+rank= 8 coords= 2 0 neighbours(up,down,left,right)= 4 12 -1 9
+rank= 4 coords= 1 0 neighbours(up,down,left,right)= 0 8 -1 5
+rank= 9 coords= 2 1 neighbours(up,down,left,right)= 5 13 8 10
+rank= 5 coords= 1 1 neighbours(up,down,left,right)= 1 9 4 6
+rank= 10 coords= 2 2 neighbours(up,down,left,right)= 6 14 9 11
+rank= 6 coords= 1 2 neighbours(up,down,left,right)= 2 10 5 7
+rank= 11 coords= 2 3 neighbours(up,down,left,right)= 7 15 10 -1
+rank= 7 coords= 1 3 neighbours(up,down,left,right)= 3 11 6 -1
+rank= 12 coords= 3 0 neighbours(up,down,left,right)= 8 -1 -1 13
+rank= 13 coords= 3 1 neighbours(up,down,left,right)= 9 -1 12 14
+rank= 14 coords= 3 2 neighbours(up,down,left,right)= 10 -1 13 15
+rank= 15 coords= 3 3 neighbours(up,down,left,right)= 11 -1 14 -1
+
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 14 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 9375; Rowend: 12501; Rows: 3126; Colstart: 6250; Colend: 9376; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 15 ; Rank-X: 3 ; Rank-Y: 3 ; Rowstart: 9375; Rowend: 12501; Rows: 3126; Colstart: 9375; Colend: 12501; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 12 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 9375; Rowend: 12501; Rows: 3126; Colstart: 0; Colend: 3126; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 13 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 9375; Rowend: 12501; Rows: 3126; Colstart: 3125; Colend: 6251; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 8 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 6250; Rowend: 9376; Rows: 3126; Colstart: 0; Colend: 3126; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 10 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 6250; Rowend: 9376; Rows: 3126; Colstart: 6250; Colend: 9376; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 9 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 9376; Rows: 3126; Colstart: 3125; Colend: 6251; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 11 ; Rank-X: 2 ; Rank-Y: 3 ; Rowstart: 6250; Rowend: 9376; Rows: 3126; Colstart: 9375; Colend: 12501; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 0; Rowend: 3126; Rows: 3126; Colstart: 6250; Colend: 9376; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 3 ; Rowstart: 0; Rowend: 3126; Rows: 3126; Colstart: 9375; Colend: 12501; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 6 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 3125; Rowend: 6251; Rows: 3126; Colstart: 6250; Colend: 9376; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 0; Rowend: 3126; Rows: 3126; Colstart: 3125; Colend: 6251; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 7 ; Rank-X: 1 ; Rank-Y: 3 ; Rowstart: 3125; Rowend: 6251; Rows: 3126; Colstart: 9375; Colend: 12501; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 4 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 3125; Rowend: 6251; Rows: 3126; Colstart: 0; Colend: 3126; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 5 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3125; Rowend: 6251; Rows: 3126; Colstart: 3125; Colend: 6251; Cols: 3126;
+Num-X: 4 ; Num-Y: 4 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3126; Rows: 3126; Colstart: 0; Colend: 3126; Cols: 3126;
+
+Resolution: 12500
+===================
+Execution time: 0.296334
+Residual: 5.863330
+
+megaflops:  73818.7
+  flop instructions (M):  21875.000
