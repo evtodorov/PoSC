@@ -4,7 +4,6 @@
 #include "heat.h"
 #include "timing.h"
 
-#include <mpi.h>
 
 double* time;
 
@@ -34,7 +33,14 @@ int main(int argc, char *argv[]) {
 	int nprows, npcols;
 	int rank, size;
 	MPI_Status s;
-	MPI_Init(&argc, &argv);
+	int provided;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &provided);
+    if(provided < MPI_THREAD_FUNNELED)
+    {
+        printf("The threading support level is lesser than that demanded.\n");
+        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+    }
+
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	MPI_Comm comm_2d;

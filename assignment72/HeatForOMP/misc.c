@@ -51,6 +51,8 @@ int initialize( algoparam_t *param, gridparam_t *gridparam )
 				      (param->visres+2) *
 				      (param->visres+2) );
 
+	
+	#pragma omp parallel for schedule(static) 
     for (i=0;i<np_rows;i++){
     	for (j=0;j<np_cols;j++){
     		param->u[i*np_cols+j]=0.0;

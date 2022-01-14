@@ -8,7 +8,8 @@
 #define JACOBI_H_INCLUDED
 
 #include <stdio.h>
-
+#include <mpi.h>
+#include <omp.h>
 // configuration
 
 typedef struct
