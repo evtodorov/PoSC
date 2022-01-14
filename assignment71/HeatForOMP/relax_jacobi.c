@@ -28,10 +28,10 @@ double relax_jacobi( double **u1, double **utmp1,
   lastcolumn = (double*)malloc( sizeof(double)* nprows );
   secondcolumn = (double*)malloc( sizeof(double)* nprows );
   secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
+  MPI_Comm_rank(*comm_2d, &rank);
 	MPI_Cart_coords(*comm_2d, rank, 2, coord);
 	MPI_Cart_shift(*comm_2d, 0, 1, &up, &down);
 	MPI_Cart_shift(*comm_2d, 1, 1, &left, &right);
-  MPI_Comm_rank(*comm_2d, &rank);
 
   // compute ghost cells
   // second and secondtolast rows
@@ -120,7 +120,7 @@ double relax_jacobi( double **u1, double **utmp1,
 
 
   // wait until all send and recv is completed
-  MPI_Waitall(8, &status, &request); 
+  MPI_Waitall(8, request, status); 
   if (right!=-1){
     for (int i=0; i < nprows; i++){
 			utmp[(i+1)*npcols-1] = lastcolumn[i]; 
