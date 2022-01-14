@@ -1,0 +1,17 @@
+#!/bin/bash
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#Output and error (also --output, --error):
+#SBATCH -o heat_task_1x4.out
+#SBATCH -e heat_task_1x4.out
+# Wall clock limit:
+#SBATCH --time=00:10:00
+#SBATCH --account=h039v
+#SBATCH --partition=micro
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --ear=off
+
+echo "mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 4"
+
+mpiexec -genv I_MPI_DEBUG=4 -env I_MPI_PIN_DOMAIN=core -n 4 ./heat test.dat 1 4
