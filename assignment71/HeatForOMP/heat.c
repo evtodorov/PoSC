@@ -4,8 +4,6 @@
 #include "heat.h"
 #include "timing.h"
 
-#include <mpi.h>
-
 double* time;
 
 void usage(char *s) {

@@ -6,7 +6,6 @@
  */
 
 #include "heat.h"
-#include <mpi.h>
 
 
 double relax_jacobi( double **u1, double **utmp1,
