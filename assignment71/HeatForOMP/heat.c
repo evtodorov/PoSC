@@ -151,8 +151,9 @@ int main(int argc, char *argv[]) {
 		lastcolumn = (double*)malloc( sizeof(double)* nprows );
 		secondcolumn = (double*)malloc( sizeof(double)* nprows );
 		secondtolastcolumn = (double*)malloc( sizeof(double)* nprows );
+		double tot_residual = 0;
 		for (iter = 0; iter < param.maxiter; iter++) {
-			MPI_Barrier(comm_2d);
+			/*MPI_Barrier(comm_2d);
 			for (int r=0; r<size; r++){
 				if (rank==r){
 						printf("\n-------------\nRank:%u\n", rank);
@@ -161,7 +162,7 @@ int main(int argc, char *argv[]) {
 				}
 			MPI_Barrier(comm_2d);
 			}
-
+			*/
 			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
 
 			// Communicate
@@ -233,13 +234,13 @@ int main(int argc, char *argv[]) {
 		free(firstcolumn); free(lastcolumn); free(secondcolumn); free(secondtolastcolumn);
 
 		time[exp_number] = wtime() - time[exp_number];
-
+		MPI_Reduce(&residual, &tot_residual, 1, MPI_DOUBLE, MPI_SUM, 0, comm_2d);
 		if (rank==0)
 		{
 			printf("\n\nResolution: %u\n", param.act_res);
 			printf("===================\n");
 			printf("Execution time: %f\n", time[exp_number]);
-			printf("Residual: %f\n\n", residual);
+			printf("Residual: %f\n\n", tot_residual);
 
 			printf("megaflops:  %.1lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / time[exp_number] / 1000000);
 			printf("  flop instructions (M):  %.3lf\n", (double) param.maxiter * (np - 2) * (np - 2) * 7 / 1000000);
