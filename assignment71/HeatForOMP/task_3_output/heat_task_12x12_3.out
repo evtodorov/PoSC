@@ -1,0 +1,456 @@
+mpiexec -genv I_MPI_DEBUG=4 -n 144
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2990035  i01r01c03s09  {0,48}
+[0] MPI startup(): 1       2990036  i01r01c03s09  {1,49}
+[0] MPI startup(): 2       2990037  i01r01c03s09  {2,50}
+[0] MPI startup(): 3       2990038  i01r01c03s09  {3,51}
+[0] MPI startup(): 4       2990039  i01r01c03s09  {4,52}
+[0] MPI startup(): 5       2990040  i01r01c03s09  {5,53}
+[0] MPI startup(): 6       2990041  i01r01c03s09  {6,54}
+[0] MPI startup(): 7       2990042  i01r01c03s09  {7,55}
+[0] MPI startup(): 8       2990043  i01r01c03s09  {8,56}
+[0] MPI startup(): 9       2990044  i01r01c03s09  {9,57}
+[0] MPI startup(): 10      2990045  i01r01c03s09  {10,58}
+[0] MPI startup(): 11      2990046  i01r01c03s09  {11,59}
+[0] MPI startup(): 12      2990047  i01r01c03s09  {12,60}
+[0] MPI startup(): 13      2990048  i01r01c03s09  {13,61}
+[0] MPI startup(): 14      2990049  i01r01c03s09  {14,62}
+[0] MPI startup(): 15      2990050  i01r01c03s09  {15,63}
+[0] MPI startup(): 16      2990051  i01r01c03s09  {16,64}
+[0] MPI startup(): 17      2990052  i01r01c03s09  {17,65}
+[0] MPI startup(): 18      2990053  i01r01c03s09  {18,66}
+[0] MPI startup(): 19      2990054  i01r01c03s09  {19,67}
+[0] MPI startup(): 20      2990055  i01r01c03s09  {20,68}
+[0] MPI startup(): 21      2990056  i01r01c03s09  {21,69}
+[0] MPI startup(): 22      2990057  i01r01c03s09  {22,70}
+[0] MPI startup(): 23      2990058  i01r01c03s09  {23,71}
+[0] MPI startup(): 24      2990059  i01r01c03s09  {24,72}
+[0] MPI startup(): 25      2990060  i01r01c03s09  {25,73}
+[0] MPI startup(): 26      2990061  i01r01c03s09  {26,74}
+[0] MPI startup(): 27      2990062  i01r01c03s09  {27,75}
+[0] MPI startup(): 28      2990063  i01r01c03s09  {28,76}
+[0] MPI startup(): 29      2990064  i01r01c03s09  {29,77}
+[0] MPI startup(): 30      2990065  i01r01c03s09  {30,78}
+[0] MPI startup(): 31      2990066  i01r01c03s09  {31,79}
+[0] MPI startup(): 32      2990067  i01r01c03s09  {32,80}
+[0] MPI startup(): 33      2990068  i01r01c03s09  {33,81}
+[0] MPI startup(): 34      2990069  i01r01c03s09  {34,82}
+[0] MPI startup(): 35      2990070  i01r01c03s09  {35,83}
+[0] MPI startup(): 36      2990071  i01r01c03s09  {36,84}
+[0] MPI startup(): 37      2990072  i01r01c03s09  {37,85}
+[0] MPI startup(): 38      2990073  i01r01c03s09  {38,86}
+[0] MPI startup(): 39      2990074  i01r01c03s09  {39,87}
+[0] MPI startup(): 40      2990075  i01r01c03s09  {40,88}
+[0] MPI startup(): 41      2990076  i01r01c03s09  {41,89}
+[0] MPI startup(): 42      2990077  i01r01c03s09  {42,90}
+[0] MPI startup(): 43      2990078  i01r01c03s09  {43,91}
+[0] MPI startup(): 44      2990079  i01r01c03s09  {44,92}
+[0] MPI startup(): 45      2990080  i01r01c03s09  {45,93}
+[0] MPI startup(): 46      2990081  i01r01c03s09  {46,94}
+[0] MPI startup(): 47      2990082  i01r01c03s09  {47,95}
+[0] MPI startup(): 48      3742293  i01r01c03s10  {0,48}
+[0] MPI startup(): 49      3742294  i01r01c03s10  {1,49}
+[0] MPI startup(): 50      3742295  i01r01c03s10  {2,50}
+[0] MPI startup(): 51      3742296  i01r01c03s10  {3,51}
+[0] MPI startup(): 52      3742297  i01r01c03s10  {4,52}
+[0] MPI startup(): 53      3742298  i01r01c03s10  {5,53}
+[0] MPI startup(): 54      3742299  i01r01c03s10  {6,54}
+[0] MPI startup(): 55      3742300  i01r01c03s10  {7,55}
+[0] MPI startup(): 56      3742301  i01r01c03s10  {8,56}
+[0] MPI startup(): 57      3742302  i01r01c03s10  {9,57}
+[0] MPI startup(): 58      3742303  i01r01c03s10  {10,58}
+[0] MPI startup(): 59      3742304  i01r01c03s10  {11,59}
+[0] MPI startup(): 60      3742305  i01r01c03s10  {12,60}
+[0] MPI startup(): 61      3742306  i01r01c03s10  {13,61}
+[0] MPI startup(): 62      3742307  i01r01c03s10  {14,62}
+[0] MPI startup(): 63      3742308  i01r01c03s10  {15,63}
+[0] MPI startup(): 64      3742309  i01r01c03s10  {16,64}
+[0] MPI startup(): 65      3742310  i01r01c03s10  {17,65}
+[0] MPI startup(): 66      3742311  i01r01c03s10  {18,66}
+[0] MPI startup(): 67      3742312  i01r01c03s10  {19,67}
+[0] MPI startup(): 68      3742313  i01r01c03s10  {20,68}
+[0] MPI startup(): 69      3742314  i01r01c03s10  {21,69}
+[0] MPI startup(): 70      3742315  i01r01c03s10  {22,70}
+[0] MPI startup(): 71      3742316  i01r01c03s10  {23,71}
+[0] MPI startup(): 72      3742317  i01r01c03s10  {24,72}
+[0] MPI startup(): 73      3742318  i01r01c03s10  {25,73}
+[0] MPI startup(): 74      3742319  i01r01c03s10  {26,74}
+[0] MPI startup(): 75      3742320  i01r01c03s10  {27,75}
+[0] MPI startup(): 76      3742321  i01r01c03s10  {28,76}
+[0] MPI startup(): 77      3742322  i01r01c03s10  {29,77}
+[0] MPI startup(): 78      3742323  i01r01c03s10  {30,78}
+[0] MPI startup(): 79      3742324  i01r01c03s10  {31,79}
+[0] MPI startup(): 80      3742325  i01r01c03s10  {32,80}
+[0] MPI startup(): 81      3742326  i01r01c03s10  {33,81}
+[0] MPI startup(): 82      3742327  i01r01c03s10  {34,82}
+[0] MPI startup(): 83      3742328  i01r01c03s10  {35,83}
+[0] MPI startup(): 84      3742329  i01r01c03s10  {36,84}
+[0] MPI startup(): 85      3742330  i01r01c03s10  {37,85}
+[0] MPI startup(): 86      3742331  i01r01c03s10  {38,86}
+[0] MPI startup(): 87      3742332  i01r01c03s10  {39,87}
+[0] MPI startup(): 88      3742333  i01r01c03s10  {40,88}
+[0] MPI startup(): 89      3742334  i01r01c03s10  {41,89}
+[0] MPI startup(): 90      3742335  i01r01c03s10  {42,90}
+[0] MPI startup(): 91      3742336  i01r01c03s10  {43,91}
+[0] MPI startup(): 92      3742337  i01r01c03s10  {44,92}
+[0] MPI startup(): 93      3742338  i01r01c03s10  {45,93}
+[0] MPI startup(): 94      3742339  i01r01c03s10  {46,94}
+[0] MPI startup(): 95      3742340  i01r01c03s10  {47,95}
+[0] MPI startup(): 96      3735490  i01r01c03s11  {0,48}
+[0] MPI startup(): 97      3735491  i01r01c03s11  {1,49}
+[0] MPI startup(): 98      3735492  i01r01c03s11  {2,50}
+[0] MPI startup(): 99      3735493  i01r01c03s11  {3,51}
+[0] MPI startup(): 100     3735494  i01r01c03s11  {4,52}
+[0] MPI startup(): 101     3735495  i01r01c03s11  {5,53}
+[0] MPI startup(): 102     3735496  i01r01c03s11  {6,54}
+[0] MPI startup(): 103     3735497  i01r01c03s11  {7,55}
+[0] MPI startup(): 104     3735498  i01r01c03s11  {8,56}
+[0] MPI startup(): 105     3735499  i01r01c03s11  {9,57}
+[0] MPI startup(): 106     3735500  i01r01c03s11  {10,58}
+[0] MPI startup(): 107     3735501  i01r01c03s11  {11,59}
+[0] MPI startup(): 108     3735502  i01r01c03s11  {12,60}
+[0] MPI startup(): 109     3735503  i01r01c03s11  {13,61}
+[0] MPI startup(): 110     3735504  i01r01c03s11  {14,62}
+[0] MPI startup(): 111     3735505  i01r01c03s11  {15,63}
+[0] MPI startup(): 112     3735506  i01r01c03s11  {16,64}
+[0] MPI startup(): 113     3735507  i01r01c03s11  {17,65}
+[0] MPI startup(): 114     3735508  i01r01c03s11  {18,66}
+[0] MPI startup(): 115     3735509  i01r01c03s11  {19,67}
+[0] MPI startup(): 116     3735510  i01r01c03s11  {20,68}
+[0] MPI startup(): 117     3735511  i01r01c03s11  {21,69}
+[0] MPI startup(): 118     3735512  i01r01c03s11  {22,70}
+[0] MPI startup(): 119     3735513  i01r01c03s11  {23,71}
+[0] MPI startup(): 120     3735514  i01r01c03s11  {24,72}
+[0] MPI startup(): 121     3735515  i01r01c03s11  {25,73}
+[0] MPI startup(): 122     3735516  i01r01c03s11  {26,74}
+[0] MPI startup(): 123     3735517  i01r01c03s11  {27,75}
+[0] MPI startup(): 124     3735518  i01r01c03s11  {28,76}
+[0] MPI startup(): 125     3735519  i01r01c03s11  {29,77}
+[0] MPI startup(): 126     3735520  i01r01c03s11  {30,78}
+[0] MPI startup(): 127     3735521  i01r01c03s11  {31,79}
+[0] MPI startup(): 128     3735522  i01r01c03s11  {32,80}
+[0] MPI startup(): 129     3735523  i01r01c03s11  {33,81}
+[0] MPI startup(): 130     3735524  i01r01c03s11  {34,82}
+[0] MPI startup(): 131     3735525  i01r01c03s11  {35,83}
+[0] MPI startup(): 132     3735526  i01r01c03s11  {36,84}
+[0] MPI startup(): 133     3735527  i01r01c03s11  {37,85}
+[0] MPI startup(): 134     3735528  i01r01c03s11  {38,86}
+[0] MPI startup(): 135     3735529  i01r01c03s11  {39,87}
+[0] MPI startup(): 136     3735530  i01r01c03s11  {40,88}
+[0] MPI startup(): 137     3735531  i01r01c03s11  {41,89}
+[0] MPI startup(): 138     3735532  i01r01c03s11  {42,90}
+[0] MPI startup(): 139     3735533  i01r01c03s11  {43,91}
+[0] MPI startup(): 140     3735534  i01r01c03s11  {44,92}
+[0] MPI startup(): 141     3735535  i01r01c03s11  {45,93}
+[0] MPI startup(): 142     3735536  i01r01c03s11  {46,94}
+[0] MPI startup(): 143     3735537  i01r01c03s11  {47,95}
+
+12 processes distributed in X-direction
+ 12 ; processes distributed in Y-direction
+Resolutions       : (12500, 13500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 96 coords= 8 0 neighbours(up,down,left,right)= 84 108 -1 97
+rank= 26 coords= 2 2 neighbours(up,down,left,right)= 14 38 25 27
+rank= 52 coords= 4 4 neighbours(up,down,left,right)= 40 64 51 53
+rank= 128 coords= 10 8 neighbours(up,down,left,right)= 116 140 127 129
+rank= 34 coords= 2 10 neighbours(up,down,left,right)= 22 46 33 35
+rank= 58 coords= 4 10 neighbours(up,down,left,right)= 46 70 57 59
+rank= 129 coords= 10 9 neighbours(up,down,left,right)= 117 141 128 130
+rank= 36 coords= 3 0 neighbours(up,down,left,right)= 24 48 -1 37
+rank= 64 coords= 5 4 neighbours(up,down,left,right)= 52 76 63 65
+rank= 97 coords= 8 1 neighbours(up,down,left,right)= 85 109 96 98
+rank= 37 coords= 3 1 neighbours(up,down,left,right)= 25 49 36 38
+rank= 82 coords= 6 10 neighbours(up,down,left,right)= 70 94 81 83
+rank= 98 coords= 8 2 neighbours(up,down,left,right)= 86 110 97 99
+rank= 39 coords= 3 3 neighbours(up,down,left,right)= 27 51 38 40
+rank= 83 coords= 6 11 neighbours(up,down,left,right)= 71 95 82 -1
+rank= 99 coords= 8 3 neighbours(up,down,left,right)= 87 111 98 100
+rank= 41 coords= 3 5 neighbours(up,down,left,right)= 29 53 40 42
+rank= 100 coords= 8 4 neighbours(up,down,left,right)= 88 112 99 101
+rank= 45 coords= 3 9 neighbours(up,down,left,right)= 33 57 44 46
+rank= 87 coords= 7 3 neighbours(up,down,left,right)= 75 99 86 88
+rank= 101 coords= 8 5 neighbours(up,down,left,right)= 89 113 100 102
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 12 -1 1
+rank= 88 coords= 7 4 neighbours(up,down,left,right)= 76 100 87 89
+rank= 102 coords= 8 6 neighbours(up,down,left,right)= 90 114 101 103
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 13 0 2
+rank= 89 coords= 7 5 neighbours(up,down,left,right)= 77 101 88 90
+rank= 103 coords= 8 7 neighbours(up,down,left,right)= 91 115 102 104
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 14 1 3
+rank= 94 coords= 7 10 neighbours(up,down,left,right)= 82 106 93 95
+rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 15 2 4
+rank= 48 coords= 4 0 neighbours(up,down,left,right)= 36 60 -1 49
+rank= 4 coords= 0 4 neighbours(up,down,left,right)= -1 16 3 5
+rank= 49 coords= 4 1 neighbours(up,down,left,right)= 37 61 48 50
+rank= 5 coords= 0 5 neighbours(up,down,left,right)= -1 17 4 6
+rank= 50 coords= 4 2 neighbours(up,down,left,right)= 38 62 49 51
+rank= 104 coords= 8 8 neighbours(up,down,left,right)= 92 116 103 105
+rank= 6 coords= 0 6 neighbours(up,down,left,right)= -1 18 5 7
+rank= 51 coords= 4 3 neighbours(up,down,left,right)= 39 63 50 52
+rank= 105 coords= 8 9 neighbours(up,down,left,right)= 93 117 104 106
+rank= 7 coords= 0 7 neighbours(up,down,left,right)= -1 19 6 8
+rank= 53 coords= 4 5 neighbours(up,down,left,right)= 41 65 52 54
+rank= 106 coords= 8 10 neighbours(up,down,left,right)= 94 118 105 107
+rank= 8 coords= 0 8 neighbours(up,down,left,right)= -1 20 7 9
+rank= 54 coords= 4 6 neighbours(up,down,left,right)= 42 66 53 55
+rank= 107 coords= 8 11 neighbours(up,down,left,right)= 95 119 106 -1
+rank= 9 coords= 0 9 neighbours(up,down,left,right)= -1 21 8 10
+rank= 55 coords= 4 7 neighbours(up,down,left,right)= 43 67 54 56
+rank= 108 coords= 9 0 neighbours(up,down,left,right)= 96 120 -1 109
+rank= 10 coords= 0 10 neighbours(up,down,left,right)= -1 22 9 11
+rank= 56 coords= 4 8 neighbours(up,down,left,right)= 44 68 55 57
+rank= 109 coords= 9 1 neighbours(up,down,left,right)= 97 121 108 110
+rank= 11 coords= 0 11 neighbours(up,down,left,right)= -1 23 10 -1
+rank= 57 coords= 4 9 neighbours(up,down,left,right)= 45 69 56 58
+rank= 110 coords= 9 2 neighbours(up,down,left,right)= 98 122 109 111
+rank= 12 coords= 1 0 neighbours(up,down,left,right)= 0 24 -1 13
+rank= 59 coords= 4 11 neighbours(up,down,left,right)= 47 71 58 -1
+rank= 111 coords= 9 3 neighbours(up,down,left,right)= 99 123 110 112
+rank= 13 coords= 1 1 neighbours(up,down,left,right)= 1 25 12 14
+rank= 60 coords= 5 0 neighbours(up,down,left,right)= 48 72 -1 61
+rank= 112 coords= 9 4 neighbours(up,down,left,right)= 100 124 111 113
+rank= 14 coords= 1 2 neighbours(up,down,left,right)= 2 26 13 15
+rank= 61 coords= 5 1 neighbours(up,down,left,right)= 49 73 60 62
+rank= 113 coords= 9 5 neighbours(up,down,left,right)= 101 125 112 114
+rank= 15 coords= 1 3 neighbours(up,down,left,right)= 3 27 14 16
+rank= 62 coords= 5 2 neighbours(up,down,left,right)= 50 74 61 63
+rank= 114 coords= 9 6 neighbours(up,down,left,right)= 102 126 113 115
+rank= 16 coords= 1 4 neighbours(up,down,left,right)= 4 28 15 17
+rank= 63 coords= 5 3 neighbours(up,down,left,right)= 51 75 62 64
+rank= 115 coords= 9 7 neighbours(up,down,left,right)= 103 127 114 116
+rank= 17 coords= 1 5 neighbours(up,down,left,right)= 5 29 16 18
+rank= 65 coords= 5 5 neighbours(up,down,left,right)= 53 77 64 66
+rank= 116 coords= 9 8 neighbours(up,down,left,right)= 104 128 115 117
+rank= 18 coords= 1 6 neighbours(up,down,left,right)= 6 30 17 19
+rank= 66 coords= 5 6 neighbours(up,down,left,right)= 54 78 65 67
+rank= 117 coords= 9 9 neighbours(up,down,left,right)= 105 129 116 118
+rank= 19 coords= 1 7 neighbours(up,down,left,right)= 7 31 18 20
+rank= 67 coords= 5 7 neighbours(up,down,left,right)= 55 79 66 68
+rank= 118 coords= 9 10 neighbours(up,down,left,right)= 106 130 117 119
+rank= 20 coords= 1 8 neighbours(up,down,left,right)= 8 32 19 21
+rank= 68 coords= 5 8 neighbours(up,down,left,right)= 56 80 67 69
+rank= 120 coords= 10 0 neighbours(up,down,left,right)= 108 132 -1 121
+rank= 21 coords= 1 9 neighbours(up,down,left,right)= 9 33 20 22
+rank= 69 coords= 5 9 neighbours(up,down,left,right)= 57 81 68 70
+rank= 121 coords= 10 1 neighbours(up,down,left,right)= 109 133 120 122
+rank= 22 coords= 1 10 neighbours(up,down,left,right)= 10 34 21 23
+rank= 70 coords= 5 10 neighbours(up,down,left,right)= 58 82 69 71
+rank= 122 coords= 10 2 neighbours(up,down,left,right)= 110 134 121 123
+rank= 23 coords= 1 11 neighbours(up,down,left,right)= 11 35 22 -1
+rank= 71 coords= 5 11 neighbours(up,down,left,right)= 59 83 70 -1
+rank= 123 coords= 10 3 neighbours(up,down,left,right)= 111 135 122 124
+rank= 24 coords= 2 0 neighbours(up,down,left,right)= 12 36 -1 25
+rank= 72 coords= 6 0 neighbours(up,down,left,right)= 60 84 -1 73
+rank= 124 coords= 10 4 neighbours(up,down,left,right)= 112 136 123 125
+rank= 25 coords= 2 1 neighbours(up,down,left,right)= 13 37 24 26
+rank= 73 coords= 6 1 neighbours(up,down,left,right)= 61 85 72 74
+rank= 125 coords= 10 5 neighbours(up,down,left,right)= 113 137 124 126
+rank= 27 coords= 2 3 neighbours(up,down,left,right)= 15 39 26 28
+rank= 74 coords= 6 2 neighbours(up,down,left,right)= 62 86 73 75
+rank= 126 coords= 10 6 neighbours(up,down,left,right)= 114 138 125 127
+rank= 28 coords= 2 4 neighbours(up,down,left,right)= 16 40 27 29
+rank= 75 coords= 6 3 neighbours(up,down,left,right)= 63 87 74 76
+rank= 127 coords= 10 7 neighbours(up,down,left,right)= 115 139 126 128
+rank= 29 coords= 2 5 neighbours(up,down,left,right)= 17 41 28 30
+rank= 76 coords= 6 4 neighbours(up,down,left,right)= 64 88 75 77
+rank= 130 coords= 10 10 neighbours(up,down,left,right)= 118 142 129 131
+rank= 30 coords= 2 6 neighbours(up,down,left,right)= 18 42 29 31
+rank= 77 coords= 6 5 neighbours(up,down,left,right)= 65 89 76 78
+rank= 131 coords= 10 11 neighbours(up,down,left,right)= 119 143 130 -1
+rank= 31 coords= 2 7 neighbours(up,down,left,right)= 19 43 30 32
+rank= 78 coords= 6 6 neighbours(up,down,left,right)= 66 90 77 79
+rank= 132 coords= 11 0 neighbours(up,down,left,right)= 120 -1 -1 133
+rank= 32 coords= 2 8 neighbours(up,down,left,right)= 20 44 31 33
+rank= 79 coords= 6 7 neighbours(up,down,left,right)= 67 91 78 80
+rank= 133 coords= 11 1 neighbours(up,down,left,right)= 121 -1 132 134
+rank= 33 coords= 2 9 neighbours(up,down,left,right)= 21 45 32 34
+rank= 80 coords= 6 8 neighbours(up,down,left,right)= 68 92 79 81
+rank= 134 coords= 11 2 neighbours(up,down,left,right)= 122 -1 133 135
+rank= 35 coords= 2 11 neighbours(up,down,left,right)= 23 47 34 -1
+rank= 81 coords= 6 9 neighbours(up,down,left,right)= 69 93 80 82
+rank= 135 coords= 11 3 neighbours(up,down,left,right)= 123 -1 134 136
+rank= 38 coords= 3 2 neighbours(up,down,left,right)= 26 50 37 39
+rank= 84 coords= 7 0 neighbours(up,down,left,right)= 72 96 -1 85
+rank= 136 coords= 11 4 neighbours(up,down,left,right)= 124 -1 135 137
+rank= 40 coords= 3 4 neighbours(up,down,left,right)= 28 52 39 41
+rank= 85 coords= 7 1 neighbours(up,down,left,right)= 73 97 84 86
+rank= 137 coords= 11 5 neighbours(up,down,left,right)= 125 -1 136 138
+rank= 42 coords= 3 6 neighbours(up,down,left,right)= 30 54 41 43
+rank= 86 coords= 7 2 neighbours(up,down,left,right)= 74 98 85 87
+rank= 138 coords= 11 6 neighbours(up,down,left,right)= 126 -1 137 139
+rank= 43 coords= 3 7 neighbours(up,down,left,right)= 31 55 42 44
+rank= 90 coords= 7 6 neighbours(up,down,left,right)= 78 102 89 91
+rank= 139 coords= 11 7 neighbours(up,down,left,right)= 127 -1 138 140
+rank= 44 coords= 3 8 neighbours(up,down,left,right)= 32 56 43 45
+rank= 91 coords= 7 7 neighbours(up,down,left,right)= 79 103 90 92
+rank= 140 coords= 11 8 neighbours(up,down,left,right)= 128 -1 139 141
+rank= 46 coords= 3 10 neighbours(up,down,left,right)= 34 58 45 47
+rank= 92 coords= 7 8 neighbours(up,down,left,right)= 80 104 91 93
+rank= 141 coords= 11 9 neighbours(up,down,left,right)= 129 -1 140 142
+rank= 47 coords= 3 11 neighbours(up,down,left,right)= 35 59 46 -1
+rank= 93 coords= 7 9 neighbours(up,down,left,right)= 81 105 92 94
+rank= 142 coords= 11 10 neighbours(up,down,left,right)= 130 -1 141 143
+rank= 95 coords= 7 11 neighbours(up,down,left,right)= 83 107 94 -1
+rank= 143 coords= 11 11 neighbours(up,down,left,right)= 131 -1 142 -1
+rank= 119 coords= 9 11 neighbours(up,down,left,right)= 107 131 118 -1
+
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 10 ; Rank-X: 0 ; Rank-Y: 10 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 4 ; Rank-X: 0 ; Rank-Y: 4 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 59 ; Rank-X: 4 ; Rank-Y: 11 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 5 ; Rank-X: 0 ; Rank-Y: 5 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 48 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 9 ; Rank-X: 0 ; Rank-Y: 9 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 51 ; Rank-X: 4 ; Rank-Y: 3 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 14 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 56 ; Rank-X: 4 ; Rank-Y: 8 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 16 ; Rank-X: 1 ; Rank-Y: 4 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 65 ; Rank-X: 5 ; Rank-Y: 5 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 38 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 41 ; Rank-X: 3 ; Rank-Y: 5 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 19 ; Rank-X: 1 ; Rank-Y: 7 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 29 ; Rank-X: 2 ; Rank-Y: 5 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 33 ; Rank-X: 2 ; Rank-Y: 9 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 35 ; Rank-X: 2 ; Rank-Y: 11 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 36 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 39 ; Rank-X: 3 ; Rank-Y: 3 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 42 ; Rank-X: 3 ; Rank-Y: 6 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 44 ; Rank-X: 3 ; Rank-Y: 8 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 45 ; Rank-X: 3 ; Rank-Y: 9 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 7 ; Rank-X: 0 ; Rank-Y: 7 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 47 ; Rank-X: 3 ; Rank-Y: 11 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 96 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 105 ; Rank-X: 8 ; Rank-Y: 9 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 15 ; Rank-X: 1 ; Rank-Y: 3 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 54 ; Rank-X: 4 ; Rank-Y: 6 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 122 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 23 ; Rank-X: 1 ; Rank-Y: 11 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 81 ; Rank-X: 6 ; Rank-Y: 9 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 131 ; Rank-X: 10 ; Rank-Y: 11 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 3 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 82 ; Rank-X: 6 ; Rank-Y: 10 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 137 ; Rank-X: 11 ; Rank-Y: 5 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 20 ; Rank-X: 1 ; Rank-Y: 8 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 84 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 140 ; Rank-X: 11 ; Rank-Y: 8 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 6 ; Rank-X: 0 ; Rank-Y: 6 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 88 ; Rank-X: 7 ; Rank-Y: 4 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 97 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 12 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 94 ; Rank-X: 7 ; Rank-Y: 10 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 98 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 18 ; Rank-X: 1 ; Rank-Y: 6 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 49 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 99 ; Rank-X: 8 ; Rank-Y: 3 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 22 ; Rank-X: 1 ; Rank-Y: 10 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 50 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 101 ; Rank-X: 8 ; Rank-Y: 5 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 52 ; Rank-X: 4 ; Rank-Y: 4 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 102 ; Rank-X: 8 ; Rank-Y: 6 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 8 ; Rank-X: 0 ; Rank-Y: 8 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 53 ; Rank-X: 4 ; Rank-Y: 5 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 104 ; Rank-X: 8 ; Rank-Y: 8 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 11 ; Rank-X: 0 ; Rank-Y: 11 ; Rowstart: 0; Rowend: 1043; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 55 ; Rank-X: 4 ; Rank-Y: 7 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 108 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 13 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 57 ; Rank-X: 4 ; Rank-Y: 9 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 109 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 17 ; Rank-X: 1 ; Rank-Y: 5 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 58 ; Rank-X: 4 ; Rank-Y: 10 ; Rowstart: 4168; Rowend: 5211; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 111 ; Rank-X: 9 ; Rank-Y: 3 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 26 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 60 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 112 ; Rank-X: 9 ; Rank-Y: 4 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 31 ; Rank-X: 2 ; Rank-Y: 7 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 61 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 115 ; Rank-X: 9 ; Rank-Y: 7 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 10 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 62 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 119 ; Rank-X: 9 ; Rank-Y: 11 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 46 ; Rank-X: 3 ; Rank-Y: 10 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 63 ; Rank-X: 5 ; Rank-Y: 3 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 124 ; Rank-X: 10 ; Rank-Y: 4 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 21 ; Rank-X: 1 ; Rank-Y: 9 ; Rowstart: 1042; Rowend: 2085; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 64 ; Rank-X: 5 ; Rank-Y: 4 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 126 ; Rank-X: 10 ; Rank-Y: 6 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 24 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 66 ; Rank-X: 5 ; Rank-Y: 6 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 129 ; Rank-X: 10 ; Rank-Y: 9 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 25 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 67 ; Rank-X: 5 ; Rank-Y: 7 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 134 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 27 ; Rank-X: 2 ; Rank-Y: 3 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 68 ; Rank-X: 5 ; Rank-Y: 8 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 136 ; Rank-X: 11 ; Rank-Y: 4 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 28 ; Rank-X: 2 ; Rank-Y: 4 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 9 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 138 ; Rank-X: 11 ; Rank-Y: 6 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 32 ; Rank-X: 2 ; Rank-Y: 8 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 70 ; Rank-X: 5 ; Rank-Y: 10 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 139 ; Rank-X: 11 ; Rank-Y: 7 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 37 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 71 ; Rank-X: 5 ; Rank-Y: 11 ; Rowstart: 5210; Rowend: 6253; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 141 ; Rank-X: 11 ; Rank-Y: 9 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 40 ; Rank-X: 3 ; Rank-Y: 4 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 72 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 142 ; Rank-X: 11 ; Rank-Y: 10 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 43 ; Rank-X: 3 ; Rank-Y: 7 ; Rowstart: 3126; Rowend: 4169; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 73 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 100 ; Rank-X: 8 ; Rank-Y: 4 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 30 ; Rank-X: 2 ; Rank-Y: 6 ; Rowstart: 2084; Rowend: 3127; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 79 ; Rank-X: 6 ; Rank-Y: 7 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 103 ; Rank-X: 8 ; Rank-Y: 7 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 80 ; Rank-X: 6 ; Rank-Y: 8 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 106 ; Rank-X: 8 ; Rank-Y: 10 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 85 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 107 ; Rank-X: 8 ; Rank-Y: 11 ; Rowstart: 8336; Rowend: 9379; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 86 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 110 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 87 ; Rank-X: 7 ; Rank-Y: 3 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 113 ; Rank-X: 9 ; Rank-Y: 5 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 89 ; Rank-X: 7 ; Rank-Y: 5 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 114 ; Rank-X: 9 ; Rank-Y: 6 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 91 ; Rank-X: 7 ; Rank-Y: 7 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 116 ; Rank-X: 9 ; Rank-Y: 8 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 95 ; Rank-X: 7 ; Rank-Y: 11 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 117 ; Rank-X: 9 ; Rank-Y: 9 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 74 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 2084; Colend: 3127; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 118 ; Rank-X: 9 ; Rank-Y: 10 ; Rowstart: 9378; Rowend: 10421; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 75 ; Rank-X: 6 ; Rank-Y: 3 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 120 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 76 ; Rank-X: 6 ; Rank-Y: 4 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 4168; Colend: 5211; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 121 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 77 ; Rank-X: 6 ; Rank-Y: 5 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 123 ; Rank-X: 10 ; Rank-Y: 3 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 78 ; Rank-X: 6 ; Rank-Y: 6 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 125 ; Rank-X: 10 ; Rank-Y: 5 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 5210; Colend: 6253; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 83 ; Rank-X: 6 ; Rank-Y: 11 ; Rowstart: 6252; Rowend: 7295; Rows: 1043; Colstart: 11462; Colend: 12501; Cols: 1039;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 127 ; Rank-X: 10 ; Rank-Y: 7 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 7294; Colend: 8337; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 90 ; Rank-X: 7 ; Rank-Y: 6 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 6252; Colend: 7295; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 128 ; Rank-X: 10 ; Rank-Y: 8 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 92 ; Rank-X: 7 ; Rank-Y: 8 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 8336; Colend: 9379; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 130 ; Rank-X: 10 ; Rank-Y: 10 ; Rowstart: 10420; Rowend: 11463; Rows: 1043; Colstart: 10420; Colend: 11463; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 93 ; Rank-X: 7 ; Rank-Y: 9 ; Rowstart: 7294; Rowend: 8337; Rows: 1043; Colstart: 9378; Colend: 10421; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 132 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 0; Colend: 1043; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 133 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 1042; Colend: 2085; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 135 ; Rank-X: 11 ; Rank-Y: 3 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 3126; Colend: 4169; Cols: 1043;
+Num-X: 12 ; Num-Y: 12 ; Resolution: 12500 ; Rank: 143 ; Rank-X: 11 ; Rank-Y: 11 ; Rowstart: 11462; Rowend: 12501; Rows: 1039; Colstart: 11462; Colend: 12501; Cols: 1039;
+
+Resolution: 12500
+===================
+Execution time: 0.119370
+Residual: 5.863966
+
+megaflops:  183253.8
+  flop instructions (M):  21875.000
