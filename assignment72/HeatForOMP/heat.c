@@ -34,12 +34,18 @@ int main(int argc, char *argv[]) {
 	int rank, size;
 	MPI_Status s;
 	int provided;
+	#ifdef HYBRID
     MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &provided);
     if(provided < MPI_THREAD_FUNNELED)
     {
         printf("The threading support level is lesser than that demanded.\n");
         MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
     }
+	if (rank==0)
+		printf("\nExecuting each MPI process in %d OMP threads.\n", omp_get_max_threads());
+	#else
+	MPI_Init(&argc, &argv);
+	#endif
 
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -130,7 +136,7 @@ int main(int argc, char *argv[]) {
 
 		printf("\nNum-X: %d ; Num-Y: %d ; Resolution: %d ; Rank: %d ; Rank-X: %d ; Rank-Y: %d ; Rowstart: %d; Rowend: %d; Rows: %d; Colstart: %d; Colend: %d; Cols: %d;", 
 				dims[1], dims[0], 
-				param.act_res, rank, coord[0], coord[1], 
+				param.act_res, rank, coord[1], coord[0], 
 				gridparam.store_row_start, gridparam.store_row_end,
 				gridparam.store_row_end - gridparam.store_row_start,
 			    gridparam.store_col_start, gridparam.store_col_end,	       
@@ -275,16 +281,16 @@ int main(int argc, char *argv[]) {
 		uvisfinal  = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
 		uvistemp = (double*)calloc( sizeof(double), (param.visres + 2)*(param.visres + 2) );
 		MPI_Status status;
-		for (int rx=0; rx < dims[0]; rx++){
-			for (int ry=0; ry < dims[1]; ry++){
-				gridparam.grid_row = rx;
-				gridparam.grid_col = ry;
+		for (int ry=0; ry < dims[0]; ry++){
+			for (int rx=0; rx < dims[1]; rx++){
+				gridparam.grid_row = ry;
+				gridparam.grid_col = rx;
 				configure_grid(&param, &gridparam);
 				int rvprows = gridparam.vis_row_end - gridparam.vis_row_start;
 				int rvpcols = gridparam.vis_col_end - gridparam.vis_col_start;
 				if (rx+ry!=0) {
 					// recv
-					MPI_Recv(uvistemp, rvprows*rvpcols, MPI_DOUBLE, rx*dims[1]+ry, 99, 
+					MPI_Recv(uvistemp, rvprows*rvpcols, MPI_DOUBLE, ry*dims[1]+rx, 99, 
 							 comm_2d, &status);
 				}
 				else {

@@ -1,9 +1,12 @@
 CC =  mpicc
-CFLAGS = -O3 -xCORE-AVX512 -qopt-zmm-usage=high -fno-alias -qopenmp
+CFLAGS = -O3 -xCORE-AVX512 -qopt-zmm-usage=high -fno-alias 
 
 MPICC = mpicc
 
 all: heat 
+
+hybrid: CFLAGS+= -qopenmp -DHYBRID
+hybrid: heat
 
 heat : heat.o input.o misc.o timing.o relax_jacobi.o
 	$(CC) $(CFLAGS) -o heat $+ -lm  
