@@ -1,0 +1,697 @@
+mpiexec -genv I_MPI_DEBUG=4 -genv OMP_NUM_THREADS=12 -genv KMP_AFFINITY=verbose,scatter -genv I_MPI_PIN_DOMAIN=omp -n 16 ./heat test.dat 1 16
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 24-29,72-77
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to socket 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 72 maps to socket 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to socket 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 73 maps to socket 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to socket 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 74 maps to socket 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to socket 1 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 75 maps to socket 1 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to socket 1 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 76 maps to socket 1 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to socket 1 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 77 maps to socket 1 core 5 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926532 thread 0 bound to OS proc set 24,72
+
+Executing each MPI process in 12 OMP threads.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 6-11,54-59
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 24-29,72-77
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to socket 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to socket 0 core 8 thread 1 
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to socket 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 72 maps to socket 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to socket 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 73 maps to socket 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to socket 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 74 maps to socket 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to socket 1 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 75 maps to socket 1 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to socket 1 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 76 maps to socket 1 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to socket 1 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 77 maps to socket 1 core 5 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to socket 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to socket 0 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to socket 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 56 maps to socket 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to socket 0 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 57 maps to socket 0 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to socket 0 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 58 maps to socket 0 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to socket 0 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 59 maps to socket 0 core 13 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819847 thread 0 bound to OS proc set 24,72
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819846 thread 0 bound to OS proc set 6,54
+
+Executing each MPI process in 12 OMP threads.
+
+Executing each MPI process in 12 OMP threads.
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       3926530  i01r01c06s05  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 1       3926531  i01r01c06s05  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 2       3926532  i01r01c06s05  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 3       3926533  i01r01c06s05  {30,31,32,33,34,35,78,79,80,81,82,83}
+[0] MPI startup(): 4       2999406  i01r01c06s06  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 5       2999407  i01r01c06s06  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 6       2999408  i01r01c06s06  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 7       2999409  i01r01c06s06  {30,31,32,33,34,35,78,79,80,81,82,83}
+[0] MPI startup(): 8       819845   i01r01c06s07  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 9       819846   i01r01c06s07  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 10      819847   i01r01c06s07  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 11      819848   i01r01c06s07  {30,31,32,33,34,35,78,79,80,81,82,83}
+[0] MPI startup(): 12      2133481  i01r01c06s08  {0,1,2,3,4,5,48,49,50,51,52,53}
+[0] MPI startup(): 13      2133482  i01r01c06s08  {6,7,8,9,10,11,54,55,56,57,58,59}
+[0] MPI startup(): 14      2133483  i01r01c06s08  {24,25,26,27,28,29,72,73,74,75,76,77}
+[0] MPI startup(): 15      2133484  i01r01c06s08  {30,31,32,33,34,35,78,79,80,81,82,83}
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 6-11,54-59
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 30-35,78-83
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-5,48-53
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to socket 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to socket 0 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to socket 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to socket 0 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to socket 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 56 maps to socket 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to socket 0 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 57 maps to socket 0 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to socket 0 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 58 maps to socket 0 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to socket 0 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 59 maps to socket 0 core 13 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133482 thread 0 bound to OS proc set 6,54
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-5,48-53
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+
+Executing each MPI process in 12 OMP threads.
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to socket 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 78 maps to socket 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to socket 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 79 maps to socket 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to socket 1 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 80 maps to socket 1 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to socket 1 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 81 maps to socket 1 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to socket 1 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 82 maps to socket 1 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to socket 1 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 83 maps to socket 1 core 13 thread 1 
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to socket 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to socket 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to socket 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to socket 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to socket 0 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to socket 0 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to socket 0 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to socket 0 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to socket 0 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to socket 0 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to socket 0 core 5 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999409 thread 0 bound to OS proc set 30,78
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999406 thread 0 bound to OS proc set 0,48
+
+Executing each MPI process in 12 OMP threads.
+
+Executing each MPI process in 12 OMP threads.
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to socket 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to socket 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to socket 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to socket 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to socket 0 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to socket 0 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to socket 0 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to socket 0 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to socket 0 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to socket 0 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to socket 0 core 5 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926530 thread 0 bound to OS proc set 0,48
+
+Executing each MPI process in 12 OMP threads.
+
+1 processes distributed in X-direction
+ 16 ; processes distributed in Y-direction
+Resolutions       : (6500, 8500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 -1 -1 1
+rank= 12 coords= 0 12 neighbours(up,down,left,right)= -1 -1 11 13
+rank= 8 coords= 0 8 neighbours(up,down,left,right)= -1 -1 7 9
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 -1 1 3
+rank= 13 coords= 0 13 neighbours(up,down,left,right)= -1 -1 12 14
+rank= 4 coords= 0 4 neighbours(up,down,left,right)= -1 -1 3 5
+rank= 9 coords= 0 9 neighbours(up,down,left,right)= -1 -1 8 10
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 -1 0 2
+rank= 14 coords= 0 14 neighbours(up,down,left,right)= -1 -1 13 15
+rank= 5 coords= 0 5 neighbours(up,down,left,right)= -1 -1 4 6
+rank= 10 coords= 0 10 neighbours(up,down,left,right)= -1 -1 9 11
+rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 -1 2 4
+rank= 15 coords= 0 15 neighbours(up,down,left,right)= -1 -1 14 -1
+rank= 6 coords= 0 6 neighbours(up,down,left,right)= -1 -1 5 7
+rank= 11 coords= 0 11 neighbours(up,down,left,right)= -1 -1 10 12
+rank= 7 coords= 0 7 neighbours(up,down,left,right)= -1 -1 6 8
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926555 thread 1 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133505 thread 1 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926554 thread 1 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819870 thread 1 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819869 thread 1 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926557 thread 2 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133507 thread 3 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999430 thread 1 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926556 thread 2 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133506 thread 2 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999431 thread 1 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926558 thread 3 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133508 thread 4 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999432 thread 2 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133509 thread 5 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999433 thread 2 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926561 thread 4 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133510 thread 6 bound to OS proc set 6,54
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819871 thread 2 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926559 thread 3 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926560 thread 4 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999435 thread 3 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999434 thread 3 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999436 thread 4 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819872 thread 2 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819873 thread 3 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819874 thread 3 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999437 thread 4 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819875 thread 4 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926562 thread 5 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819877 thread 5 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926563 thread 5 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819876 thread 4 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926565 thread 6 bound to OS proc set 0,48
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926566 thread 7 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819878 thread 5 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926567 thread 7 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926569 thread 8 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819880 thread 7 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819879 thread 6 bound to OS proc set 24,72
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-5,48-53
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819881 thread 6 bound to OS proc set 6,54
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819883 thread 7 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819882 thread 8 bound to OS proc set 26,74
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 30-35,78-83
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-5,48-53
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133511 thread 7 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133512 thread 8 bound to OS proc set 8,56
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 24-29,72-77
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 6-11,54-59
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 30-35,78-83
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133514 thread 10 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133513 thread 9 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819884 thread 9 bound to OS proc set 27,75
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 6-11,54-59
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 24-29,72-77
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 30-35,78-83
+OMP: Info #213: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #251: KMP_AFFINITY: pid 2133482 tid 2133515 thread 11 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926564 thread 6 bound to OS proc set 24,72
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926568 thread 8 bound to OS proc set 26,74
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999440 thread 6 bound to OS proc set 0,48
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to socket 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to socket 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to socket 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to socket 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to socket 0 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to socket 0 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to socket 0 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to socket 0 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to socket 0 core 4 thread 1 
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999438 thread 5 bound to OS proc set 5,53
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to socket 0 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to socket 0 core 5 thread 1 
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to socket 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to socket 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to socket 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to socket 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to socket 0 core 2 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to socket 0 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to socket 0 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to socket 0 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to socket 0 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to socket 0 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to socket 0 core 5 thread 1 
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819845 thread 0 bound to OS proc set 0,48
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926571 thread 9 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133481 thread 0 bound to OS proc set 0,48
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999442 thread 7 bound to OS proc set 1,49
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to socket 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 78 maps to socket 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to socket 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 79 maps to socket 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to socket 1 core 10 thread 0 
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to socket 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to socket 0 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 80 maps to socket 1 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to socket 1 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 81 maps to socket 1 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to socket 1 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 82 maps to socket 1 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to socket 1 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 83 maps to socket 1 core 13 thread 1 
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926570 thread 9 bound to OS proc set 27,75
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to socket 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to socket 0 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to socket 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 56 maps to socket 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to socket 0 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 57 maps to socket 0 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to socket 0 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 58 maps to socket 0 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to socket 0 core 13 thread 0 
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819848 thread 0 bound to OS proc set 30,78
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to socket 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 78 maps to socket 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to socket 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 79 maps to socket 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to socket 1 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 80 maps to socket 1 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to socket 1 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 81 maps to socket 1 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to socket 1 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 82 maps to socket 1 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to socket 1 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 83 maps to socket 1 core 13 thread 1 
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999439 thread 5 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999441 thread 6 bound to OS proc set 30,78
+OMP: Info #171: KMP_AFFINITY: OS proc 59 maps to socket 0 core 13 thread 1 
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to socket 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 72 maps to socket 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to socket 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 73 maps to socket 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to socket 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 74 maps to socket 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to socket 1 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 75 maps to socket 1 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to socket 1 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 76 maps to socket 1 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to socket 1 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 77 maps to socket 1 core 5 thread 1 
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819885 thread 1 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926572 thread 10 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133516 thread 1 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999443 thread 8 bound to OS proc set 2,50
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999408 thread 0 bound to OS proc set 24,72
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819886 thread 2 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926531 thread 0 bound to OS proc set 6,54
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to socket 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 72 maps to socket 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to socket 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 73 maps to socket 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to socket 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 74 maps to socket 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to socket 1 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 75 maps to socket 1 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to socket 1 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 76 maps to socket 1 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to socket 1 core 5 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 77 maps to socket 1 core 5 thread 1 
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to socket 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to socket 0 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to socket 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to socket 0 core 9 thread 1 
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819887 thread 1 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926573 thread 10 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133517 thread 2 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999445 thread 9 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819892 thread 11 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926533 thread 0 bound to OS proc set 30,78
+OMP: Info #276: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #156: KMP_AFFINITY: 12 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #191: KMP_AFFINITY: 1 socket x 6 cores/socket x 2 threads/core (6 total cores)
+OMP: Info #215: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to socket 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 78 maps to socket 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to socket 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 79 maps to socket 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to socket 1 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 80 maps to socket 1 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to socket 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 56 maps to socket 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to socket 0 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 57 maps to socket 0 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to socket 0 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 58 maps to socket 0 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to socket 0 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 59 maps to socket 0 core 13 thread 1 
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819888 thread 2 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 3926530 tid 3926574 thread 11 bound to OS proc set 5,53
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133483 thread 0 bound to OS proc set 24,72
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999444 thread 7 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819891 thread 3 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 3926532 tid 3926575 thread 11 bound to OS proc set 29,77
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to socket 1 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 81 maps to socket 1 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to socket 1 core 12 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 82 maps to socket 1 core 12 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to socket 1 core 13 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 83 maps to socket 1 core 13 thread 1 
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999407 thread 0 bound to OS proc set 6,54
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819889 thread 8 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926577 thread 1 bound to OS proc set 31,79
+OMP: Info #144: KMP_AFFINITY: Threads may migrate across 1 innermost levels of machine
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999448 thread 1 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 819847 tid 819890 thread 10 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926576 thread 1 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133484 thread 0 bound to OS proc set 30,78
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999447 thread 10 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819894 thread 4 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926578 thread 2 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133518 thread 3 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999449 thread 9 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999446 thread 8 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819893 thread 3 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926579 thread 2 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133519 thread 4 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 2999406 tid 2999451 thread 11 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819895 thread 9 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926581 thread 3 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133520 thread 1 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999450 thread 2 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819898 thread 10 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926580 thread 3 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133521 thread 1 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999453 thread 1 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819897 thread 4 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133522 thread 2 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999452 thread 10 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819896 thread 5 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926582 thread 4 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133523 thread 2 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999455 thread 4 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819900 thread 5 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926583 thread 4 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133524 thread 3 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999454 thread 3 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819899 thread 6 bound to OS proc set 0,48
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133525 thread 3 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999457 thread 2 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 819846 tid 819901 thread 11 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926584 thread 5 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133526 thread 4 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2999409 tid 2999456 thread 11 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819903 thread 6 bound to OS proc set 30,78
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999458 thread 5 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819902 thread 7 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926585 thread 6 bound to OS proc set 30,78
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819904 thread 7 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133527 thread 5 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999459 thread 6 bound to OS proc set 24,72
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926586 thread 7 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819905 thread 8 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133528 thread 6 bound to OS proc set 30,78
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133529 thread 7 bound to OS proc set 31,79
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133531 thread 5 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133530 thread 8 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133533 thread 6 bound to OS proc set 0,48
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133532 thread 9 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133534 thread 7 bound to OS proc set 1,49
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133535 thread 8 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133536 thread 4 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133537 thread 9 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133538 thread 5 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133539 thread 10 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999460 thread 3 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819906 thread 8 bound to OS proc set 2,50
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819907 thread 9 bound to OS proc set 3,51
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819909 thread 9 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 2133481 tid 2133542 thread 11 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133541 thread 7 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133540 thread 6 bound to OS proc set 24,72
+OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819908 thread 10 bound to OS proc set 4,52
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926587 thread 5 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926588 thread 8 bound to OS proc set 32,80
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926590 thread 9 bound to OS proc set 33,81
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926589 thread 6 bound to OS proc set 6,54
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999461 thread 4 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133543 thread 8 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999463 thread 7 bound to OS proc set 25,73
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999464 thread 8 bound to OS proc set 26,74
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819911 thread 10 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999462 thread 5 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999465 thread 6 bound to OS proc set 6,54
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926591 thread 7 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999466 thread 9 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999467 thread 7 bound to OS proc set 7,55
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133545 thread 9 bound to OS proc set 27,75
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926592 thread 10 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133544 thread 10 bound to OS proc set 34,82
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133546 thread 10 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999468 thread 10 bound to OS proc set 28,76
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926593 thread 8 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 2133484 tid 2133547 thread 11 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 3926533 tid 3926594 thread 11 bound to OS proc set 35,83
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999469 thread 8 bound to OS proc set 8,56
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926595 thread 9 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 2999408 tid 2999470 thread 11 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926596 thread 10 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 3926531 tid 3926597 thread 11 bound to OS proc set 11,59
+OMP: Info #251: KMP_AFFINITY: pid 2133483 tid 2133548 thread 11 bound to OS proc set 29,77
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999471 thread 9 bound to OS proc set 9,57
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999472 thread 10 bound to OS proc set 10,58
+OMP: Info #251: KMP_AFFINITY: pid 2999407 tid 2999473 thread 11 bound to OS proc set 11,59
+
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 5291; Colend: 5699; Cols: 408;OMP: Info #251: KMP_AFFINITY: pid 819845 tid 819910 thread 11 bound to OS proc set 5,53
+OMP: Info #251: KMP_AFFINITY: pid 819848 tid 819912 thread 11 bound to OS proc set 35,83
+
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 1628; Colend: 2036; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 4070; Colend: 4478; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 2849; Colend: 3257; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 814; Colend: 1222; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 0; Colend: 408; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 2035; Colend: 2443; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 407; Colend: 815; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 3663; Colend: 4071; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 3256; Colend: 3664; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 4477; Colend: 4885; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 2442; Colend: 2850; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 4884; Colend: 5292; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 1221; Colend: 1629; Cols: 408;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 6105; Colend: 6501; Cols: 396;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 5698; Colend: 6106; Cols: 408;
+
+Resolution: 6500
+===================
+Execution time: 0.021703
+Residual: 3.049154
+
+megaflops:  272542.9
+  flop instructions (M):  5915.000
+
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 3192; Colend: 3725; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 4788; Colend: 5321; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 3724; Colend: 4257; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 2128; Colend: 2661; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 2660; Colend: 3193; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 6384; Colend: 6917; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 4256; Colend: 4789; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 6916; Colend: 7449; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 5852; Colend: 6385; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 5320; Colend: 5853; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 7448; Colend: 7981; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 7980; Colend: 8501; Cols: 521;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 0; Colend: 533; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 532; Colend: 1065; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 1064; Colend: 1597; Cols: 533;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 1596; Colend: 2129; Cols: 533;
+
+Resolution: 8500
+===================
+Execution time: 0.040714
+Residual: 3.987213
+
+megaflops:  248440.2
+  flop instructions (M):  10115.000
+
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 657; Colend: 1315; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 1971; Colend: 2629; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 1314; Colend: 1972; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 8541; Colend: 9199; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 9198; Colend: 9856; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 2628; Colend: 3286; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 9855; Colend: 10501; Cols: 646;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 3285; Colend: 3943; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 4599; Colend: 5257; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 0; Colend: 658; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 7884; Colend: 8542; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 6570; Colend: 7228; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 3942; Colend: 4600; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 7227; Colend: 7885; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 5256; Colend: 5914; Cols: 658;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 5913; Colend: 6571; Cols: 658;
+
+Resolution: 10500
+===================
+Execution time: 0.065167
+Residual: 4.925272
+
+megaflops:  236853.2
+  flop instructions (M):  15435.000
+
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 9384; Colend: 10167; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 5474; Colend: 6257; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 7038; Colend: 7821; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 11730; Colend: 12501; Cols: 771;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 3128; Colend: 3911; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 3910; Colend: 4693; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 8602; Colend: 9385; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 1564; Colend: 2347; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 2346; Colend: 3129; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 10166; Colend: 10949; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 4692; Colend: 5475; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 782; Colend: 1565; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 7820; Colend: 8603; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 10948; Colend: 11731; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 6256; Colend: 7039; Cols: 783;
+Num-X: 16 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 0; Colend: 783; Cols: 783;
+
+Resolution: 12500
+===================
+Execution time: 0.092468
+Residual: 5.863330
+
+megaflops:  236568.3
+  flop instructions (M):  21875.000
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 2133481 RUNNING AT i01r01c06s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 2133482 RUNNING AT i01r01c06s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 2133483 RUNNING AT i01r01c06s08
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 2133484 RUNNING AT i01r01c06s08
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
