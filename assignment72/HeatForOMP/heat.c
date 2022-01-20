@@ -178,7 +178,7 @@ int main(int argc, char *argv[]) {
 			residual = relax_jacobi(&(param.u), &(param.uhelp), npcols, nprows);
 
 			// Communicate
-			if (dims[0] > 1){
+			if (dims[1] > 1){
 				for (int i=0; i < nprows; i++){
 					secondcolumn[i] = param.u[i*npcols+1]; 
 					secondtolastcolumn[i] = param.u[(i+1)*npcols-2];
@@ -218,7 +218,7 @@ int main(int argc, char *argv[]) {
 
 			}
 
-			if (dims[1]>1){
+			if (dims[0]>1){
 				// send up, recv down
 				// send down, recv up
 				if (up==-1){
