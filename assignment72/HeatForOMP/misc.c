@@ -164,22 +164,26 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	int num_cols = gridparam->grid_num_cols;
 	int row = gridparam->grid_row;
 	int col = gridparam->grid_col;
-	int row_stride = (compute_points + num_rows - 1)/num_rows;
-	int col_stride = (compute_points + num_cols - 1)/num_cols;
-	int vis_row_stride = (vis_points + num_rows - 1)/num_rows;
-	int vis_col_stride = (vis_points + num_cols - 1)/num_cols;
+	int row_stride = compute_points/num_rows;
+	int col_stride = compute_points/num_cols;
+	int row_rem = compute_points % num_rows;
+	int col_rem = compute_points % num_cols;
+	int vis_row_stride = vis_points/num_rows;
+	int vis_col_stride = vis_points/num_cols;
+	int vis_row_rem = vis_points % num_rows;
+	int vis_col_rem = vis_points % num_cols;
 
-	(gridparam->store_row_start) = row * row_stride;
-	(gridparam->store_col_start) = col * col_stride;
-	(gridparam->vis_row_start) = row * vis_row_stride;
-	(gridparam->vis_col_start) = col * vis_col_stride;
+	(gridparam->store_row_start) = row * row_stride + min(row, row_rem);
+	(gridparam->store_col_start) = col * col_stride + min(col, col_rem);
+	(gridparam->vis_row_start) = row * vis_row_stride + min(row, vis_row_rem);
+	(gridparam->vis_col_start) = col * vis_col_stride + min(col, vis_col_rem);
 	(gridparam->compute_row_start) = (gridparam->store_row_start) + 1;
 	(gridparam->compute_col_start) = (gridparam->store_col_start) + 1;
 
-	(gridparam->store_row_end) = min((row+1)*row_stride+1, store_points - 1);
-	(gridparam->store_col_end) = min((col+1)*col_stride+1, store_points - 1);
-	(gridparam->vis_row_end) = min((row+1)*vis_row_stride+1, vis_points);
-	(gridparam->vis_col_end) = min((col+1)*vis_col_stride+1, vis_points);
+	(gridparam->store_row_end) = min((row+1)*row_stride+min(row+1, row_rem)+1, store_points - 1);
+	(gridparam->store_col_end) = min((col+1)*col_stride+min(col+1, col_rem)+1, store_points - 1);
+	(gridparam->vis_row_end) = min((row+1)*vis_row_stride+min(row+1, vis_row_rem)+1, vis_points);
+	(gridparam->vis_col_end) = min((col+1)*vis_col_stride+min(col+1, vis_col_rem)+1, vis_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
 	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
 }
