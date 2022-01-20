@@ -179,15 +179,12 @@ void configure_grid(algoparam_t *algoparam, gridparam_t *gridparam){
 	(gridparam->vis_col_end) = min((col+1)*vis_col_stride+1, vis_points);
 	(gridparam->compute_row_end) = (gridparam->store_row_end) - 1;
 	(gridparam->compute_col_end) = (gridparam->store_col_end) - 1;
-
-
-
 }
 
 void print_array(double *u, int sizex, int sizey){
 	for (int i=0; i < sizey; i++){
 		for (int j=0; j < sizex; j++){
-			printf("%f ", u[i*sizex + j]);
+			printf("%.2f ", u[i*sizex + j]);
 		}
 		printf("\n");
 	}
@@ -317,7 +314,7 @@ int coarsen( double *uold, unsigned oldx, unsigned oldy ,
           temp = 0;
           for ( k=0; k<stepy; k++ ){
 	       	for ( l=0; l<stepx; l++ ){
-	       		if (ii+k<oldx && jj+l<oldy)
+	       		if (ii+k<oldy && jj+l<oldx)
 		           temp += uold[(ii+k)*oldx+(jj+l)] ;
 	        }
 	      }
