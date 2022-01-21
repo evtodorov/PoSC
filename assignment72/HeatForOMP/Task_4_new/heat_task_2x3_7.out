@@ -1,3 +1,87 @@
 mpiexec -genv I_MPI_DEBUG=4 -genv OMP_NUM_THREADS=8 -genv I_MPI_PIN_DOMAIN=omp -n 6 ./heat test.dat 2 3
-/var/spool/slurm/job1920689/slurm_script: line 17: unexpected EOF while looking for matching `"'
-/var/spool/slurm/job1920689/slurm_script: line 18: syntax error: unexpected end of file
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       3603023  i01r01c03s01  {0,1,2,3,48,49,50,51}
+[0] MPI startup(): 1       3603024  i01r01c03s01  {4,5,6,7,52,53,54,55}
+[0] MPI startup(): 2       3603025  i01r01c03s01  {8,9,10,11,56,57,58,59}
+[0] MPI startup(): 3       3603026  i01r01c03s01  {24,25,26,27,72,73,74,75}
+[0] MPI startup(): 4       3603027  i01r01c03s01  {28,29,30,31,76,77,78,79}
+[0] MPI startup(): 5       3603028  i01r01c03s01  {32,33,34,35,80,81,82,83}
+
+2 processes distributed in X-direction
+ 3 ; processes distributed in Y-direction
+Resolutions       : (6500, 8500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 3 -1 1
+rank= 4 coords= 1 1 neighbours(up,down,left,right)= 1 -1 3 5
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 4 0 2
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 5 1 -1
+rank= 3 coords= 1 0 neighbours(up,down,left,right)= 0 -1 -1 4
+rank= 5 coords= 1 2 neighbours(up,down,left,right)= 2 -1 4 -1
+
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3251; Rows: 3251; Colstart: 0; Colend: 2168; Cols: 2168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3250; Rowend: 6501; Rows: 3251; Colstart: 0; Colend: 2168; Cols: 2168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3251; Rows: 3251; Colstart: 4334; Colend: 6501; Cols: 2167;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 4 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3250; Rowend: 6501; Rows: 3251; Colstart: 2167; Colend: 4335; Cols: 2168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 5 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 3250; Rowend: 6501; Rows: 3251; Colstart: 4334; Colend: 6501; Cols: 2167;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3251; Rows: 3251; Colstart: 2167; Colend: 4335; Cols: 2168;
+
+Resolution: 6500
+===================
+Execution time: 0.095969
+Residual: 3.049154
+
+megaflops:  61634.5
+  flop instructions (M):  5915.000
+
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4251; Rows: 4251; Colstart: 2834; Colend: 5668; Cols: 2834;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 4 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 4250; Rowend: 8501; Rows: 4251; Colstart: 2834; Colend: 5668; Cols: 2834;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4251; Rows: 4251; Colstart: 5667; Colend: 8501; Cols: 2834;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 5 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 4250; Rowend: 8501; Rows: 4251; Colstart: 5667; Colend: 8501; Cols: 2834;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4251; Rows: 4251; Colstart: 0; Colend: 2835; Cols: 2835;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 4250; Rowend: 8501; Rows: 4251; Colstart: 0; Colend: 2835; Cols: 2835;
+
+Resolution: 8500
+===================
+Execution time: 0.166234
+Residual: 3.987213
+
+megaflops:  60848.0
+  flop instructions (M):  10115.000
+
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 4 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 5250; Rowend: 10501; Rows: 5251; Colstart: 3500; Colend: 7001; Cols: 3501;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5251; Rows: 5251; Colstart: 3500; Colend: 7001; Cols: 3501;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 5 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 5250; Rowend: 10501; Rows: 5251; Colstart: 7000; Colend: 10501; Cols: 3501;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5251; Rows: 5251; Colstart: 7000; Colend: 10501; Cols: 3501;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 5250; Rowend: 10501; Rows: 5251; Colstart: 0; Colend: 3501; Cols: 3501;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5251; Rows: 5251; Colstart: 0; Colend: 3501; Cols: 3501;
+
+Resolution: 10500
+===================
+Execution time: 0.256711
+Residual: 4.925272
+
+megaflops:  60126.0
+  flop instructions (M):  15435.000
+
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6251; Rows: 6251; Colstart: 4167; Colend: 8335; Cols: 4168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 4 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 12501; Rows: 6251; Colstart: 4167; Colend: 8335; Cols: 4168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6251; Rows: 6251; Colstart: 0; Colend: 4168; Cols: 4168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 12501; Rows: 6251; Colstart: 0; Colend: 4168; Cols: 4168;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6251; Rows: 6251; Colstart: 8334; Colend: 12501; Cols: 4167;
+Num-X: 3 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 5 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 12501; Rows: 6251; Colstart: 8334; Colend: 12501; Cols: 4167;
+
+Resolution: 12500
+===================
+Execution time: 0.361048
+Residual: 5.863330
+
+megaflops:  60587.5
+  flop instructions (M):  21875.000
