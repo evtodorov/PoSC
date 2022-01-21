@@ -1,0 +1,65 @@
+mpiexec -genv I_MPI_DEBUG=4 -genv OMP_NUM_THREADS=24 -genv I_MPI_PIN_DOMAIN=omp -n 2 ./heat test.dat 1 2
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2445809  i01r01c02s09  {0,1,2,3,4,5,6,7,8,9,10,11,48,49,50,51,52,53,54,55,56,57,58,59}
+[0] MPI startup(): 1       2445810  i01r01c02s09  {24,25,26,27,28,29,30,31,32,33,34,35,72,73,74,75,76,77,78,79,80,81,82,83}
+
+Executing each MPI process in 24 OMP threads.
+
+1 processes distributed in X-direction
+ 2 ; processes distributed in Y-direction
+Resolutions       : (6500, 8500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 -1 -1 1
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 -1 0 -1
+
+Num-X: 2 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 0; Colend: 3251; Cols: 3251;
+Num-X: 2 ; Num-Y: 1 ; Resolution: 6500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6501; Rows: 6501; Colstart: 3250; Colend: 6501; Cols: 3251;
+
+Resolution: 6500
+===================
+Execution time: 0.097365
+Residual: 3.049154
+
+megaflops:  60750.7
+  flop instructions (M):  5915.000
+
+Num-X: 2 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 4250; Colend: 8501; Cols: 4251;
+Num-X: 2 ; Num-Y: 1 ; Resolution: 8500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 8501; Rows: 8501; Colstart: 0; Colend: 4251; Cols: 4251;
+
+Resolution: 8500
+===================
+Execution time: 0.167468
+Residual: 3.987213
+
+megaflops:  60399.7
+  flop instructions (M):  10115.000
+
+Num-X: 2 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 5250; Colend: 10501; Cols: 5251;
+Num-X: 2 ; Num-Y: 1 ; Resolution: 10500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 10501; Rows: 10501; Colstart: 0; Colend: 5251; Cols: 5251;
+
+Resolution: 10500
+===================
+Execution time: 0.258136
+Residual: 4.925272
+
+megaflops:  59794.1
+  flop instructions (M):  15435.000
+
+Num-X: 2 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 0; Colend: 6251; Cols: 6251;
+Num-X: 2 ; Num-Y: 1 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 12501; Rows: 12501; Colstart: 6250; Colend: 12501; Cols: 6251;
+
+Resolution: 12500
+===================
+Execution time: 0.364085
+Residual: 5.863330
+
+megaflops:  60082.1
+  flop instructions (M):  21875.000

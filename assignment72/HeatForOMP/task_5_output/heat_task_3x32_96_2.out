@@ -1,0 +1,1182 @@
+mpiexec -genv I_MPI_DEBUG=4 -genv OMP_NUM_THREADS=2 -genv I_MPI_PIN_DOMAIN=omp -n 96 ./heat test.dat 3 32
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+
+Executing each MPI process in 2 OMP threads.
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       3712360  i01r01c04s05  {0,48}
+[0] MPI startup(): 1       3712361  i01r01c04s05  {1,49}
+[0] MPI startup(): 2       3712362  i01r01c04s05  {2,50}
+[0] MPI startup(): 3       3712363  i01r01c04s05  {3,51}
+[0] MPI startup(): 4       3712364  i01r01c04s05  {4,52}
+[0] MPI startup(): 5       3712365  i01r01c04s05  {5,53}
+[0] MPI startup(): 6       3712366  i01r01c04s05  {6,54}
+[0] MPI startup(): 7       3712367  i01r01c04s05  {7,55}
+[0] MPI startup(): 8       3712368  i01r01c04s05  {8,56}
+[0] MPI startup(): 9       3712369  i01r01c04s05  {9,57}
+[0] MPI startup(): 10      3712370  i01r01c04s05  {10,58}
+[0] MPI startup(): 11      3712371  i01r01c04s05  {11,59}
+[0] MPI startup(): 12      3712372  i01r01c04s05  {24,72}
+[0] MPI startup(): 13      3712373  i01r01c04s05  {25,73}
+[0] MPI startup(): 14      3712374  i01r01c04s05  {26,74}
+[0] MPI startup(): 15      3712375  i01r01c04s05  {27,75}
+[0] MPI startup(): 16      3712376  i01r01c04s05  {28,76}
+[0] MPI startup(): 17      3712377  i01r01c04s05  {29,77}
+[0] MPI startup(): 18      3712378  i01r01c04s05  {30,78}
+[0] MPI startup(): 19      3712379  i01r01c04s05  {31,79}
+[0] MPI startup(): 20      3712380  i01r01c04s05  {32,80}
+[0] MPI startup(): 21      3712381  i01r01c04s05  {33,81}
+[0] MPI startup(): 22      3712382  i01r01c04s05  {34,82}
+[0] MPI startup(): 23      3712383  i01r01c04s05  {35,83}
+[0] MPI startup(): 24      2841207  i01r01c04s06  {0,48}
+[0] MPI startup(): 25      2841208  i01r01c04s06  {1,49}
+[0] MPI startup(): 26      2841209  i01r01c04s06  {2,50}
+[0] MPI startup(): 27      2841210  i01r01c04s06  {3,51}
+[0] MPI startup(): 28      2841211  i01r01c04s06  {4,52}
+[0] MPI startup(): 29      2841212  i01r01c04s06  {5,53}
+[0] MPI startup(): 30      2841213  i01r01c04s06  {6,54}
+[0] MPI startup(): 31      2841214  i01r01c04s06  {7,55}
+[0] MPI startup(): 32      2841215  i01r01c04s06  {8,56}
+[0] MPI startup(): 33      2841216  i01r01c04s06  {9,57}
+[0] MPI startup(): 34      2841217  i01r01c04s06  {10,58}
+[0] MPI startup(): 35      2841218  i01r01c04s06  {11,59}
+[0] MPI startup(): 36      2841219  i01r01c04s06  {24,72}
+[0] MPI startup(): 37      2841220  i01r01c04s06  {25,73}
+[0] MPI startup(): 38      2841221  i01r01c04s06  {26,74}
+[0] MPI startup(): 39      2841222  i01r01c04s06  {27,75}
+[0] MPI startup(): 40      2841223  i01r01c04s06  {28,76}
+[0] MPI startup(): 41      2841224  i01r01c04s06  {29,77}
+[0] MPI startup(): 42      2841225  i01r01c04s06  {30,78}
+[0] MPI startup(): 43      2841226  i01r01c04s06  {31,79}
+[0] MPI startup(): 44      2841227  i01r01c04s06  {32,80}
+[0] MPI startup(): 45      2841228  i01r01c04s06  {33,81}
+[0] MPI startup(): 46      2841229  i01r01c04s06  {34,82}
+[0] MPI startup(): 47      2841230  i01r01c04s06  {35,83}
+[0] MPI startup(): 48      1851917  i01r01c04s07  {0,48}
+[0] MPI startup(): 49      1851918  i01r01c04s07  {1,49}
+[0] MPI startup(): 50      1851919  i01r01c04s07  {2,50}
+[0] MPI startup(): 51      1851920  i01r01c04s07  {3,51}
+
+Executing each MPI process in 2 OMP threads.
+[0] MPI startup(): 52      1851921  i01r01c04s07  {4,52}
+[0] MPI startup(): 53      1851922  i01r01c04s07  {5,53}
+[0] MPI startup(): 54      1851923  i01r01c04s07  {6,54}
+[0] MPI startup(): 55      1851924  i01r01c04s07  {7,55}
+[0] MPI startup(): 56      1851925  i01r01c04s07  {8,56}
+[0] MPI startup(): 57      1851926  i01r01c04s07  {9,57}
+[0] MPI startup(): 58      1851927  i01r01c04s07  {10,58}
+[0] MPI startup(): 59      1851928  i01r01c04s07  {11,59}
+[0] MPI startup(): 60      1851929  i01r01c04s07  {24,72}
+[0] MPI startup(): 61      1851930  i01r01c04s07  {25,73}
+[0] MPI startup(): 62      1851931  i01r01c04s07  {26,74}
+[0] MPI startup(): 63      1851932  i01r01c04s07  {27,75}
+[0] MPI startup(): 64      1851933  i01r01c04s07  {28,76}
+[0] MPI startup(): 65      1851934  i01r01c04s07  {29,77}
+[0] MPI startup(): 66      1851935  i01r01c04s07  {30,78}
+[0] MPI startup(): 67      1851936  i01r01c04s07  {31,79}
+[0] MPI startup(): 68      1851937  i01r01c04s07  {32,80}
+[0] MPI startup(): 69      1851938  i01r01c04s07  {33,81}
+[0] MPI startup(): 70      1851939  i01r01c04s07  {34,82}
+[0] MPI startup(): 71      1851940  i01r01c04s07  {35,83}
+[0] MPI startup(): 72      1805888  i01r01c04s08  {0,48}
+[0] MPI startup(): 73      1805889  i01r01c04s08  {1,49}
+[0] MPI startup(): 74      1805890  i01r01c04s08  {2,50}
+[0] MPI startup(): 75      1805891  i01r01c04s08  {3,51}
+[0] MPI startup(): 76      1805892  i01r01c04s08  {4,52}
+[0] MPI startup(): 77      1805893  i01r01c04s08  {5,53}
+[0] MPI startup(): 78      1805894  i01r01c04s08  {6,54}
+[0] MPI startup(): 79      1805895  i01r01c04s08  {7,55}
+[0] MPI startup(): 80      1805896  i01r01c04s08  {8,56}
+[0] MPI startup(): 81      1805897  i01r01c04s08  {9,57}
+[0] MPI startup(): 82      1805898  i01r01c04s08  {10,58}
+[0] MPI startup(): 83      1805899  i01r01c04s08  {11,59}
+[0] MPI startup(): 84      1805900  i01r01c04s08  {24,72}
+[0] MPI startup(): 85      1805901  i01r01c04s08  {25,73}
+[0] MPI startup(): 86      1805902  i01r01c04s08  {26,74}
+[0] MPI startup(): 87      1805903  i01r01c04s08  {27,75}
+[0] MPI startup(): 88      1805904  i01r01c04s08  {28,76}
+[0] MPI startup(): 89      1805905  i01r01c04s08  {29,77}
+[0] MPI startup(): 90      1805906  i01r01c04s08  {30,78}
+[0] MPI startup(): 91      1805907  i01r01c04s08  {31,79}
+[0] MPI startup(): 92      1805908  i01r01c04s08  {32,80}
+[0] MPI startup(): 93      1805909  i01r01c04s08  {33,81}
+[0] MPI startup(): 94      1805910  i01r01c04s08  {34,82}
+[0] MPI startup(): 95      1805911  i01r01c04s08  {35,83}
+
+3 processes distributed in X-direction
+ 32 ; processes distributed in Y-direction
+Resolutions       : (4500, 5500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 32 -1 1
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 33 0 2
+rank= 24 coords= 0 24 neighbours(up,down,left,right)= -1 56 23 25
+rank= 72 coords= 2 8 neighbours(up,down,left,right)= 40 -1 71 73
+rank= 48 coords= 1 16 neighbours(up,down,left,right)= 16 80 47 49
+rank= 2 coords= 0 2 neighbours(up,down,left,right)= -1 34 1 3
+rank= 25 coords= 0 25 neighbours(up,down,left,right)= -1 57 24 26
+rank= 73 coords= 2 9 neighbours(up,down,left,right)= 41 -1 72 74
+rank= 49 coords= 1 17 neighbours(up,down,left,right)= 17 81 48 50
+rank= 4 coords= 0 4 neighbours(up,down,left,right)= -1 36 3 5
+rank= 26 coords= 0 26 neighbours(up,down,left,right)= -1 58 25 27
+rank= 74 coords= 2 10 neighbours(up,down,left,right)= 42 -1 73 75
+rank= 50 coords= 1 18 neighbours(up,down,left,right)= 18 82 49 51
+rank= 8 coords= 0 8 neighbours(up,down,left,right)= -1 40 7 9
+rank= 28 coords= 0 28 neighbours(up,down,left,right)= -1 60 27 29
+rank= 75 coords= 2 11 neighbours(up,down,left,right)= 43 -1 74 76
+rank= 52 coords= 1 20 neighbours(up,down,left,right)= 20 84 51 53
+rank= 9 coords= 0 9 neighbours(up,down,left,right)= -1 41 8 10
+rank= 29 coords= 0 29 neighbours(up,down,left,right)= -1 61 28 30
+rank= 76 coords= 2 12 neighbours(up,down,left,right)= 44 -1 75 77
+rank= 53 coords= 1 21 neighbours(up,down,left,right)= 21 85 52 54
+rank= 10 coords= 0 10 neighbours(up,down,left,right)= -1 42 9 11
+rank= 30 coords= 0 30 neighbours(up,down,left,right)= -1 62 29 31
+rank= 78 coords= 2 14 neighbours(up,down,left,right)= 46 -1 77 79
+rank= 54 coords= 1 22 neighbours(up,down,left,right)= 22 86 53 55
+rank= 14 coords= 0 14 neighbours(up,down,left,right)= -1 46 13 15
+rank= 31 coords= 0 31 neighbours(up,down,left,right)= -1 63 30 -1
+rank= 79 coords= 2 15 neighbours(up,down,left,right)= 47 -1 78 80
+rank= 56 coords= 1 24 neighbours(up,down,left,right)= 24 88 55 57
+rank= 16 coords= 0 16 neighbours(up,down,left,right)= -1 48 15 17
+rank= 32 coords= 1 0 neighbours(up,down,left,right)= 0 64 -1 33
+rank= 80 coords= 2 16 neighbours(up,down,left,right)= 48 -1 79 81
+rank= 57 coords= 1 25 neighbours(up,down,left,right)= 25 89 56 58
+rank= 17 coords= 0 17 neighbours(up,down,left,right)= -1 49 16 18
+rank= 33 coords= 1 1 neighbours(up,down,left,right)= 1 65 32 34
+rank= 82 coords= 2 18 neighbours(up,down,left,right)= 50 -1 81 83
+rank= 58 coords= 1 26 neighbours(up,down,left,right)= 26 90 57 59
+rank= 18 coords= 0 18 neighbours(up,down,left,right)= -1 50 17 19
+rank= 34 coords= 1 2 neighbours(up,down,left,right)= 2 66 33 35
+rank= 84 coords= 2 20 neighbours(up,down,left,right)= 52 -1 83 85
+rank= 59 coords= 1 27 neighbours(up,down,left,right)= 27 91 58 60
+rank= 20 coords= 0 20 neighbours(up,down,left,right)= -1 52 19 21
+rank= 35 coords= 1 3 neighbours(up,down,left,right)= 3 67 34 36
+rank= 85 coords= 2 21 neighbours(up,down,left,right)= 53 -1 84 86
+rank= 60 coords= 1 28 neighbours(up,down,left,right)= 28 92 59 61
+rank= 22 coords= 0 22 neighbours(up,down,left,right)= -1 54 21 23
+rank= 36 coords= 1 4 neighbours(up,down,left,right)= 4 68 35 37
+rank= 86 coords= 2 22 neighbours(up,down,left,right)= 54 -1 85 87
+rank= 61 coords= 1 29 neighbours(up,down,left,right)= 29 93 60 62
+rank= 3 coords= 0 3 neighbours(up,down,left,right)= -1 35 2 4
+rank= 37 coords= 1 5 neighbours(up,down,left,right)= 5 69 36 38
+rank= 87 coords= 2 23 neighbours(up,down,left,right)= 55 -1 86 88
+rank= 63 coords= 1 31 neighbours(up,down,left,right)= 31 95 62 -1
+rank= 5 coords= 0 5 neighbours(up,down,left,right)= -1 37 4 6
+rank= 38 coords= 1 6 neighbours(up,down,left,right)= 6 70 37 39
+rank= 88 coords= 2 24 neighbours(up,down,left,right)= 56 -1 87 89
+rank= 64 coords= 2 0 neighbours(up,down,left,right)= 32 -1 -1 65
+rank= 6 coords= 0 6 neighbours(up,down,left,right)= -1 38 5 7
+rank= 39 coords= 1 7 neighbours(up,down,left,right)= 7 71 38 40
+rank= 89 coords= 2 25 neighbours(up,down,left,right)= 57 -1 88 90
+rank= 65 coords= 2 1 neighbours(up,down,left,right)= 33 -1 64 66
+rank= 7 coords= 0 7 neighbours(up,down,left,right)= -1 39 6 8
+rank= 40 coords= 1 8 neighbours(up,down,left,right)= 8 72 39 41
+rank= 90 coords= 2 26 neighbours(up,down,left,right)= 58 -1 89 91
+rank= 66 coords= 2 2 neighbours(up,down,left,right)= 34 -1 65 67
+rank= 11 coords= 0 11 neighbours(up,down,left,right)= -1 43 10 12
+rank= 41 coords= 1 9 neighbours(up,down,left,right)= 9 73 40 42
+rank= 91 coords= 2 27 neighbours(up,down,left,right)= 59 -1 90 92
+rank= 67 coords= 2 3 neighbours(up,down,left,right)= 35 -1 66 68
+rank= 12 coords= 0 12 neighbours(up,down,left,right)= -1 44 11 13
+rank= 42 coords= 1 10 neighbours(up,down,left,right)= 10 74 41 43
+rank= 92 coords= 2 28 neighbours(up,down,left,right)= 60 -1 91 93
+rank= 68 coords= 2 4 neighbours(up,down,left,right)= 36 -1 67 69
+rank= 13 coords= 0 13 neighbours(up,down,left,right)= -1 45 12 14
+rank= 43 coords= 1 11 neighbours(up,down,left,right)= 11 75 42 44
+rank= 93 coords= 2 29 neighbours(up,down,left,right)= 61 -1 92 94
+rank= 69 coords= 2 5 neighbours(up,down,left,right)= 37 -1 68 70
+rank= 15 coords= 0 15 neighbours(up,down,left,right)= -1 47 14 16
+rank= 44 coords= 1 12 neighbours(up,down,left,right)= 12 76 43 45
+rank= 94 coords= 2 30 neighbours(up,down,left,right)= 62 -1 93 95
+rank= 51 coords= 1 19 neighbours(up,down,left,right)= 19 83 50 52
+rank= 19 coords= 0 19 neighbours(up,down,left,right)= -1 51 18 20
+rank= 45 coords= 1 13 neighbours(up,down,left,right)= 13 77 44 46
+rank= 95 coords= 2 31 neighbours(up,down,left,right)= 63 -1 94 -1
+rank= 55 coords= 1 23 neighbours(up,down,left,right)= 23 87 54 56
+rank= 21 coords= 0 21 neighbours(up,down,left,right)= -1 53 20 22
+rank= 46 coords= 1 14 neighbours(up,down,left,right)= 14 78 45 47
+rank= 77 coords= 2 13 neighbours(up,down,left,right)= 45 -1 76 78
+rank= 62 coords= 1 30 neighbours(up,down,left,right)= 30 94 61 63
+rank= 23 coords= 0 23 neighbours(up,down,left,right)= -1 55 22 24
+rank= 47 coords= 1 15 neighbours(up,down,left,right)= 15 79 46 48
+rank= 81 coords= 2 17 neighbours(up,down,left,right)= 49 -1 80 82
+rank= 70 coords= 2 6 neighbours(up,down,left,right)= 38 -1 69 71
+rank= 27 coords= 0 27 neighbours(up,down,left,right)= -1 59 26 28
+rank= 83 coords= 2 19 neighbours(up,down,left,right)= 51 -1 82 84
+rank= 71 coords= 2 7 neighbours(up,down,left,right)= 39 -1 70 72
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3520; Colend: 3661; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 282; Colend: 424; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2256; Colend: 2398; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 423; Colend: 565; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3100; Colend: 3241; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1692; Colend: 1834; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3520; Colend: 3661; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1833; Colend: 1975; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 4080; Colend: 4221; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3940; Colend: 4081; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 282; Colend: 424; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 846; Colend: 988; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1833; Colend: 1975; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3660; Colend: 3801; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2115; Colend: 2257; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3660; Colend: 3801; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2256; Colend: 2398; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 4220; Colend: 4361; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1128; Colend: 1270; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1410; Colend: 1552; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1551; Colend: 1693; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1974; Colend: 2116; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 705; Colend: 847; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3800; Colend: 3941; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 987; Colend: 1129; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3520; Colend: 3661; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3800; Colend: 3941; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3380; Colend: 3521; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 141; Colend: 283; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 0; Colend: 142; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 141; Colend: 283; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2820; Colend: 2961; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3380; Colend: 3521; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3100; Colend: 3241; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 4080; Colend: 4221; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 4360; Colend: 4501; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 423; Colend: 565; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 564; Colend: 706; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1551; Colend: 1693; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2538; Colend: 2680; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2820; Colend: 2961; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2679; Colend: 2821; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 4220; Colend: 4361; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2679; Colend: 2821; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2960; Colend: 3101; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1269; Colend: 1411; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 564; Colend: 706; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2397; Colend: 2539; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 705; Colend: 847; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3940; Colend: 4081; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2820; Colend: 2961; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1128; Colend: 1270; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1128; Colend: 1270; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2960; Colend: 3101; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1269; Colend: 1411; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2115; Colend: 2257; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3240; Colend: 3381; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1974; Colend: 2116; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2538; Colend: 2680; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3380; Colend: 3521; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2397; Colend: 2539; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 2960; Colend: 3101; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 4080; Colend: 4221; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 3240; Colend: 3381; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 3240; Colend: 3381; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 4220; Colend: 4361; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1551; Colend: 1693; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 4360; Colend: 4501; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 0; Colend: 142; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 0; Colend: 142; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 141; Colend: 283; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 282; Colend: 424; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 423; Colend: 565; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 564; Colend: 706; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 705; Colend: 847; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1974; Colend: 2116; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 846; Colend: 988; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2256; Colend: 2398; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2397; Colend: 2539; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2538; Colend: 2680; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 2679; Colend: 2821; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3100; Colend: 3241; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3660; Colend: 3801; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3800; Colend: 3941; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1833; Colend: 1975; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 987; Colend: 1129; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1692; Colend: 1834; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 3940; Colend: 4081; Cols: 141;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1269; Colend: 1411; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 1500; Rowend: 3001; Rows: 1501; Colstart: 1692; Colend: 1834; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 987; Colend: 1129; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 1410; Colend: 1552; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 2115; Colend: 2257; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1501; Rows: 1501; Colstart: 846; Colend: 988; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 1410; Colend: 1552; Cols: 142;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 4500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 3000; Rowend: 4501; Rows: 1501; Colstart: 4360; Colend: 4501; Cols: 141;
+
+Resolution: 4500
+===================
+Execution time: 0.008125
+Residual: 2.111093
+
+megaflops:  348920.2
+  flop instructions (M):  2835.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3784; Colend: 3957; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 688; Colend: 861; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1892; Colend: 2065; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 0; Colend: 173; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1376; Colend: 1549; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4300; Colend: 4473; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2064; Colend: 2237; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 344; Colend: 517; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1204; Colend: 1377; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 5329; Colend: 5501; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3096; Colend: 3269; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3612; Colend: 3785; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1892; Colend: 2065; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 860; Colend: 1033; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4472; Colend: 4645; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4816; Colend: 4988; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2580; Colend: 2753; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4987; Colend: 5159; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 688; Colend: 861; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1548; Colend: 1721; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2924; Colend: 3097; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2924; Colend: 3097; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 516; Colend: 689; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3440; Colend: 3613; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3268; Colend: 3441; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1548; Colend: 1721; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4128; Colend: 4301; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4987; Colend: 5159; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2236; Colend: 2409; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3268; Colend: 3441; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 172; Colend: 345; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 688; Colend: 861; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1376; Colend: 1549; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 5329; Colend: 5501; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1720; Colend: 1893; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3784; Colend: 3957; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3956; Colend: 4129; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1892; Colend: 2065; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4644; Colend: 4817; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4128; Colend: 4301; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4472; Colend: 4645; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 5158; Colend: 5330; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 516; Colend: 689; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4987; Colend: 5159; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1548; Colend: 1721; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3440; Colend: 3613; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 172; Colend: 345; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2236; Colend: 2409; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4300; Colend: 4473; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1032; Colend: 1205; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2752; Colend: 2925; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 860; Colend: 1033; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1204; Colend: 1377; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3612; Colend: 3785; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1204; Colend: 1377; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 1376; Colend: 1549; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 3956; Colend: 4129; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2752; Colend: 2925; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2064; Colend: 2237; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4816; Colend: 4988; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 3096; Colend: 3269; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 2408; Colend: 2581; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1720; Colend: 1893; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4472; Colend: 4645; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4128; Colend: 4301; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2580; Colend: 2753; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 4644; Colend: 4817; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4644; Colend: 4817; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 4300; Colend: 4473; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 5158; Colend: 5330; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 4816; Colend: 4988; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 5329; Colend: 5501; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 1032; Colend: 1205; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 5158; Colend: 5330; Cols: 172;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 0; Colend: 173; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 3667; Rowend: 5501; Rows: 1834; Colstart: 2408; Colend: 2581; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 1834; Rowend: 3668; Rows: 1834; Colstart: 344; Colend: 517; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 0; Colend: 173; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 172; Colend: 345; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 344; Colend: 517; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 516; Colend: 689; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 860; Colend: 1033; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1032; Colend: 1205; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 1720; Colend: 1893; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2064; Colend: 2237; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2236; Colend: 2409; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2408; Colend: 2581; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2580; Colend: 2753; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2752; Colend: 2925; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 2924; Colend: 3097; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3096; Colend: 3269; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3268; Colend: 3441; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3440; Colend: 3613; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3612; Colend: 3785; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3784; Colend: 3957; Cols: 173;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 5500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 1835; Rows: 1835; Colstart: 3956; Colend: 4129; Cols: 173;
+
+Resolution: 5500
+===================
+Execution time: 0.010760
+Residual: 2.580124
+
+megaflops:  393584.8
+  flop instructions (M):  4235.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 1222; Colend: 1426; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 5688; Colend: 5892; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 0; Colend: 205; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 204; Colend: 409; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 408; Colend: 613; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 1628; Colend: 1832; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 5079; Colend: 5283; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 4673; Colend: 4877; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 6297; Colend: 6501; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 5079; Colend: 5283; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 5688; Colend: 5892; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 5688; Colend: 5892; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 816; Colend: 1020; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 5485; Colend: 5689; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 1019; Colend: 1223; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 4064; Colend: 4268; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 5079; Colend: 5283; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 4876; Colend: 5080; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 1019; Colend: 1223; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 3861; Colend: 4065; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 5891; Colend: 6095; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 1425; Colend: 1629; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 5891; Colend: 6095; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 3455; Colend: 3659; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 2643; Colend: 2847; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 2237; Colend: 2441; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 4267; Colend: 4471; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 3049; Colend: 3253; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 3658; Colend: 3862; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 5282; Colend: 5486; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 5282; Colend: 5486; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 1831; Colend: 2035; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 2034; Colend: 2238; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 2034; Colend: 2238; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 5485; Colend: 5689; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 3658; Colend: 3862; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 2237; Colend: 2441; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 6094; Colend: 6298; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 6297; Colend: 6501; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 2440; Colend: 2644; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 1628; Colend: 1832; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 612; Colend: 817; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 2846; Colend: 3050; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 2440; Colend: 2644; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 4876; Colend: 5080; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 2643; Colend: 2847; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 5891; Colend: 6095; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 2846; Colend: 3050; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 3861; Colend: 4065; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 6297; Colend: 6501; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 3252; Colend: 3456; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 4064; Colend: 4268; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 816; Colend: 1020; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 4267; Colend: 4471; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 4470; Colend: 4674; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 1831; Colend: 2035; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 4876; Colend: 5080; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 3049; Colend: 3253; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 5485; Colend: 5689; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 6094; Colend: 6298; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 4470; Colend: 4674; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 6094; Colend: 6298; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 4673; Colend: 4877; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 1222; Colend: 1426; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 1425; Colend: 1629; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 5282; Colend: 5486; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 3252; Colend: 3456; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 2167; Rowend: 4335; Rows: 2168; Colstart: 612; Colend: 817; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 204; Colend: 409; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 3455; Colend: 3659; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 408; Colend: 613; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 4334; Rowend: 6501; Rows: 2167; Colstart: 0; Colend: 205; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 0; Colend: 205; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 204; Colend: 409; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 408; Colend: 613; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 612; Colend: 817; Cols: 205;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 816; Colend: 1020; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 1019; Colend: 1223; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 1222; Colend: 1426; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 1425; Colend: 1629; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 1628; Colend: 1832; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 1831; Colend: 2035; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 2034; Colend: 2238; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 2237; Colend: 2441; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 2440; Colend: 2644; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 2643; Colend: 2847; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 2846; Colend: 3050; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 3049; Colend: 3253; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 3252; Colend: 3456; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 3455; Colend: 3659; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 3658; Colend: 3862; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 3861; Colend: 4065; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 4064; Colend: 4268; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 4267; Colend: 4471; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 4470; Colend: 4674; Cols: 204;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 6500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2168; Rows: 2168; Colstart: 4673; Colend: 4877; Cols: 204;
+
+Resolution: 6500
+===================
+Execution time: 0.018506
+Residual: 3.049154
+
+megaflops:  319625.2
+  flop instructions (M):  5915.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 6798; Colend: 7033; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 4926; Colend: 5161; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 4224; Colend: 4459; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 3990; Colend: 4225; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 5862; Colend: 6097; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 4692; Colend: 4927; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 6798; Colend: 7033; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 6798; Colend: 7033; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 6564; Colend: 6799; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 7266; Colend: 7501; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 6096; Colend: 6331; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 7266; Colend: 7501; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 3522; Colend: 3757; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 2820; Colend: 3055; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 940; Colend: 1176; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 1410; Colend: 1646; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 6096; Colend: 6331; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 6330; Colend: 6565; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 1880; Colend: 2116; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 5628; Colend: 5863; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 3522; Colend: 3757; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 4458; Colend: 4693; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 2115; Colend: 2351; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 470; Colend: 706; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 3756; Colend: 3991; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 5160; Colend: 5395; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 2350; Colend: 2586; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 7032; Colend: 7267; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 4458; Colend: 4693; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 5394; Colend: 5629; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 2585; Colend: 2821; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 235; Colend: 471; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 5628; Colend: 5863; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 5862; Colend: 6097; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 940; Colend: 1176; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 1410; Colend: 1646; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 6564; Colend: 6799; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 1175; Colend: 1411; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 1175; Colend: 1411; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 470; Colend: 706; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 2820; Colend: 3055; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 1645; Colend: 1881; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 1175; Colend: 1411; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 3054; Colend: 3289; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 3054; Colend: 3289; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 1880; Colend: 2116; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 4224; Colend: 4459; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 3288; Colend: 3523; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 3288; Colend: 3523; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 2585; Colend: 2821; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 4692; Colend: 4927; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 3756; Colend: 3991; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 6564; Colend: 6799; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 3054; Colend: 3289; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 0; Colend: 236; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 3990; Colend: 4225; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 0; Colend: 236; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 3990; Colend: 4225; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 235; Colend: 471; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 4224; Colend: 4459; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 1880; Colend: 2116; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 5862; Colend: 6097; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 1410; Colend: 1646; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 4926; Colend: 5161; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 2350; Colend: 2586; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 7266; Colend: 7501; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 5628; Colend: 5863; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 1645; Colend: 1881; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 2820; Colend: 3055; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 2350; Colend: 2586; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 6330; Colend: 6565; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 4458; Colend: 4693; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 6330; Colend: 6565; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 4926; Colend: 5161; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 7032; Colend: 7267; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 235; Colend: 471; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 705; Colend: 941; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 5160; Colend: 5395; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 705; Colend: 941; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 470; Colend: 706; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 2115; Colend: 2351; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 7032; Colend: 7267; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 1645; Colend: 1881; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 0; Colend: 236; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 2585; Colend: 2821; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 3288; Colend: 3523; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 6096; Colend: 6331; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 3522; Colend: 3757; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 5394; Colend: 5629; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 3756; Colend: 3991; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 4692; Colend: 4927; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 5000; Rowend: 7501; Rows: 2501; Colstart: 2115; Colend: 2351; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 5160; Colend: 5395; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 5394; Colend: 5629; Cols: 235;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 2500; Rowend: 5001; Rows: 2501; Colstart: 940; Colend: 1176; Cols: 236;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 7500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2501; Rows: 2501; Colstart: 705; Colend: 941; Cols: 236;
+
+Resolution: 7500
+===================
+Execution time: 0.027661
+Residual: 3.518183
+
+megaflops:  284696.0
+  flop instructions (M):  7875.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 4256; Colend: 4523; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 5320; Colend: 5586; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 266; Colend: 533; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 7440; Colend: 7706; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 5850; Colend: 6116; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 4522; Colend: 4789; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 1596; Colend: 1863; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 266; Colend: 533; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 6115; Colend: 6381; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 6910; Colend: 7176; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 2660; Colend: 2927; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 532; Colend: 799; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 5054; Colend: 5321; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 1064; Colend: 1331; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 3724; Colend: 3991; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 1596; Colend: 1863; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 5585; Colend: 5851; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 266; Colend: 533; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 5585; Colend: 5851; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 0; Colend: 267; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 6380; Colend: 6646; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 1330; Colend: 1597; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 798; Colend: 1065; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 7175; Colend: 7441; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 6380; Colend: 6646; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 1330; Colend: 1597; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 7175; Colend: 7441; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 3458; Colend: 3725; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 6645; Colend: 6911; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 3192; Colend: 3459; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 2128; Colend: 2395; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 6645; Colend: 6911; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 6115; Colend: 6381; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 4522; Colend: 4789; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 2926; Colend: 3193; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 7970; Colend: 8236; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 7440; Colend: 7706; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 6115; Colend: 6381; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 3192; Colend: 3459; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 8235; Colend: 8501; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 1596; Colend: 1863; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 0; Colend: 267; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 3724; Colend: 3991; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 2394; Colend: 2661; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 5585; Colend: 5851; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 2128; Colend: 2395; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 6380; Colend: 6646; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 7440; Colend: 7706; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 7175; Colend: 7441; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 5054; Colend: 5321; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 8235; Colend: 8501; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 5320; Colend: 5586; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 7705; Colend: 7971; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 5850; Colend: 6116; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 798; Colend: 1065; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 6910; Colend: 7176; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 532; Colend: 799; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 2926; Colend: 3193; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 1064; Colend: 1331; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 7705; Colend: 7971; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 4256; Colend: 4523; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 3990; Colend: 4257; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 1330; Colend: 1597; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 2660; Colend: 2927; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 4788; Colend: 5055; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 4256; Colend: 4523; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 7705; Colend: 7971; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 3990; Colend: 4257; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 5054; Colend: 5321; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 2394; Colend: 2661; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 7970; Colend: 8236; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 4522; Colend: 4789; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 5850; Colend: 6116; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 5320; Colend: 5586; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 3458; Colend: 3725; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 7970; Colend: 8236; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 532; Colend: 799; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 6910; Colend: 7176; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 3192; Colend: 3459; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 0; Colend: 267; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 3458; Colend: 3725; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 2394; Colend: 2661; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 3724; Colend: 3991; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 798; Colend: 1065; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 1064; Colend: 1331; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 6645; Colend: 6911; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 2128; Colend: 2395; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 1862; Colend: 2129; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 1862; Colend: 2129; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 1862; Colend: 2129; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 2926; Colend: 3193; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 8235; Colend: 8501; Cols: 266;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2835; Rows: 2835; Colstart: 4788; Colend: 5055; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 2660; Colend: 2927; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 5667; Rowend: 8501; Rows: 2834; Colstart: 4788; Colend: 5055; Cols: 267;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 8500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 2834; Rowend: 5668; Rows: 2834; Colstart: 3990; Colend: 4257; Cols: 267;
+
+Resolution: 8500
+===================
+Execution time: 0.037744
+Residual: 3.987213
+
+megaflops:  267991.0
+  flop instructions (M):  10115.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 2970; Colend: 3268; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 5346; Colend: 5644; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 1485; Colend: 1783; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 1188; Colend: 1486; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 1782; Colend: 2080; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 2970; Colend: 3268; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 1782; Colend: 2080; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 891; Colend: 1189; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 2079; Colend: 2377; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 4455; Colend: 4753; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 5643; Colend: 5941; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 2376; Colend: 2674; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 2376; Colend: 2674; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 3267; Colend: 3565; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 7722; Colend: 8020; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 4455; Colend: 4753; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 2970; Colend: 3268; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 5643; Colend: 5941; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 5940; Colend: 6238; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 5346; Colend: 5644; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 7722; Colend: 8020; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 6534; Colend: 6832; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 7128; Colend: 7426; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 2079; Colend: 2377; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 8019; Colend: 8317; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 8316; Colend: 8613; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 297; Colend: 595; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 6237; Colend: 6535; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 891; Colend: 1189; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 5940; Colend: 6238; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 0; Colend: 298; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 297; Colend: 595; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 4455; Colend: 4753; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 8019; Colend: 8317; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 594; Colend: 892; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 1485; Colend: 1783; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 7128; Colend: 7426; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 8908; Colend: 9205; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 6237; Colend: 6535; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 4158; Colend: 4456; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 8908; Colend: 9205; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 4752; Colend: 5050; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 8612; Colend: 8909; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 6831; Colend: 7129; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 9204; Colend: 9501; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 6831; Colend: 7129; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 1188; Colend: 1486; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 3564; Colend: 3862; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 3564; Colend: 3862; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 7425; Colend: 7723; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 5049; Colend: 5347; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 5643; Colend: 5941; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 7425; Colend: 7723; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 8612; Colend: 8909; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 891; Colend: 1189; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 594; Colend: 892; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 8316; Colend: 8613; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 3861; Colend: 4159; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 4752; Colend: 5050; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 1782; Colend: 2080; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 2673; Colend: 2971; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 7128; Colend: 7426; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 7425; Colend: 7723; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 2673; Colend: 2971; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 3267; Colend: 3565; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 3564; Colend: 3862; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 8316; Colend: 8613; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 3267; Colend: 3565; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 4158; Colend: 4456; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 5049; Colend: 5347; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 8908; Colend: 9205; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 3861; Colend: 4159; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 1485; Colend: 1783; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 4158; Colend: 4456; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 9204; Colend: 9501; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 5049; Colend: 5347; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 594; Colend: 892; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 2376; Colend: 2674; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 2079; Colend: 2377; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 5940; Colend: 6238; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 1188; Colend: 1486; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 7722; Colend: 8020; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 5346; Colend: 5644; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 4752; Colend: 5050; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 297; Colend: 595; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 2673; Colend: 2971; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 8019; Colend: 8317; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 0; Colend: 298; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 3861; Colend: 4159; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 6534; Colend: 6832; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 6534; Colend: 6832; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3168; Rows: 3168; Colstart: 8612; Colend: 8909; Cols: 297;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 6831; Colend: 7129; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3167; Rowend: 6335; Rows: 3168; Colstart: 0; Colend: 298; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 6237; Colend: 6535; Cols: 298;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 9500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 6334; Rowend: 9501; Rows: 3167; Colstart: 9204; Colend: 9501; Cols: 297;
+
+Resolution: 9500
+===================
+Execution time: 0.048422
+Residual: 4.456242
+
+megaflops:  260934.6
+  flop instructions (M):  12635.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 1644; Colend: 1973; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 4596; Colend: 4925; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 8204; Colend: 8533; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 658; Colend: 988; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 0; Colend: 330; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 2956; Colend: 3285; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 8860; Colend: 9189; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 1972; Colend: 2301; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 3612; Colend: 3941; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 6892; Colend: 7221; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 9844; Colend: 10173; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 2956; Colend: 3285; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 4596; Colend: 4925; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 3940; Colend: 4269; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 987; Colend: 1317; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 4268; Colend: 4597; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 329; Colend: 659; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 5580; Colend: 5909; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 7548; Colend: 7877; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 4924; Colend: 5253; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 658; Colend: 988; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 8532; Colend: 8861; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 5908; Colend: 6237; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 5252; Colend: 5581; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 1644; Colend: 1973; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 7220; Colend: 7549; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 658; Colend: 988; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 5580; Colend: 5909; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 4268; Colend: 4597; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 9844; Colend: 10173; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 5252; Colend: 5581; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 6236; Colend: 6565; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 9844; Colend: 10173; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 10172; Colend: 10501; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 1316; Colend: 1645; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 7220; Colend: 7549; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 987; Colend: 1317; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 3612; Colend: 3941; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 2300; Colend: 2629; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 0; Colend: 330; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 1972; Colend: 2301; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 6564; Colend: 6893; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 8532; Colend: 8861; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 987; Colend: 1317; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 2300; Colend: 2629; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 8860; Colend: 9189; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 9516; Colend: 9845; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 2300; Colend: 2629; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 2628; Colend: 2957; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 2628; Colend: 2957; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 6236; Colend: 6565; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 2628; Colend: 2957; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 9516; Colend: 9845; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 3284; Colend: 3613; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 7220; Colend: 7549; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 3284; Colend: 3613; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 3284; Colend: 3613; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 5908; Colend: 6237; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 7876; Colend: 8205; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 3612; Colend: 3941; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 3940; Colend: 4269; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 7548; Colend: 7877; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 1644; Colend: 1973; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 5908; Colend: 6237; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 4924; Colend: 5253; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 7876; Colend: 8205; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 1972; Colend: 2301; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 6564; Colend: 6893; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 8532; Colend: 8861; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 8204; Colend: 8533; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 6564; Colend: 6893; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 1316; Colend: 1645; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 2956; Colend: 3285; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 9188; Colend: 9517; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 9188; Colend: 9517; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 6892; Colend: 7221; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 8860; Colend: 9189; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 9516; Colend: 9845; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 6892; Colend: 7221; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 7548; Colend: 7877; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 1316; Colend: 1645; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 4268; Colend: 4597; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 0; Colend: 330; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 329; Colend: 659; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 7876; Colend: 8205; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 4924; Colend: 5253; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 10172; Colend: 10501; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 4596; Colend: 4925; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 8204; Colend: 8533; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 6236; Colend: 6565; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 3500; Rowend: 7001; Rows: 3501; Colstart: 5580; Colend: 5909; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 3940; Colend: 4269; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 9188; Colend: 9517; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 5252; Colend: 5581; Cols: 329;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 7000; Rowend: 10501; Rows: 3501; Colstart: 329; Colend: 659; Cols: 330;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 10500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3501; Rows: 3501; Colstart: 10172; Colend: 10501; Cols: 329;
+
+Resolution: 10500
+===================
+Execution time: 0.061255
+Residual: 4.925272
+
+megaflops:  251979.5
+  flop instructions (M):  15435.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 3960; Colend: 4321; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 7192; Colend: 7552; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 1080; Colend: 1441; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 8269; Colend: 8629; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 6115; Colend: 6475; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 1440; Colend: 1801; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 8628; Colend: 8988; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 6474; Colend: 6834; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 2520; Colend: 2881; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 5397; Colend: 5757; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 10423; Colend: 10783; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 360; Colend: 721; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 8987; Colend: 9347; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 3240; Colend: 3601; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 7551; Colend: 7911; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 10064; Colend: 10424; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 6833; Colend: 7193; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 3600; Colend: 3961; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 3960; Colend: 4321; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 7551; Colend: 7911; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 5756; Colend: 6116; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 5038; Colend: 5398; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 720; Colend: 1081; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 5756; Colend: 6116; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 10064; Colend: 10424; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 5397; Colend: 5757; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 2520; Colend: 2881; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 3600; Colend: 3961; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 360; Colend: 721; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 5756; Colend: 6116; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 2880; Colend: 3241; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 7910; Colend: 8270; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 720; Colend: 1081; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 8269; Colend: 8629; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 2160; Colend: 2521; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 8987; Colend: 9347; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 1440; Colend: 1801; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 2160; Colend: 2521; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 3240; Colend: 3601; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 10064; Colend: 10424; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 2520; Colend: 2881; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 4320; Colend: 4680; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 3600; Colend: 3961; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 10782; Colend: 11142; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 6833; Colend: 7193; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 6474; Colend: 6834; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 10782; Colend: 11142; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 5397; Colend: 5757; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 7551; Colend: 7911; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 7910; Colend: 8270; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 1440; Colend: 1801; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 7192; Colend: 7552; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 8628; Colend: 8988; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 1800; Colend: 2161; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 9705; Colend: 10065; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 9705; Colend: 10065; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 8987; Colend: 9347; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 2880; Colend: 3241; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 360; Colend: 721; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 11141; Colend: 11501; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 9346; Colend: 9706; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 6833; Colend: 7193; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 4320; Colend: 4680; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 4679; Colend: 5039; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 10423; Colend: 10783; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 720; Colend: 1081; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 4679; Colend: 5039; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 6115; Colend: 6475; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 1080; Colend: 1441; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 9346; Colend: 9706; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 6474; Colend: 6834; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 8269; Colend: 8629; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 10423; Colend: 10783; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 9346; Colend: 9706; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 9705; Colend: 10065; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 3960; Colend: 4321; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 8628; Colend: 8988; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 4320; Colend: 4680; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 1800; Colend: 2161; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 6115; Colend: 6475; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 1800; Colend: 2161; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 5038; Colend: 5398; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 2160; Colend: 2521; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 0; Colend: 361; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 5038; Colend: 5398; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 2880; Colend: 3241; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 7910; Colend: 8270; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 3240; Colend: 3601; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 0; Colend: 361; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 10782; Colend: 11142; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 4679; Colend: 5039; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 7667; Rowend: 11501; Rows: 3834; Colstart: 0; Colend: 361; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 7192; Colend: 7552; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 1080; Colend: 1441; Cols: 361;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3835; Rows: 3835; Colstart: 11141; Colend: 11501; Cols: 360;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 11500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 3834; Rowend: 7668; Rows: 3834; Colstart: 11141; Colend: 11501; Cols: 360;
+
+Resolution: 11500
+===================
+Execution time: 0.074302
+Residual: 5.394301
+
+megaflops:  249185.9
+  flop instructions (M):  18515.000
+
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 20 ; Rank-X: 20 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 7820; Colend: 8211; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 86 ; Rank-X: 22 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 8600; Colend: 8991; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 51 ; Rank-X: 19 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 7429; Colend: 7821; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 13 ; Rank-X: 13 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 5083; Colend: 5475; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 29 ; Rank-X: 29 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 11330; Colend: 11721; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 84 ; Rank-X: 20 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 7820; Colend: 8211; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 58 ; Rank-X: 26 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 10160; Colend: 10551; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 391; Colend: 783; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 35 ; Rank-X: 3 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 1173; Colend: 1565; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 91 ; Rank-X: 27 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 10550; Colend: 10941; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 54 ; Rank-X: 22 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 8600; Colend: 8991; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 3 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 1173; Colend: 1565; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 34 ; Rank-X: 2 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 782; Colend: 1174; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 92 ; Rank-X: 28 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 10940; Colend: 11331; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 4 ; Rank-X: 4 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 1564; Colend: 1956; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 28 ; Rank-X: 28 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 10940; Colend: 11331; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 94 ; Rank-X: 30 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 11720; Colend: 12111; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 7 ; Rank-X: 7 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 2737; Colend: 3129; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 25 ; Rank-X: 25 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 9770; Colend: 10161; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 75 ; Rank-X: 11 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 4301; Colend: 4693; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 9 ; Rank-X: 9 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 3519; Colend: 3911; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 30 ; Rank-X: 30 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 11720; Colend: 12111; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 81 ; Rank-X: 17 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 6647; Colend: 7039; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 61 ; Rank-X: 29 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 11330; Colend: 11721; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 11 ; Rank-X: 11 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 4301; Colend: 4693; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 45 ; Rank-X: 13 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 5083; Colend: 5475; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 83 ; Rank-X: 19 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 7429; Colend: 7821; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 62 ; Rank-X: 30 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 11720; Colend: 12111; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 16 ; Rank-X: 16 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 6256; Colend: 6648; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 90 ; Rank-X: 26 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 10160; Colend: 10551; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 69 ; Rank-X: 5 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 1955; Colend: 2347; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 21 ; Rank-X: 21 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 8210; Colend: 8601; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 93 ; Rank-X: 29 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 11330; Colend: 11721; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 70 ; Rank-X: 6 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 2346; Colend: 2738; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 23 ; Rank-X: 23 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 8990; Colend: 9381; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 76 ; Rank-X: 12 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 4692; Colend: 5084; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 49 ; Rank-X: 17 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 6647; Colend: 7039; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 2 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 782; Colend: 1174; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 80 ; Rank-X: 16 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 6256; Colend: 6648; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 50 ; Rank-X: 18 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 7038; Colend: 7430; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 14 ; Rank-X: 14 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 5474; Colend: 5866; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 37 ; Rank-X: 5 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 1955; Colend: 2347; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 89 ; Rank-X: 25 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 9770; Colend: 10161; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 52 ; Rank-X: 20 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 7820; Colend: 8211; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 22 ; Rank-X: 22 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 8600; Colend: 8991; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 47 ; Rank-X: 15 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 5865; Colend: 6257; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 85 ; Rank-X: 21 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 8210; Colend: 8601; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 55 ; Rank-X: 23 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 8990; Colend: 9381; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 15 ; Rank-X: 15 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 5865; Colend: 6257; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 31 ; Rank-X: 31 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 12110; Colend: 12501; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 87 ; Rank-X: 23 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 8990; Colend: 9381; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 56 ; Rank-X: 24 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 9380; Colend: 9771; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 12 ; Rank-X: 12 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 4692; Colend: 5084; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 38 ; Rank-X: 6 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 2346; Colend: 2738; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 88 ; Rank-X: 24 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 9380; Colend: 9771; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 57 ; Rank-X: 25 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 9770; Colend: 10161; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 19 ; Rank-X: 19 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 7429; Colend: 7821; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 44 ; Rank-X: 12 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 4692; Colend: 5084; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 72 ; Rank-X: 8 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 3128; Colend: 3520; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 59 ; Rank-X: 27 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 10550; Colend: 10941; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 5 ; Rank-X: 5 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 1955; Colend: 2347; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 33 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 391; Colend: 783; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 82 ; Rank-X: 18 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 7038; Colend: 7430; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 48 ; Rank-X: 16 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 6256; Colend: 6648; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 8 ; Rank-X: 8 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 3128; Colend: 3520; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 73 ; Rank-X: 9 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 3519; Colend: 3911; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 53 ; Rank-X: 21 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 8210; Colend: 8601; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 18 ; Rank-X: 18 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 7038; Colend: 7430; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 63 ; Rank-X: 31 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 12110; Colend: 12501; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 6 ; Rank-X: 6 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 2346; Colend: 2738; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 46 ; Rank-X: 14 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 5474; Colend: 5866; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 79 ; Rank-X: 15 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 5865; Colend: 6257; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 65 ; Rank-X: 1 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 391; Colend: 783; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 17 ; Rank-X: 17 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 6647; Colend: 7039; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 68 ; Rank-X: 4 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 1564; Colend: 1956; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 77 ; Rank-X: 13 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 5083; Colend: 5475; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 71 ; Rank-X: 7 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 2737; Colend: 3129; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 78 ; Rank-X: 14 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 5474; Colend: 5866; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 60 ; Rank-X: 28 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 10940; Colend: 11331; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 95 ; Rank-X: 31 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 12110; Colend: 12501; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 10 ; Rank-X: 10 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 3910; Colend: 4302; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 32 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 0; Colend: 392; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 26 ; Rank-X: 26 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 10160; Colend: 10551; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 27 ; Rank-X: 27 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 10550; Colend: 10941; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 74 ; Rank-X: 10 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 3910; Colend: 4302; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 24 ; Rank-X: 24 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 9380; Colend: 9771; Cols: 391;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 67 ; Rank-X: 3 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 1173; Colend: 1565; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 66 ; Rank-X: 2 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 782; Colend: 1174; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 39 ; Rank-X: 7 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 2737; Colend: 3129; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 41 ; Rank-X: 9 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 3519; Colend: 3911; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 42 ; Rank-X: 10 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 3910; Colend: 4302; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 43 ; Rank-X: 11 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 4301; Colend: 4693; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 36 ; Rank-X: 4 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 1564; Colend: 1956; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 40 ; Rank-X: 8 ; Rank-Y: 1 ; Rowstart: 4167; Rowend: 8335; Rows: 4168; Colstart: 3128; Colend: 3520; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4168; Rows: 4168; Colstart: 0; Colend: 392; Cols: 392;
+Num-X: 32 ; Num-Y: 3 ; Resolution: 12500 ; Rank: 64 ; Rank-X: 0 ; Rank-Y: 2 ; Rowstart: 8334; Rowend: 12501; Rows: 4167; Colstart: 0; Colend: 392; Cols: 392;
+
+Resolution: 12500
+===================
+Execution time: 0.088184
+Residual: 5.863330
+
+megaflops:  248060.5
+  flop instructions (M):  21875.000

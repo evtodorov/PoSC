@@ -1,0 +1,144 @@
+mpiexec -genv I_MPI_DEBUG=4 -genv OMP_NUM_THREADS=48 -genv I_MPI_PIN_DOMAIN=omp -n 4 ./heat test.dat 2 2
+[0] MPI startup(): Intel(R) MPI Library, Version 2019 Update 8  Build 20200624 (id: 4f16ad915)
+[0] MPI startup(): Copyright (C) 2003-2020 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.10.1-impi
+[0] MPI startup(): libfabric provider: psm2
+[0] MPI startup(): Rank    Pid      Node name     Pin cpu
+[0] MPI startup(): 0       2857302  i01r01c04s06  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 1       1863723  i01r01c04s07  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 2       1814317  i01r01c04s08  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+[0] MPI startup(): 3       1798889  i01r01c04s09  {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,48,49,50,51,52,53,
+                                    54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71}
+
+2 processes distributed in X-direction
+ 2 ; processes distributed in Y-direction
+Resolutions       : (4500, 5500, ... 12500)
+Iterations        : 20
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00 
+   2: (1.00, 1.00) 1.00 0.50 
+rank= 0 coords= 0 0 neighbours(up,down,left,right)= -1 2 -1 1
+rank= 2 coords= 1 0 neighbours(up,down,left,right)= 0 -1 -1 3
+rank= 3 coords= 1 1 neighbours(up,down,left,right)= 1 -1 2 -1
+rank= 1 coords= 0 1 neighbours(up,down,left,right)= -1 3 0 -1
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 4500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2251; Rows: 2251; Colstart: 0; Colend: 2251; Cols: 2251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 4500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 2250; Rowend: 4501; Rows: 2251; Colstart: 0; Colend: 2251; Cols: 2251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 4500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2251; Rows: 2251; Colstart: 2250; Colend: 4501; Cols: 2251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 4500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2250; Rowend: 4501; Rows: 2251; Colstart: 2250; Colend: 4501; Cols: 2251;
+
+Resolution: 4500
+===================
+Execution time: 0.018513
+Residual: 2.111093
+
+megaflops:  153135.9
+  flop instructions (M):  2835.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 5500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 2750; Rowend: 5501; Rows: 2751; Colstart: 0; Colend: 2751; Cols: 2751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 5500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 2750; Rowend: 5501; Rows: 2751; Colstart: 2750; Colend: 5501; Cols: 2751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 5500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2751; Rows: 2751; Colstart: 2750; Colend: 5501; Cols: 2751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 5500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 2751; Rows: 2751; Colstart: 0; Colend: 2751; Cols: 2751;
+
+Resolution: 5500
+===================
+Execution time: 0.030263
+Residual: 2.580124
+
+megaflops:  139940.1
+  flop instructions (M):  4235.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3251; Rows: 3251; Colstart: 3250; Colend: 6501; Cols: 3251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3250; Rowend: 6501; Rows: 3251; Colstart: 0; Colend: 3251; Cols: 3251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3250; Rowend: 6501; Rows: 3251; Colstart: 3250; Colend: 6501; Cols: 3251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 6500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3251; Rows: 3251; Colstart: 0; Colend: 3251; Cols: 3251;
+
+Resolution: 6500
+===================
+Execution time: 0.044379
+Residual: 3.049154
+
+megaflops:  133283.8
+  flop instructions (M):  5915.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 7500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 3750; Rowend: 7501; Rows: 3751; Colstart: 0; Colend: 3751; Cols: 3751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 7500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3751; Rows: 3751; Colstart: 3750; Colend: 7501; Cols: 3751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 7500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 3750; Rowend: 7501; Rows: 3751; Colstart: 3750; Colend: 7501; Cols: 3751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 7500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 3751; Rows: 3751; Colstart: 0; Colend: 3751; Cols: 3751;
+
+Resolution: 7500
+===================
+Execution time: 0.062146
+Residual: 3.518183
+
+megaflops:  126717.8
+  flop instructions (M):  7875.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 4250; Rowend: 8501; Rows: 4251; Colstart: 0; Colend: 4251; Cols: 4251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 4250; Rowend: 8501; Rows: 4251; Colstart: 4250; Colend: 8501; Cols: 4251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4251; Rows: 4251; Colstart: 4250; Colend: 8501; Cols: 4251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 8500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4251; Rows: 4251; Colstart: 0; Colend: 4251; Cols: 4251;
+
+Resolution: 8500
+===================
+Execution time: 0.083723
+Residual: 3.987213
+
+megaflops:  120815.3
+  flop instructions (M):  10115.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 9500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4751; Rows: 4751; Colstart: 4750; Colend: 9501; Cols: 4751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 9500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 4750; Rowend: 9501; Rows: 4751; Colstart: 0; Colend: 4751; Cols: 4751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 9500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 4750; Rowend: 9501; Rows: 4751; Colstart: 4750; Colend: 9501; Cols: 4751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 9500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 4751; Rows: 4751; Colstart: 0; Colend: 4751; Cols: 4751;
+
+Resolution: 9500
+===================
+Execution time: 0.104976
+Residual: 4.456242
+
+megaflops:  120360.9
+  flop instructions (M):  12635.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5251; Rows: 5251; Colstart: 0; Colend: 5251; Cols: 5251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5251; Rows: 5251; Colstart: 5250; Colend: 10501; Cols: 5251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 5250; Rowend: 10501; Rows: 5251; Colstart: 0; Colend: 5251; Cols: 5251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 10500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 5250; Rowend: 10501; Rows: 5251; Colstart: 5250; Colend: 10501; Cols: 5251;
+
+Resolution: 10500
+===================
+Execution time: 0.128410
+Residual: 4.925272
+
+megaflops:  120200.8
+  flop instructions (M):  15435.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 11500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 5750; Rowend: 11501; Rows: 5751; Colstart: 0; Colend: 5751; Cols: 5751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 11500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 5750; Rowend: 11501; Rows: 5751; Colstart: 5750; Colend: 11501; Cols: 5751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 11500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5751; Rows: 5751; Colstart: 5750; Colend: 11501; Cols: 5751;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 11500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 5751; Rows: 5751; Colstart: 0; Colend: 5751; Cols: 5751;
+
+Resolution: 11500
+===================
+Execution time: 0.156306
+Residual: 5.394301
+
+megaflops:  118453.5
+  flop instructions (M):  18515.000
+
+Num-X: 2 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 0 ; Rank-X: 0 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6251; Rows: 6251; Colstart: 0; Colend: 6251; Cols: 6251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 1 ; Rank-X: 1 ; Rank-Y: 0 ; Rowstart: 0; Rowend: 6251; Rows: 6251; Colstart: 6250; Colend: 12501; Cols: 6251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 3 ; Rank-X: 1 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 12501; Rows: 6251; Colstart: 6250; Colend: 12501; Cols: 6251;
+Num-X: 2 ; Num-Y: 2 ; Resolution: 12500 ; Rank: 2 ; Rank-X: 0 ; Rank-Y: 1 ; Rowstart: 6250; Rowend: 12501; Rows: 6251; Colstart: 0; Colend: 6251; Cols: 6251;
+
+Resolution: 12500
+===================
+Execution time: 0.184998
+Residual: 5.863330
+
+megaflops:  118244.5
+  flop instructions (M):  21875.000
