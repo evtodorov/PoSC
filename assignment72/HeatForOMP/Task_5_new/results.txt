@@ -1,0 +1,502 @@
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_12x16_192_1
+Resolution: 4500Execution time: 0.005611Residual: 2.111093
+Resolution: 5500Execution time: 0.010463Residual: 2.580124
+Resolution: 6500Execution time: 0.018214Residual: 3.049154
+Resolution: 7500Execution time: 0.028981Residual: 3.518183
+Resolution: 8500Execution time: 0.036930Residual: 3.987213
+Resolution: 9500Execution time: 0.049549Residual: 4.456242
+Resolution: 10500Execution time: 0.062204Residual: 4.925272
+Resolution: 11500Execution time: 0.073371Residual: 5.394301
+Resolution: 12500Execution time: 0.088357Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_12x8_96_2
+Resolution: 4500Execution time: 0.005330Residual: 2.111093
+Resolution: 5500Execution time: 0.010996Residual: 2.580124
+Resolution: 6500Execution time: 0.018930Residual: 3.049154
+Resolution: 7500Execution time: 0.027817Residual: 3.518183
+Resolution: 8500Execution time: 0.037194Residual: 3.987213
+Resolution: 9500Execution time: 0.048683Residual: 4.456242
+Resolution: 10500Execution time: 0.061532Residual: 4.925272
+Resolution: 11500Execution time: 0.074037Residual: 5.394301
+Resolution: 12500Execution time: 0.089186Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x12_192_1
+Resolution: 4500Execution time: 0.010606Residual: 2.111093
+Resolution: 5500Execution time: 0.010897Residual: 2.580124
+Resolution: 6500Execution time: 0.018906Residual: 3.049154
+Resolution: 7500Execution time: 0.027513Residual: 3.518183
+Resolution: 8500Execution time: 0.038018Residual: 3.987213
+Resolution: 9500Execution time: 0.049952Residual: 4.456242
+Resolution: 10500Execution time: 0.060356Residual: 4.925272
+Resolution: 11500Execution time: 0.075859Residual: 5.394301
+Resolution: 12500Execution time: 0.088283Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x1_16_12
+Resolution: 4500Execution time: 0.006424Residual: 2.111093
+Resolution: 5500Execution time: 0.011529Residual: 2.580124
+Resolution: 6500Execution time: 0.019742Residual: 3.049154
+Resolution: 7500Execution time: 0.028216Residual: 3.518183
+Resolution: 8500Execution time: 0.038707Residual: 3.987213
+Resolution: 9500Execution time: 0.049443Residual: 4.456242
+Resolution: 10500Execution time: 0.061348Residual: 4.925272
+Resolution: 11500Execution time: 0.075119Residual: 5.394301
+Resolution: 12500Execution time: 0.096514Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x2_32_6
+Resolution: 4500Execution time: 0.005389Residual: 2.111093
+Resolution: 5500Execution time: 0.011458Residual: 2.580124
+Resolution: 6500Execution time: 0.018544Residual: 3.049154
+Resolution: 7500Execution time: 0.028537Residual: 3.518183
+Resolution: 8500Execution time: 0.037862Residual: 3.987213
+Resolution: 9500Execution time: 0.048246Residual: 4.456242
+Resolution: 10500Execution time: 0.061604Residual: 4.925272
+Resolution: 11500Execution time: 0.073240Residual: 5.394301
+Resolution: 12500Execution time: 0.088141Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x3_48_4
+Resolution: 4500Execution time: 0.005895Residual: 2.111093
+Resolution: 5500Execution time: 0.011805Residual: 2.580124
+Resolution: 6500Execution time: 0.018647Residual: 3.049154
+Resolution: 7500Execution time: 0.027685Residual: 3.518183
+Resolution: 8500Execution time: 0.037388Residual: 3.987213
+Resolution: 9500Execution time: 0.048759Residual: 4.456242
+Resolution: 10500Execution time: 0.061037Residual: 4.925272
+Resolution: 11500Execution time: 0.074171Residual: 5.394301
+Resolution: 12500Execution time: 0.087315Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x4_64_3
+Resolution: 4500Execution time: 0.005699Residual: 2.111093
+Resolution: 5500Execution time: 0.011539Residual: 2.580124
+Resolution: 6500Execution time: 0.019045Residual: 3.049154
+Resolution: 7500Execution time: 0.027384Residual: 3.518183
+Resolution: 8500Execution time: 0.037931Residual: 3.987213
+Resolution: 9500Execution time: 0.047952Residual: 4.456242
+Resolution: 10500Execution time: 0.060196Residual: 4.925272
+Resolution: 11500Execution time: 0.073634Residual: 5.394301
+Resolution: 12500Execution time: 0.087895Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_16x6_96_2
+Resolution: 4500Execution time: 0.010770Residual: 2.111093
+Resolution: 5500Execution time: 0.010690Residual: 2.580124
+Resolution: 6500Execution time: 0.018822Residual: 3.049154
+Resolution: 7500Execution time: 0.026985Residual: 3.518183
+Resolution: 8500Execution time: 0.037513Residual: 3.987213
+Resolution: 9500Execution time: 0.048509Residual: 4.456242
+Resolution: 10500Execution time: 0.060197Residual: 4.925272
+Resolution: 11500Execution time: 0.072680Residual: 5.394301
+Resolution: 12500Execution time: 0.088096Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_192x1_192_1
+Resolution: 4500Execution time: 0.010198Residual: 2.111093
+Resolution: 5500Execution time: 0.011391Residual: 2.580124
+Resolution: 6500Execution time: 0.019105Residual: 3.049154
+Resolution: 7500Execution time: 0.027586Residual: 3.518183
+Resolution: 8500Execution time: 0.038739Residual: 3.987213
+Resolution: 9500Execution time: 0.051599Residual: 4.456242
+Resolution: 10500Execution time: 0.061494Residual: 4.925272
+Resolution: 11500Execution time: 0.076255Residual: 5.394301
+Resolution: 12500Execution time: 0.091975Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_1x16_16_12
+Resolution: 4500Execution time: 0.007515Residual: 2.111093
+Resolution: 5500Execution time: 0.012682Residual: 2.580124
+Resolution: 6500Execution time: 0.020791Residual: 3.049154
+Resolution: 7500Execution time: 0.030262Residual: 3.518183
+Resolution: 8500Execution time: 0.041337Residual: 3.987213
+Resolution: 9500Execution time: 0.052193Residual: 4.456242
+Resolution: 10500Execution time: 0.065478Residual: 4.925272
+Resolution: 11500Execution time: 0.078240Residual: 5.394301
+Resolution: 12500Execution time: 0.093222Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_1x192_192_1
+Resolution: 4500Execution time: 0.014569Residual: 2.111093
+Resolution: 5500Execution time: 0.017736Residual: 2.580124
+Resolution: 6500Execution time: 0.028291Residual: 3.049154
+Resolution: 7500Execution time: 0.044112Residual: 3.518183
+Resolution: 8500Execution time: 0.056348Residual: 3.987213
+Resolution: 9500Execution time: 0.061538Residual: 4.456242
+Resolution: 10500Execution time: 0.077886Residual: 4.925272
+Resolution: 11500Execution time: 0.094335Residual: 5.394301
+Resolution: 12500Execution time: 0.106385Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_1x48_48_4
+Resolution: 4500Execution time: 0.006715Residual: 2.111093
+Resolution: 5500Execution time: 0.011694Residual: 2.580124
+Resolution: 6500Execution time: 0.020602Residual: 3.049154
+Resolution: 7500Execution time: 0.029048Residual: 3.518183
+Resolution: 8500Execution time: 0.040006Residual: 3.987213
+Resolution: 9500Execution time: 0.049949Residual: 4.456242
+Resolution: 10500Execution time: 0.061697Residual: 4.925272
+Resolution: 11500Execution time: 0.076305Residual: 5.394301
+Resolution: 12500Execution time: 0.090643Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_1x64_64_3
+Resolution: 4500Execution time: 0.011267Residual: 2.111093
+Resolution: 5500Execution time: 0.013073Residual: 2.580124
+Resolution: 6500Execution time: 0.021010Residual: 3.049154
+Resolution: 7500Execution time: 0.030001Residual: 3.518183
+Resolution: 8500Execution time: 0.040655Residual: 3.987213
+Resolution: 9500Execution time: 0.051055Residual: 4.456242
+Resolution: 10500Execution time: 0.063009Residual: 4.925272
+Resolution: 11500Execution time: 0.076539Residual: 5.394301
+Resolution: 12500Execution time: 0.092421Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_1x96_96_2
+Resolution: 4500Execution time: 0.006259Residual: 2.111093
+Resolution: 5500Execution time: 0.012495Residual: 2.580124
+Resolution: 6500Execution time: 0.021300Residual: 3.049154
+Resolution: 7500Execution time: 0.030489Residual: 3.518183
+Resolution: 8500Execution time: 0.040078Residual: 3.987213
+Resolution: 9500Execution time: 0.051637Residual: 4.456242
+Resolution: 10500Execution time: 0.065987Residual: 4.925272
+Resolution: 11500Execution time: 0.078360Residual: 5.394301
+Resolution: 12500Execution time: 0.094697Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_24x8_192_1
+Resolution: 4500Execution time: 0.010233Residual: 2.111093
+Resolution: 5500Execution time: 0.010878Residual: 2.580124
+Resolution: 6500Execution time: 0.018277Residual: 3.049154
+Resolution: 7500Execution time: 0.027209Residual: 3.518183
+Resolution: 8500Execution time: 0.037294Residual: 3.987213
+Resolution: 9500Execution time: 0.049809Residual: 4.456242
+Resolution: 10500Execution time: 0.059758Residual: 4.925272
+Resolution: 11500Execution time: 0.074098Residual: 5.394301
+Resolution: 12500Execution time: 0.086927Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_2x16_32_6
+Resolution: 4500Execution time: 0.008659Residual: 2.111093
+Resolution: 5500Execution time: 0.011218Residual: 2.580124
+Resolution: 6500Execution time: 0.018643Residual: 3.049154
+Resolution: 7500Execution time: 0.028534Residual: 3.518183
+Resolution: 8500Execution time: 0.038668Residual: 3.987213
+Resolution: 9500Execution time: 0.049693Residual: 4.456242
+Resolution: 10500Execution time: 0.061931Residual: 4.925272
+Resolution: 11500Execution time: 0.074228Residual: 5.394301
+Resolution: 12500Execution time: 0.088734Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_2x2_4_48
+Resolution: 4500Execution time: 0.018513Residual: 2.111093
+Resolution: 5500Execution time: 0.030263Residual: 2.580124
+Resolution: 6500Execution time: 0.044379Residual: 3.049154
+Resolution: 7500Execution time: 0.062146Residual: 3.518183
+Resolution: 8500Execution time: 0.083723Residual: 3.987213
+Resolution: 9500Execution time: 0.104976Residual: 4.456242
+Resolution: 10500Execution time: 0.128410Residual: 4.925272
+Resolution: 11500Execution time: 0.156306Residual: 5.394301
+Resolution: 12500Execution time: 0.184998Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_2x8_16_12
+Resolution: 4500Execution time: 0.006018Residual: 2.111093
+Resolution: 5500Execution time: 0.012833Residual: 2.580124
+Resolution: 6500Execution time: 0.020336Residual: 3.049154
+Resolution: 7500Execution time: 0.030554Residual: 3.518183
+Resolution: 8500Execution time: 0.040935Residual: 3.987213
+Resolution: 9500Execution time: 0.051510Residual: 4.456242
+Resolution: 10500Execution time: 0.063822Residual: 4.925272
+Resolution: 11500Execution time: 0.078106Residual: 5.394301
+Resolution: 12500Execution time: 0.093213Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_2x96_192_1
+Resolution: 4500Execution time: 0.010699Residual: 2.111093
+Resolution: 5500Execution time: 0.011689Residual: 2.580124
+Resolution: 6500Execution time: 0.021255Residual: 3.049154
+Resolution: 7500Execution time: 0.030318Residual: 3.518183
+Resolution: 8500Execution time: 0.040776Residual: 3.987213
+Resolution: 9500Execution time: 0.053418Residual: 4.456242
+Resolution: 10500Execution time: 0.065332Residual: 4.925272
+Resolution: 11500Execution time: 0.078498Residual: 5.394301
+Resolution: 12500Execution time: 0.094582Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_32x2_64_3
+Resolution: 4500Execution time: 0.010225Residual: 2.111093
+Resolution: 5500Execution time: 0.011367Residual: 2.580124
+Resolution: 6500Execution time: 0.018390Residual: 3.049154
+Resolution: 7500Execution time: 0.027711Residual: 3.518183
+Resolution: 8500Execution time: 0.036025Residual: 3.987213
+Resolution: 9500Execution time: 0.047940Residual: 4.456242
+Resolution: 10500Execution time: 0.058330Residual: 4.925272
+Resolution: 11500Execution time: 0.072189Residual: 5.394301
+Resolution: 12500Execution time: 0.086834Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_32x3_96_2
+Resolution: 4500Execution time: 0.007417Residual: 2.111093
+Resolution: 5500Execution time: 0.011017Residual: 2.580124
+Resolution: 6500Execution time: 0.018220Residual: 3.049154
+Resolution: 7500Execution time: 0.027129Residual: 3.518183
+Resolution: 8500Execution time: 0.036050Residual: 3.987213
+Resolution: 9500Execution time: 0.046992Residual: 4.456242
+Resolution: 10500Execution time: 0.060567Residual: 4.925272
+Resolution: 11500Execution time: 0.073341Residual: 5.394301
+Resolution: 12500Execution time: 0.085572Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_32x6_192_1
+Resolution: 4500Execution time: 0.006094Residual: 2.111093
+Resolution: 5500Execution time: 0.010755Residual: 2.580124
+Resolution: 6500Execution time: 0.018298Residual: 3.049154
+Resolution: 7500Execution time: 0.026940Residual: 3.518183
+Resolution: 8500Execution time: 0.037068Residual: 3.987213
+Resolution: 9500Execution time: 0.047141Residual: 4.456242
+Resolution: 10500Execution time: 0.060116Residual: 4.925272
+Resolution: 11500Execution time: 0.071740Residual: 5.394301
+Resolution: 12500Execution time: 0.085580Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_3x2_6_32
+Resolution: 4500Execution time: 0.017301Residual: 2.111093
+Resolution: 5500Execution time: 0.030824Residual: 2.580124
+Resolution: 6500Execution time: 0.044912Residual: 3.049154
+Resolution: 7500Execution time: 0.070420Residual: 3.518183
+Resolution: 8500Execution time: 0.086127Residual: 3.987213
+Resolution: 9500Execution time: 0.105931Residual: 4.456242
+Resolution: 10500Execution time: 0.130980Residual: 4.925272
+Resolution: 11500Execution time: 0.157079Residual: 5.394301
+Resolution: 12500Execution time: 0.184321Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_3x32_96_2
+Resolution: 4500Execution time: 0.008125Residual: 2.111093
+Resolution: 5500Execution time: 0.010760Residual: 2.580124
+Resolution: 6500Execution time: 0.018506Residual: 3.049154
+Resolution: 7500Execution time: 0.027661Residual: 3.518183
+Resolution: 8500Execution time: 0.037744Residual: 3.987213
+Resolution: 9500Execution time: 0.048422Residual: 4.456242
+Resolution: 10500Execution time: 0.061255Residual: 4.925272
+Resolution: 11500Execution time: 0.074302Residual: 5.394301
+Resolution: 12500Execution time: 0.088184Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_3x64_192_1
+Resolution: 4500Execution time: 0.015044Residual: 2.111093
+Resolution: 5500Execution time: 0.011136Residual: 2.580124
+Resolution: 6500Execution time: 0.020015Residual: 3.049154
+Resolution: 7500Execution time: 0.030681Residual: 3.518183
+Resolution: 8500Execution time: 0.038525Residual: 3.987213
+Resolution: 9500Execution time: 0.051855Residual: 4.456242
+Resolution: 10500Execution time: 0.063618Residual: 4.925272
+Resolution: 11500Execution time: 0.076480Residual: 5.394301
+Resolution: 12500Execution time: 0.090147Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_3x64_96_2
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_3x8_24_8
+Resolution: 4500Execution time: 0.005936Residual: 2.111093
+Resolution: 5500Execution time: 0.011959Residual: 2.580124
+Resolution: 6500Execution time: 0.020613Residual: 3.049154
+Resolution: 7500Execution time: 0.029490Residual: 3.518183
+Resolution: 8500Execution time: 0.039902Residual: 3.987213
+Resolution: 9500Execution time: 0.049381Residual: 4.456242
+Resolution: 10500Execution time: 0.062714Residual: 4.925272
+Resolution: 11500Execution time: 0.076423Residual: 5.394301
+Resolution: 12500Execution time: 0.091899Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_48x1_48_4
+Resolution: 4500Execution time: 0.006123Residual: 2.111093
+Resolution: 5500Execution time: 0.011423Residual: 2.580124
+Resolution: 6500Execution time: 0.018940Residual: 3.049154
+Resolution: 7500Execution time: 0.026746Residual: 3.518183
+Resolution: 8500Execution time: 0.037212Residual: 3.987213
+Resolution: 9500Execution time: 0.047203Residual: 4.456242
+Resolution: 10500Execution time: 0.059646Residual: 4.925272
+Resolution: 11500Execution time: 0.072953Residual: 5.394301
+Resolution: 12500Execution time: 0.091022Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_48x4_192_1
+Resolution: 4500Execution time: 0.010641Residual: 2.111093
+Resolution: 5500Execution time: 0.010757Residual: 2.580124
+Resolution: 6500Execution time: 0.018540Residual: 3.049154
+Resolution: 7500Execution time: 0.026868Residual: 3.518183
+Resolution: 8500Execution time: 0.037499Residual: 3.987213
+Resolution: 9500Execution time: 0.046713Residual: 4.456242
+Resolution: 10500Execution time: 0.061465Residual: 4.925272
+Resolution: 11500Execution time: 0.073299Residual: 5.394301
+Resolution: 12500Execution time: 0.087827Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x16_64_3
+Resolution: 4500Execution time: 0.008866Residual: 2.111093
+Resolution: 5500Execution time: 0.011073Residual: 2.580124
+Resolution: 6500Execution time: 0.019974Residual: 3.049154
+Resolution: 7500Execution time: 0.028321Residual: 3.518183
+Resolution: 8500Execution time: 0.037753Residual: 3.987213
+Resolution: 9500Execution time: 0.048738Residual: 4.456242
+Resolution: 10500Execution time: 0.062093Residual: 4.925272
+Resolution: 11500Execution time: 0.074892Residual: 5.394301
+Resolution: 12500Execution time: 0.090405Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x2_8_24
+Resolution: 4500Execution time: 0.006637Residual: 2.111093
+Resolution: 5500Execution time: 0.012431Residual: 2.580124
+Resolution: 6500Execution time: 0.020492Residual: 3.049154
+Resolution: 7500Execution time: 0.028757Residual: 3.518183
+Resolution: 8500Execution time: 0.038485Residual: 3.987213
+Resolution: 9500Execution time: 0.049240Residual: 4.456242
+Resolution: 10500Execution time: 0.062957Residual: 4.925272
+Resolution: 11500Execution time: 0.074995Residual: 5.394301
+Resolution: 12500Execution time: 0.089203Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x3_12_16
+Resolution: 4500Execution time: 0.010911Residual: 2.111093
+Resolution: 5500Execution time: 0.017404Residual: 2.580124
+Resolution: 6500Execution time: 0.027234Residual: 3.049154
+Resolution: 7500Execution time: 0.039029Residual: 3.518183
+Resolution: 8500Execution time: 0.051055Residual: 3.987213
+Resolution: 9500Execution time: 0.065205Residual: 4.456242
+Resolution: 10500Execution time: 0.081710Residual: 4.925272
+Resolution: 11500Execution time: 0.099718Residual: 5.394301
+Resolution: 12500Execution time: 0.117611Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x48_192_1
+Resolution: 4500Execution time: 0.008310Residual: 2.111093
+Resolution: 5500Execution time: 0.011068Residual: 2.580124
+Resolution: 6500Execution time: 0.018994Residual: 3.049154
+Resolution: 7500Execution time: 0.028822Residual: 3.518183
+Resolution: 8500Execution time: 0.038688Residual: 3.987213
+Resolution: 9500Execution time: 0.049542Residual: 4.456242
+Resolution: 10500Execution time: 0.062372Residual: 4.925272
+Resolution: 11500Execution time: 0.077445Residual: 5.394301
+Resolution: 12500Execution time: 0.089653Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x4_16_12
+Resolution: 4500Execution time: 0.007396Residual: 2.111093
+Resolution: 5500Execution time: 0.012405Residual: 2.580124
+Resolution: 6500Execution time: 0.020890Residual: 3.049154
+Resolution: 7500Execution time: 0.028472Residual: 3.518183
+Resolution: 8500Execution time: 0.039001Residual: 3.987213
+Resolution: 9500Execution time: 0.049267Residual: 4.456242
+Resolution: 10500Execution time: 0.061797Residual: 4.925272
+Resolution: 11500Execution time: 0.077034Residual: 5.394301
+Resolution: 12500Execution time: 0.091319Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x6_24_8
+Resolution: 4500Execution time: 0.007377Residual: 2.111093
+Resolution: 5500Execution time: 0.011589Residual: 2.580124
+Resolution: 6500Execution time: 0.019671Residual: 3.049154
+Resolution: 7500Execution time: 0.028512Residual: 3.518183
+Resolution: 8500Execution time: 0.038943Residual: 3.987213
+Resolution: 9500Execution time: 0.049471Residual: 4.456242
+Resolution: 10500Execution time: 0.062717Residual: 4.925272
+Resolution: 11500Execution time: 0.075994Residual: 5.394301
+Resolution: 12500Execution time: 0.091134Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_4x8_32_6
+Resolution: 4500Execution time: 0.009101Residual: 2.111093
+Resolution: 5500Execution time: 0.011336Residual: 2.580124
+Resolution: 6500Execution time: 0.019996Residual: 3.049154
+Resolution: 7500Execution time: 0.027848Residual: 3.518183
+Resolution: 8500Execution time: 0.037792Residual: 3.987213
+Resolution: 9500Execution time: 0.049667Residual: 4.456242
+Resolution: 10500Execution time: 0.061892Residual: 4.925272
+Resolution: 11500Execution time: 0.075345Residual: 5.394301
+Resolution: 12500Execution time: 0.089475Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_64x1_64_3
+Resolution: 4500Execution time: 0.008438Residual: 2.111093
+Resolution: 5500Execution time: 0.009972Residual: 2.580124
+Resolution: 6500Execution time: 0.018079Residual: 3.049154
+Resolution: 7500Execution time: 0.027918Residual: 3.518183
+Resolution: 8500Execution time: 0.036533Residual: 3.987213
+Resolution: 9500Execution time: 0.048515Residual: 4.456242
+Resolution: 10500Execution time: 0.061394Residual: 4.925272
+Resolution: 11500Execution time: 0.073706Residual: 5.394301
+Resolution: 12500Execution time: 0.090948Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_64x3_192_1
+Resolution: 4500Execution time: 0.006808Residual: 2.111093
+Resolution: 5500Execution time: 0.009756Residual: 2.580124
+Resolution: 6500Execution time: 0.018226Residual: 3.049154
+Resolution: 7500Execution time: 0.027562Residual: 3.518183
+Resolution: 8500Execution time: 0.037173Residual: 3.987213
+Resolution: 9500Execution time: 0.049698Residual: 4.456242
+Resolution: 10500Execution time: 0.059426Residual: 4.925272
+Resolution: 11500Execution time: 0.073994Residual: 5.394301
+Resolution: 12500Execution time: 0.088377Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_64x3_96_2
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_6x16_96_2
+Resolution: 4500Execution time: 0.007844Residual: 2.111093
+Resolution: 5500Execution time: 0.016336Residual: 2.580124
+Resolution: 6500Execution time: 0.030631Residual: 3.049154
+Resolution: 7500Execution time: 0.046223Residual: 3.518183
+Resolution: 8500Execution time: 0.064579Residual: 3.987213
+Resolution: 9500Execution time: 0.084084Residual: 4.456242
+Resolution: 10500Execution time: 0.105339Residual: 4.925272
+Resolution: 11500Execution time: 0.130413Residual: 5.394301
+Resolution: 12500Execution time: 0.155420Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_6x32_192_1
+Resolution: 4500Execution time: 0.012065Residual: 2.111093
+Resolution: 5500Execution time: 0.010992Residual: 2.580124
+Resolution: 6500Execution time: 0.018987Residual: 3.049154
+Resolution: 7500Execution time: 0.027691Residual: 3.518183
+Resolution: 8500Execution time: 0.038452Residual: 3.987213
+Resolution: 9500Execution time: 0.049738Residual: 4.456242
+Resolution: 10500Execution time: 0.060166Residual: 4.925272
+Resolution: 11500Execution time: 0.075365Residual: 5.394301
+Resolution: 12500Execution time: 0.088797Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_6x4_24_8
+Resolution: 4500Execution time: 0.009454Residual: 2.111093
+Resolution: 5500Execution time: 0.012012Residual: 2.580124
+Resolution: 6500Execution time: 0.019610Residual: 3.049154
+Resolution: 7500Execution time: 0.028610Residual: 3.518183
+Resolution: 8500Execution time: 0.038410Residual: 3.987213
+Resolution: 9500Execution time: 0.050016Residual: 4.456242
+Resolution: 10500Execution time: 0.061245Residual: 4.925272
+Resolution: 11500Execution time: 0.075016Residual: 5.394301
+Resolution: 12500Execution time: 0.089631Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_6x8_48_4
+Resolution: 4500Execution time: 0.007639Residual: 2.111093
+Resolution: 5500Execution time: 0.011263Residual: 2.580124
+Resolution: 6500Execution time: 0.019370Residual: 3.049154
+Resolution: 7500Execution time: 0.028883Residual: 3.518183
+Resolution: 8500Execution time: 0.037849Residual: 3.987213
+Resolution: 9500Execution time: 0.049062Residual: 4.456242
+Resolution: 10500Execution time: 0.061588Residual: 4.925272
+Resolution: 11500Execution time: 0.074943Residual: 5.394301
+Resolution: 12500Execution time: 0.089430Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x12_96_2
+Resolution: 4500Execution time: 0.004971Residual: 2.111093
+Resolution: 5500Execution time: 0.011223Residual: 2.580124
+Resolution: 6500Execution time: 0.018934Residual: 3.049154
+Resolution: 7500Execution time: 0.028688Residual: 3.518183
+Resolution: 8500Execution time: 0.037943Residual: 3.987213
+Resolution: 9500Execution time: 0.049012Residual: 4.456242
+Resolution: 10500Execution time: 0.060852Residual: 4.925272
+Resolution: 11500Execution time: 0.075010Residual: 5.394301
+Resolution: 12500Execution time: 0.089286Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x24_192_1
+Resolution: 4500Execution time: 0.008000Residual: 2.111093
+Resolution: 5500Execution time: 0.010664Residual: 2.580124
+Resolution: 6500Execution time: 0.018290Residual: 3.049154
+Resolution: 7500Execution time: 0.027235Residual: 3.518183
+Resolution: 8500Execution time: 0.037082Residual: 3.987213
+Resolution: 9500Execution time: 0.049220Residual: 4.456242
+Resolution: 10500Execution time: 0.059940Residual: 4.925272
+Resolution: 11500Execution time: 0.075115Residual: 5.394301
+Resolution: 12500Execution time: 0.087495Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x2_16_12
+Resolution: 4500Execution time: 0.006670Residual: 2.111093
+Resolution: 5500Execution time: 0.012295Residual: 2.580124
+Resolution: 6500Execution time: 0.020586Residual: 3.049154
+Resolution: 7500Execution time: 0.028438Residual: 3.518183
+Resolution: 8500Execution time: 0.038442Residual: 3.987213
+Resolution: 9500Execution time: 0.049982Residual: 4.456242
+Resolution: 10500Execution time: 0.062463Residual: 4.925272
+Resolution: 11500Execution time: 0.074693Residual: 5.394301
+Resolution: 12500Execution time: 0.089771Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x3_24_8
+Resolution: 4500Execution time: 0.796098Residual: 2.111093
+Resolution: 5500Execution time: 0.013059Residual: 2.580124
+Resolution: 6500Execution time: 0.020181Residual: 3.049154
+Resolution: 7500Execution time: 0.029689Residual: 3.518183
+Resolution: 8500Execution time: 0.038756Residual: 3.987213
+Resolution: 9500Execution time: 0.049318Residual: 4.456242
+Resolution: 10500Execution time: 0.062388Residual: 4.925272
+Resolution: 11500Execution time: 0.074891Residual: 5.394301
+Resolution: 12500Execution time: 0.089339Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x4_32_6
+Resolution: 4500Execution time: 0.009147Residual: 2.111093
+Resolution: 5500Execution time: 0.011881Residual: 2.580124
+Resolution: 6500Execution time: 0.020658Residual: 3.049154
+Resolution: 7500Execution time: 0.028694Residual: 3.518183
+Resolution: 8500Execution time: 0.038184Residual: 3.987213
+Resolution: 9500Execution time: 0.049485Residual: 4.456242
+Resolution: 10500Execution time: 0.062087Residual: 4.925272
+Resolution: 11500Execution time: 0.074610Residual: 5.394301
+Resolution: 12500Execution time: 0.087872Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x6_48_4
+Resolution: 4500Execution time: 0.008121Residual: 2.111093
+Resolution: 5500Execution time: 0.011699Residual: 2.580124
+Resolution: 6500Execution time: 0.018927Residual: 3.049154
+Resolution: 7500Execution time: 0.028369Residual: 3.518183
+Resolution: 8500Execution time: 0.038186Residual: 3.987213
+Resolution: 9500Execution time: 0.048168Residual: 4.456242
+Resolution: 10500Execution time: 0.060538Residual: 4.925272
+Resolution: 11500Execution time: 0.073408Residual: 5.394301
+Resolution: 12500Execution time: 0.088545Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_8x8_64_3
+Resolution: 4500Execution time: 0.008823Residual: 2.111093
+Resolution: 5500Execution time: 0.011514Residual: 2.580124
+Resolution: 6500Execution time: 0.019301Residual: 3.049154
+Resolution: 7500Execution time: 0.028817Residual: 3.518183
+Resolution: 8500Execution time: 0.038364Residual: 3.987213
+Resolution: 9500Execution time: 0.048570Residual: 4.456242
+Resolution: 10500Execution time: 0.061174Residual: 4.925272
+Resolution: 11500Execution time: 0.076150Residual: 5.394301
+Resolution: 12500Execution time: 0.090263Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_96x1_96_2
+Resolution: 4500Execution time: 0.009365Residual: 2.111093
+Resolution: 5500Execution time: 0.011158Residual: 2.580124
+Resolution: 6500Execution time: 0.019394Residual: 3.049154
+Resolution: 7500Execution time: 0.027950Residual: 3.518183
+Resolution: 8500Execution time: 0.036508Residual: 3.987213
+Resolution: 9500Execution time: 0.046742Residual: 4.456242
+Resolution: 10500Execution time: 0.060113Residual: 4.925272
+Resolution: 11500Execution time: 0.074766Residual: 5.394301
+Resolution: 12500Execution time: 0.090919Residual: 5.863330
+C:\Users\hemra\Downloads\Programming_of_supercomputer\pos_21_group12\assignment72\HeatForOMP\Task_5_new\heat_task_96x2_192_1
+Resolution: 4500Execution time: 0.009721Residual: 2.111093
+Resolution: 5500Execution time: 0.011195Residual: 2.580124
+Resolution: 6500Execution time: 0.018683Residual: 3.049154
+Resolution: 7500Execution time: 0.027818Residual: 3.518183
+Resolution: 8500Execution time: 0.037168Residual: 3.987213
+Resolution: 9500Execution time: 0.048576Residual: 4.456242
+Resolution: 10500Execution time: 0.059264Residual: 4.925272
+Resolution: 11500Execution time: 0.074790Residual: 5.394301
+Resolution: 12500Execution time: 0.086030Residual: 5.863330
